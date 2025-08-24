@@ -8,10 +8,12 @@ import smtplib
 from email.mime.text import MIMEText
 from flask import render_template, request, redirect, url_for, abort
 
+print("Loaded routes.py")
+
 def parse_post(filepath):
     with open(filepath, 'r') as f:
         content = f.read()
-    
+
     if content.startswith('---'):
         # Split YAML front matter from content
         parts = content.split('---', 2)
@@ -20,7 +22,7 @@ def parse_post(filepath):
     else:
         metadata = {}
         post_content = content
-    
+
     return {
         'title': metadata.get('title', 'Untitled'),
         'date': metadata.get('date', ''),
@@ -36,10 +38,12 @@ def parse_post(filepath):
 @app.route('/start')
 @app.route('/index')
 def start():
+    print('Loaded start()')
     return render_template('index.html')
 
 @app.route('/end')
 def end():
+    print('Loaded end()')
     return render_template('end.html')
 
 # CONTENTS
@@ -93,13 +97,13 @@ def blog():
 def blog_contents():
     posts = []
     posts_dir = os.path.join(os.getcwd(), "app", "posts")
-    
+
     for filename in sorted(os.listdir(posts_dir), reverse=True):
         if filename.endswith('.md'):
             filepath = os.path.join(posts_dir, filename)
             post = parse_post(filepath)
             posts.append(post)
-    
+
     return render_template('blog_contents.html', posts=posts)
 
 @app.route("/blog/<slug>")
@@ -118,7 +122,7 @@ def blog_post(slug):
     # Expected file path for the post
     post_path = os.path.join(posts_dir, post_dates[slug])
     post_path = post_path + "_" + slug + ".md"
-    
+
     if not os.path.exists(post_path):
         abort(404)  # If file doesn't exist
 
@@ -127,7 +131,7 @@ def blog_post(slug):
         next_page = "/blog/" + order[order.index(slug)+1]
     except ValueError:
         abort(404)
-    
+
     post = parse_post(post_path)
     return render_template(f"blog_post.html", **post, next_page=next_page, last_page=last_page)
 
@@ -161,7 +165,7 @@ def blog_submission():
 def blog_thanks():
     posts = []
     posts_dir = os.path.join(os.getcwd(), "app", "posts")
-    
+
     for filename in sorted(os.listdir(posts_dir), reverse=True):
         if filename.endswith('.md'):
             filepath = os.path.join(posts_dir, filename)
@@ -192,7 +196,7 @@ def fragments_post(slug):
 
     # Expected file path for the post
     post_path = os.path.join(posts_dir, slug + ".md")
-    
+
     if not os.path.exists(post_path):
         abort(404)  # If file doesn't exist
 
@@ -201,7 +205,7 @@ def fragments_post(slug):
         next_page = "/fragments/" + order[order.index(slug)+1]
     except ValueError:
         abort(404)
-    
+
     post = parse_post(post_path)
     return render_template(f"fragments_post.html", **post, next_page=next_page, last_page=last_page)
 
@@ -222,7 +226,7 @@ def projects_post(slug):
 
     # Expected file path for the post
     post_path = os.path.join(posts_dir, slug + ".md")
-    
+
     if not os.path.exists(post_path):
         abort(404)  # If file doesn't exist
 
@@ -231,7 +235,7 @@ def projects_post(slug):
         next_page = "/projects/" + order[order.index(slug)+1]
     except ValueError:
         abort(404)
-    
+
     post = parse_post(post_path)
     return render_template(f"fragments_post.html", **post, next_page=next_page, last_page=last_page)
 
@@ -269,3 +273,12 @@ def epilogue_submission():
 @app.route('/epilogue/thanks', methods=['GET'])
 def epilogue_thanks():
     return render_template('epilogue_thanks.html')
+
+print("All registered routes:")
+for rule in app.url_map.iter_rules():
+    print(f"  {rule.rule} -> {rule.endpoint}")
+
+@app.before_request
+def log_request():
+    print(f"REQUEST: {request.method} {request.path}")
+    print(f"Headers: {dict(request.headers)}")
