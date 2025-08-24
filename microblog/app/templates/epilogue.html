@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block structure %}
+<body>
+    <div id="contents">
+        <div id="sidebar1">
+            <a href="/contents/4"><div><p>←</p></div></a>
+        </div>
+        <div id="mainContents" style="text-align: left"> 
+            <h1>Epilogue</h1>
+            <p> Anyone who knows me will tell you that I listen much more than I speak. If you don't think that's true, please <a href=https://admonymous.co/pbenn>let me know</a>. </p>
+            <p> Unfortunately, this website—as most personal websites are—is more for speaking than listening. I don't like that. </p>
+            <p> I'd love it if you could take just a quarter of the time you spent on this website to tell me something about yourself. If you need ideas, consider answering one of the following prompts, arranged from least to most complex.
+                <ul> <i>
+                What's your name? <br>
+                What do you do for work? <br>
+                What song or album should I listen to next? <br>
+                Do you like your parents? <br>
+                What's the strongest emotion you've ever experienced? <br>
+                What's the biggest red flag you see in your personality? <br>
+                What motivates you? <br>
+                </i> </ul>
+            </p>
+            <form action="/epilogue/submission" method="post">
+                <p>
+                    <textarea id="epilogue_form" name="epilogue_form" size="100" style="height: 30vh"></textarea><br>
+                    <button type="submit" class="submit-btn">Send</button>
+                </p>
+            </form>
+        </div>
+        <div id="sidebar2">
+            <a href="/end"><div><p>→</p></div></a>
+        </div>
+    </div>
+</body>
+{% endblock %}

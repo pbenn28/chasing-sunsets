@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block structure %}
+<body>
+    <div id="contents">
+        <div id="sidebar1">
+            <a href="/blog"><div><p>←</p></div></a>
+        </div>
+        <div id="mainContents"> 
+            <h1 style="margin-bottom: 0em">Posts</h1>
+    
+            {% for post in posts %}
+                <article>
+                    <button type="button" onclick="window.location.href='{{ post.handle }}'" class="post-button">
+                        <h2 style="margin-bottom: -0.5em; color: #333333;">{{ post.title }}</h2>
+                        <p style="margin-bottom: -0.4em"><small>{{ post.date }} </small></p>
+                        <div><p>{{ post.description }}</p></div>
+                    </button>
+                    <hr style="width:100%; margin-top: 0em; margin-bottom: 0em;">
+                </article>
+            {% endfor %}
+
+            <h3 style="text-align: center; color: royalblue"> Thank you for subscribing! </h3>
+
+
+        </div>
+        <div id="sidebar2">
+            <a href="/blog/golumbia"><div><p>→</p></div></a>
+        </div>
+    </div>
+</body>
+{% endblock %}

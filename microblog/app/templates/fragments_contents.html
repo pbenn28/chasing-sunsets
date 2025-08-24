@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block structure %}
+<body>
+    <div id="contents">
+        <div id="sidebar1">
+            <a href="/fragments"><div><p>←</p></div></a>
+        </div>
+        <div id="mainContents"> 
+            <h1> Fragments </h1>
+            <h2 style="text-align:left;"> Fragments of Self <span style="float:right;"> Fragments of Work </span> </h2>
+            <div id="fragments">
+            <p style="text-align:left;"> <span class="highlighted-with-color"><a href="/fragments/recs"> Recommendations </a></span> <span style="float:right;"> <a href="/fragments/palm">a palm drive</a> </span> </p>
+            <p style="text-align:left;"> <a href="/fragments/quotes">Quotes</a> <span style="float:right;"> <a href="/fragments/alaska">palo alto, alaska</a> </span> </p>
+            <p style="text-align:left;"> <a href="/fragments/intros">Introductions</a> <span style="float:right;"> <a href="/fragments/bart">things one might encounter</a> </span> </p>
+            <p style="text-align:left;"> <a href="/fragments/todo">To-Do</a> <span style="float:right;">  </span> </p>
+            <p style="text-align:left;"> <a href="/fragments/future-posts">Future Posts</a> <span style="float:right;">  </span> </p>
+            </div>
+        </div>
+        <div id="sidebar2">
+            <a href="/fragments/recs"><div><p>→</p></div></a>
+        </div>
+    </div>
+</body>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block structure %}
+<body>
+    <div id="contents">
+        <div id="sidebar1">
+            <a href="{{ last_page }}"><div><p>←</p></div></a>
+        </div>
+        <div id="mainContents"> 
+            <h1 style="margin-bottom: -0.2em"> {{ title }} </h1>
+            <h3 style="text-align: center"> Published: {{ date }}</h3>
+            <hr>
+            {{ content|safe }}
+        </div>
+        <div id="sidebar2">
+            <a href="{{ next_page }}"><div><p>→</p></div></a>
+        </div>
+    </div>
+</body>
+{% endblock %}

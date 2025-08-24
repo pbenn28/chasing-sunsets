@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block structure %}
+<body>
+    <div id="contents">
+        <div id="sidebar1">
+            <a href="/projects"><div><p>←</p></div></a>
+        </div>
+        <div id="mainContents"> 
+            <h1> Projects </h1>
+            <h2 style="text-align:left;"> Current <span style="float:right;"> Former </span> </h2>
+            <div id="fragments">
+            <p style="text-align:left;"> <a href="/projects/gratta">Gratta Lab</a> <span style="float:right;"> <a href="/projects/wtp">We the People</a> </span> </p>
+            <p style="text-align:left;"> <a href="/projects/useso">U.S. Earth Science Organization</a> <span style="float:right;"> <a href="/projects/ess">Earth Science Scrimmage</a> </span> </p>
+            <p style="text-align:left;"> <a href="/projects/sso">Stanford Science Bowl</a> <span style="float:right;"> <a href="/projects/prometheus">Prometheus</a> </span> </p>
+            <p style="text-align:left;"> <a href="/projects/sias">Stanford International Affairs Society</a> <span style="float:right;"> <a href="/projects/fhs-scibowl">HS Science Bowl</a> </span> </p>
+            <p style="text-align:left;"> <a href="/projects/smunc">Stanford Model UN Conference</a> <span style="float:right;"> <a href="/projects/fhs-scioly">HS Science Olympiad</a> </span> </p>
+            <p style="text-align:left;"> <a href="/projects/scioly">Science Olympiad</a> <span style="float:right;"> <a href="/projects/pms-scibowl">MS Science Bowl</a> </span> </p>
+            <p style="text-align:left;"> <a href="/projects/dorm-lectures">Dorm Lectures</a> <span style="float:right;"> <a href="/projects/esods">ESODS</a> </span> </p>
+            <p style="text-align:left;"> <a href="/projects/oasis">Oasis</a> <span style="float:right;"> <a href="/projects/cosmos">COSMOS</a> </span> </p>
+            <p style="text-align:left;"> <a href="/projects/chasing-sunsets">Chasing Sunsets</a> <span style="float:right;"> <a href="/projects/ieso">IESO</a> </span> </p>
+            </div>
+        </div>
+        <div id="sidebar2">
+            <a href="/projects/gratta"><div><p>→</p></div></a>
+        </div>
+    </div>
+</body>
+{% endblock %}

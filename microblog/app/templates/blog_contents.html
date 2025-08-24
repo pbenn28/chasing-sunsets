@@ -1,0 +1,90 @@
+
+{% extends "base.html" %}
+
+{% block structure %}
+<body>
+    <div id="contents">
+        <div id="sidebar1">
+            <a href="/blog"><div><p>←</p></div></a>
+        </div>
+        <div id="mainContents"> 
+            <h1 style="margin-bottom: 0em">Posts</h1>
+    
+            {% for post in posts %}
+                <article>
+                    <button type="button" onclick="window.location.href='{{ post.handle }}'" class="post-button">
+                        <h2 style="margin-bottom: -0.5em; color: #333333;">{{ post.title }}</h2>
+                        <p style="margin-bottom: -0.4em"><small>{{ post.date }} </small></p>
+                        <div><p>{{ post.description }}</p></div>
+                    </button>
+                    <hr style="width:100%; margin-top: 0em; margin-bottom: 0em;">
+                </article>
+            {% endfor %}
+
+            <form action="/blog/submission" method="post">
+                <p style="text-align: center">
+                    <input id="blog_form" name="blog_form" placeholder="example@gmail.com"></input>
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </p>
+            </form>
+
+
+        </div>
+        <div id="sidebar2">
+            <a href="/blog/golumbia"><div><p>→</p></div></a>
+        </div>
+    </div>
+</body>
+{% endblock %}
+
+<!--
+
+<body>
+    <div id="contents">
+        <div id="sidebar1">
+            <a href="/blog"><div><p>←</p></div></a>
+        </div>
+        <div id="mainContents"> 
+            <h1>Posts</h1>
+    
+            {% for post in posts %}
+                <article>
+                    <button type="button" onclick="window.location.href='{{ post.handle }}'" 
+                            style="width: 100%; text-align: left; background: none; border: none; padding: 0; cursor: pointer; font-family: inherit;">
+                        <h2 style="margin-bottom: -0.3em; color: #333333;">{{ post.title }}</h2>
+                        <p><small>{{ post.date }} </small></p>
+                        <div><p>{{ post.description }}</p></div>
+                    </button>
+                    <hr style="width:100%">
+                </article>
+            {% endfor %}
+        </div>
+        <div id="sidebar2">
+            <a href="/blog/feeling"><div><p>→</p></div></a>
+        </div>
+    </div>
+</body>
+
+<body>
+    <div id="contents">
+        <div id="sidebar1">
+            <a href="/blog"><div><p>←</p></div></a>
+        </div>
+        <div id="mainContents"> 
+            <h1>Posts</h1>
+    
+            {% for post in posts %}
+                <article>
+                    <h2 style="margin-bottom: -0.3em;"><a style="color: #333333" href="{{ post.handle }}">{{ post.title }}</a></h2>
+                    <p><small>{{ post.date }} </small></p>
+                    <div><p>{{ post.description }}</p></div>
+                    <hr style="width:100%">
+                </article>
+            {% endfor %}
+        </div>
+        <div id="sidebar2">
+            <a href="/blog/feeling"><div><p>→</p></div></a>
+        </div>
+    </div>
+</body>
+-->
