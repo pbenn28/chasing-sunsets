@@ -34,15 +34,15 @@ def parse_post(filepath):
 # START & END
 @app.route('/')
 @app.route('/start')
+@app.route('/index')
 def start():
-    return render_template('start.html')
+    return render_template('index.html')
 
 @app.route('/end')
 def end():
     return render_template('end.html')
 
 # CONTENTS
-@app.route('/index')
 @app.route('/contents')
 def contents():
     return render_template('contents.html')
