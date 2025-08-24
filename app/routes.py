@@ -96,8 +96,8 @@ def blog():
 @app.route('/blog/contents')
 def blog_contents():
     posts = []
-    posts_dir = os.path.join(os.getcwd(), "app", "posts")
-
+    posts_dir = os.path.join(os.getcwd(), "chasing-sunsets", "app", "posts")
+    
     for filename in sorted(os.listdir(posts_dir), reverse=True):
         if filename.endswith('.md'):
             filepath = os.path.join(posts_dir, filename)
