@@ -96,7 +96,7 @@ def blog():
 @app.route('/blog/contents')
 def blog_contents():
     posts = []
-    posts_dir = os.path.join(os.getcwd(), "chasing-sunsets", "app", "posts")
+    posts_dir = os.path.join(os.getcwd(), "app", "posts")
 
     for filename in sorted(os.listdir(posts_dir), reverse=True):
         if filename.endswith('.md'):
@@ -108,7 +108,7 @@ def blog_contents():
 
 @app.route("/blog/<slug>")
 def blog_post(slug):
-    posts_dir = os.path.join(os.getcwd(), "chasing-sunsets", "app", "posts")
+    posts_dir = os.path.join(os.getcwd(), "app", "posts")
 
     post_dates = {
         "golumbia": "250809",
@@ -166,7 +166,7 @@ def blog_submission():
 @app.route('/blog/thanks', methods=['GET'])
 def blog_thanks():
     posts = []
-    posts_dir = os.path.join(os.getcwd(), "chasing-sunsets", "app", "posts")
+    posts_dir = os.path.join(os.getcwd(), "app", "posts")
 
     for filename in sorted(os.listdir(posts_dir), reverse=True):
         if filename.endswith('.md'):
@@ -192,7 +192,7 @@ def fragments_contents_work():
 
 @app.route("/fragments/<slug>")
 def fragments_post(slug):
-    posts_dir = os.path.join(os.getcwd(), "chasing-sunsets", "app", "fragments")
+    posts_dir = os.path.join(os.getcwd(), "app", "fragments")
 
     order = ["contents","recs","quotes","intros","todo","future-posts","contents/work","palm","alaska","bart","end"]
 
@@ -222,7 +222,7 @@ def projects_contents():
 
 @app.route("/projects/<slug>")
 def projects_post(slug):
-    posts_dir = os.path.join(os.getcwd(), "chasing-sunsets", "app", "projects")
+    posts_dir = os.path.join(os.getcwd(), "app", "projects")
 
     order = ["contents","gratta","useso","ssb","sias","smunc","scioly","dorm-lectures","oasis","chasing-sunsets","wtp","ess","prometheus","hs-scibowl","hs-scioly","ms-scibowl","esods","cosmos","ieso","end"]
 
