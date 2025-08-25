@@ -97,7 +97,7 @@ def blog():
 def blog_contents():
     posts = []
     posts_dir = os.path.join(os.getcwd(), "chasing-sunsets", "app", "posts")
-    
+
     for filename in sorted(os.listdir(posts_dir), reverse=True):
         if filename.endswith('.md'):
             filepath = os.path.join(posts_dir, filename)
@@ -108,7 +108,7 @@ def blog_contents():
 
 @app.route("/blog/<slug>")
 def blog_post(slug):
-    posts_dir = os.path.join(os.getcwd(), "app", "posts")
+    posts_dir = os.path.join(os.getcwd(), "chasing-sunsets", "app", "posts")
 
     post_dates = {
         "golumbia": "250809",
@@ -124,12 +124,14 @@ def blog_post(slug):
     post_path = post_path + "_" + slug + ".md"
 
     if not os.path.exists(post_path):
+        print('Path does not exist')
         abort(404)  # If file doesn't exist
 
     try:
         last_page = "/blog/" + order[order.index(slug)-1]
         next_page = "/blog/" + order[order.index(slug)+1]
     except ValueError:
+        print('Neighboring files do not exist')
         abort(404)
 
     post = parse_post(post_path)
@@ -164,7 +166,7 @@ def blog_submission():
 @app.route('/blog/thanks', methods=['GET'])
 def blog_thanks():
     posts = []
-    posts_dir = os.path.join(os.getcwd(), "app", "posts")
+    posts_dir = os.path.join(os.getcwd(), "chasing-sunsets", "app", "posts")
 
     for filename in sorted(os.listdir(posts_dir), reverse=True):
         if filename.endswith('.md'):
@@ -190,7 +192,7 @@ def fragments_contents_work():
 
 @app.route("/fragments/<slug>")
 def fragments_post(slug):
-    posts_dir = os.path.join(os.getcwd(), "app", "fragments")
+    posts_dir = os.path.join(os.getcwd(), "chasing-sunsets", "app", "fragments")
 
     order = ["contents","recs","quotes","intros","todo","future-posts","contents/work","palm","alaska","bart","end"]
 
@@ -220,9 +222,9 @@ def projects_contents():
 
 @app.route("/projects/<slug>")
 def projects_post(slug):
-    posts_dir = os.path.join(os.getcwd(), "app", "projects")
+    posts_dir = os.path.join(os.getcwd(), "chasing-sunsets", "app", "projects")
 
-    order = ["contents","gratta","useso","sso","sias","smunc","scioly","dorm-lectures","oasis","chasing-sunsets","wtp","ess","prometheus","fhs-scibowl","fhs-scioly","pms-scibowl","esods","cosmos","ieso","end"]
+    order = ["contents","gratta","useso","sso","sias","smunc","scioly","dorm-lectures","oasis","chasing-sunsets","wtp","ess","prometheus","hs-scibowl","hs-scioly","ms-scibowl","esods","cosmos","ieso","end"]
 
     # Expected file path for the post
     post_path = os.path.join(posts_dir, slug + ".md")
