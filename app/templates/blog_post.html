@@ -10,7 +10,15 @@
             <h1 style="margin-bottom: -0.2em"> {{ title }} </h1>
             <h3 style="text-align: center"> Published: {{ date }}</h3>
             <hr>
+            
             {{ content|safe }}
+
+            <form action="/blog/submission" method="post">
+                <p style="text-align: center">
+                    <input id="blog_form" name="blog_form" placeholder="example@gmail.com"></input>
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </p>
+            </form>
         </div>
         <div id="sidebar2">
             <a href="{{ next_page }}"><div><p>→</p></div></a>

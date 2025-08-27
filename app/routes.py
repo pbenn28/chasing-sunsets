@@ -111,7 +111,7 @@ def blog_post(slug):
     posts_dir = os.path.join(os.getcwd(), "app", "posts")
 
     post_dates = {
-        "golumbia": "250809",
+        "golumbia": "250827",
         "visions": "250610",
         "etch": "250320",
         "crystallization": "241215"

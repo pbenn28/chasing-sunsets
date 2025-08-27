@@ -9,6 +9,8 @@
         <div id="mainContents"> 
             <h1 style="margin-bottom: 0em">Posts</h1>
     
+            <h3 style="text-align: center; color: royalblue"> Thank you for subscribing! </h3>
+
             {% for post in posts %}
                 <article>
                     <button type="button" onclick="window.location.href='{{ post.handle }}'" class="post-button">
@@ -19,8 +21,6 @@
                     <hr style="width:100%; margin-top: 0em; margin-bottom: 0em;">
                 </article>
             {% endfor %}
-
-            <h3 style="text-align: center; color: royalblue"> Thank you for subscribing! </h3>
 
 
         </div>
