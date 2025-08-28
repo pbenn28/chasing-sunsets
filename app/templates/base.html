@@ -3,6 +3,18 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
+
+        {% if title %}
+        <meta property="og:title" content="{{ title }} • Chasing Sunsets" />
+        {% else %}
+        <meta property="og:title" content="Chasing Sunsets" />
+        {% endif %}
+        <meta property="og:site_name" content="Chasing Sunsets" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Hi there! It's nice to meet you." />
+        <meta property="og:image" content="/static/images/sunset_small.jpeg" />
+        <meta property="og:url" content="{{ request.url }}" />
+
         <link href="{{ url_for('static', filename='styles/style.css') }}" rel="stylesheet" />
         <link
             href="https://fonts.googleapis.com/css?family=EB+Garamond"
