@@ -46,7 +46,7 @@ body {
     width: 100%;
     min-height: 100vh;
     /* Explicit column sizes for desktop */
-    grid-template-columns: minmax(50px, 1fr) 720px minmax(50px, 1fr);
+    grid-template-columns: minmax(50px, 1fr) 730px minmax(50px, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas: "left center right";
 }
@@ -68,7 +68,7 @@ body {
 }
 
 #mainContents {
-    max-width: 720px; /* Match the desktop width */
+    max-width: 730px; /* Match the desktop width */
     margin: 0 0; /* Center the content, change second to auto? */
     padding: 0 40px; /* Add some padding on small screens */
     box-sizing: border-box; /* Include padding in width calculation */
@@ -190,19 +190,19 @@ body {
 */
 
 @keyframes flashing {
-  0%   {color: orangered;}
-  20%   {color: orangered;}
+  0%   {color: tomato;}
+  20%   {color: tomato;}
   55%  {color: inherit;}
   65%  {color: inherit;}
-  100% {color: orangered;}
+  100% {color: tomato;}
 }
 
 @keyframes flashing-with-color {
-  0%   {color: orangered;}
-  20%   {color: orangered;}
+  0%   {color: tomato;}
+  20%   {color: tomato;}
   55%  {color: royalblue;}
   65%  {color: royalblue;}
-  100% {color: orangered;}
+  100% {color: tomato;}
 }
 
 @keyframes notflashing {

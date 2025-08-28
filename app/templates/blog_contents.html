@@ -8,16 +8,8 @@
             <a href="/blog"><div><p>←</p></div></a>
         </div>
         <div id="mainContents"> 
-            <h1 style="margin-bottom: 0em">Posts</h1>
-    
-            <form action="/blog/submission" method="post">
-                <p style="text-align: center">
-                    <input id="blog_form" name="blog_form" placeholder="example@gmail.com"></input>
-                    <button type="submit" class="subscribe-btn">Subscribe</button>
-                </p>
-            </form>
+            <h1 style="margin-bottom: 0em"><a href="/contents" style="color: black">Posts</a></h1>
 
-            <hr style="width:100%; margin-top: 0em; margin-bottom: 0em;">
             {% for post in posts %}
                 <article>
                     <button type="button" onclick="window.location.href='{{ post.handle }}'" class="post-button">
@@ -29,8 +21,12 @@
                 </article>
             {% endfor %}
 
-            <h3 style="text-align: center; color: royalblue"> Consider subscribing :) </h3>
-
+            <form action="/blog/submission" method="post">
+                <p style="text-align: center">
+                    <input id="blog_form" name="blog_form" placeholder="example@gmail.com"></input>
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </p>
+            </form>
 
         </div>
         <div id="sidebar2">

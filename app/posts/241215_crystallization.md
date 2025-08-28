@@ -3,8 +3,10 @@ title: "Crystallization"
 handle: "crystallization"
 date: "December 12, 2024"
 author: "Peter Bennett"
-description: "Systematic attunement as a model of identity formation. (ESSAY)"
+description: "How and why we form identities. (ESSAY)"
 ---
+
+<i>This essay was originally written for COLLEGE 101: Why College? Your Education and the Good Life. It thus assumes familiarity with many of the sources mentioned, which are generally worth reading if you have time.</i>
 
 ## Crystallization
 
@@ -16,11 +18,11 @@ In contrast, a crystal is well-defined: it knows what it is and what it isn’t.
 
 The people we admire seem to have their lives all figured out. They know who they are, they know what to do with their lives, and then they act on it. It seems that in order to reach this kind of life, we need to start defining ourselves. This essay attempts to lay out how that process might occur.
 
-Now, people are much more complicated than crystals, and Inconsistency begins by exploring that complexity. In response, Attunement uses Zadie Smith’s idea of attunement, which I argue can identify and potentially resolve the complexity in our lives. In Systematic Attunement, I suggest that attunement can be done through two methodical processes: Jenny Odell’s idea of “doing nothing,” which involves intentionally observing our environment, and Freire’s model of education, which involves intentionally learning from other people. Finally, The Good Life discusses how we can use systematic attunement to build a good life.
+Now, people are much more complicated than crystals, and <u>Inconsistency</u> begins by exploring that complexity. In response, <u>Attunement</u> uses Zadie Smith’s idea of attunement, which I argue can identify and potentially resolve the complexity in our lives. In <u>Systematic Attunement</u>, I suggest that attunement can be done through two methodical processes: Jenny Odell’s idea of “doing nothing,” which involves intentionally observing our environment, and Freire’s model of education, which involves intentionally learning from other people. Finally, <u>The Good Life</u> discusses how we can use systematic attunement to build a good life.
 
 ## Inconsistency
 
-Tara Westover is a complicated person. 
+<a href='https://en.wikipedia.org/wiki/Educated_(memoir)'>Tara Westover</a> is a complicated person. 
 
 As a child, Tara is fully shaped by her parents. She’s devoutly religious. She’s deeply distrustful of government. Even when her grandparents try to bring her to school, she refuses, trusting that her family is right about it. All she knows is loyalty to her family and their values.
 
@@ -33,7 +35,7 @@ Tara’s identity–her many identities–are inconsistent.
 
 ## Attunement
 
-In Some Notes on Attunement, Zadie Smith identifies the inconsistency Tara feels. She finds that we are often inconsistent with ourselves in different moments. In one moment, Joni Mitchell might sound grating and shrill; in another, it might be the most beautiful song in the world. Smith couldn’t make sense of the phenomenon; I’d like to.
+In <a href='https://www.newyorker.com/magazine/2012/12/17/some-notes-on-attunement'>Some Notes on Attunement</a>, Zadie Smith identifies the inconsistency Tara feels. She finds that we are often inconsistent with ourselves in different moments. In one moment, Joni Mitchell might sound grating and shrill; in another, it might be the most beautiful song in the world. Smith couldn’t make sense of the phenomenon; I’d like to.
 
 Happiness is determined by how we live our lives–how we spend our time and the things we decide to do. It’s not always logical, but happiness is predictable: getting sick makes us unhappy, doing well on a final makes us happy, ruining a shirt makes us unhappy, getting boba makes us happy. Thus, our happiness must be some function of all the things we do in our lives. See this problem from Math 51:
 
@@ -65,7 +67,7 @@ If we want to understand our identities better, we must find a way to attune sys
 
 ### Attunement to the World
 
-In How to Do Nothing, Jenny Odell describes how she attunes with the world by “doing nothing.” Odell’s ideas are hard to define concisely, but she attempts to do nothing by going out into the world–visiting the Oakland rose garden, watching her neighborhood birds, walking a labyrinth–and escaping from societal pressure. The essence of an activity involving “nothing” is that the activity is done for its own sake. Watching Netflix isn’t nothing because it’s done for entertainment or to relax. Biking to class isn’t nothing because the biker is concerned about not falling, going at the right speed, and being on time. Listening to a lecture isn’t nothing because it necessitates paying attention to gain knowledge.
+In <a href='https://medium.com/@the_jennitaur/how-to-do-nothing-57e100f59bbb'>How to Do Nothing</a>, Jenny Odell describes how she attunes with the world by “doing nothing.” Odell’s ideas are hard to define concisely, but she attempts to do nothing by going out into the world–visiting the Oakland rose garden, watching her neighborhood birds, walking a labyrinth–and escaping from societal pressure. The essence of an activity involving “nothing” is that the activity is done for its own sake. Watching Netflix isn’t nothing because it’s done for entertainment or to relax. Biking to class isn’t nothing because the biker is concerned about not falling, going at the right speed, and being on time. Listening to a lecture isn’t nothing because it necessitates paying attention to gain knowledge.
 
 What all of these non-nothing (“substantial”) activities have in common is that they are optimizing for something, whether that’s entertainment, class time, or knowledge. Odell’s idea of doing nothing allows her to altogether escape the pressure of her value function. She quotes author Rebecca Solnit, who explains of the labyrinth at Grace Cathedral in San Francisco, “The circuit was so absorbing I lost sight of the people nearby and hardly heard the sound of the traffic and the bells for six o’clock.” This is the benefit of nothingness: it actively prevents us from thinking about everything that distracts us in our normal living.
 
@@ -75,11 +77,11 @@ This is how Odell practices attunement. Substantial activities are distracting. 
 
 Odell’s method focuses on observation, which is startlingly effective at discovering things we can see silently (ourselves & nature), but is entirely ineffective for discovering things about other people. To learn from others, we need to actively participate in an activity that allows the sharing of information. 
 
-In Pedagogy of the Oppressed, Paulo Freire posits that this sharing of information can come from education if it follows the problem-posing model. Freire’s vision of education was heavily influenced by Marxist theory–he identifies that the usual banking model of education, where students are taught by a teacher with inherently high status, causes the “oppression” in the title and cannot exist. He imagines a model of education that frees people from said oppression in that the teacher no longer controls the classroom and students learn from each other’s experiences. In other words, he aims to allow students to become attuned to each other.
+In <a href='https://en.wikipedia.org/wiki/Pedagogy_of_the_Oppressed'>Pedagogy of the Oppressed</a>, Paulo Freire posits that this sharing of information can come from education if it follows the problem-posing model. Freire’s vision of education was heavily influenced by Marxist theory–he identifies that the usual banking model of education, where students are taught by a teacher with inherently high status, causes the “oppression” in the title and cannot exist. He imagines a model of education that frees people from said oppression in that the teacher no longer controls the classroom and students learn from each other’s experiences. In other words, he aims to allow students to become attuned to each other.
 
 In Freire’s model, the primary method by which learning occurs is via dialogue, both with teachers and other students. Dialogue reduces the structure of the content students learn, expanding the breadth of the curriculum to the experiences of other students and teachers. The goal of dialogue is to make students human–when they participate in the conversation, they become active thinkers, rather than simply passive absorbers of information. This is how attunement occurs. In the banking model, students gain specific knowledge about the world; in the problem-posing model, they reflect on their experiences and learn about others’ lives and identities, expanding their own lives and identities along the way. In terms of their value function, students might use reflection to clarify their identity and values, allowing them to be happier, and might use others’ experiences as data points to find new values and preferences.
 
-In Towards Universal Man, Rabindranath Tagore takes this form of education a step further. Tagore’s ideal model of education is similar to the problem-posing model in that it prioritizes learning outside of the simple transfer of information seen in the banking model. His philosophy also matches that of Odell’s theory of nothingness; he believes being in nature allows greater reflection, whereas being in a standard classroom isolates students from a holistic view of their lives. 
+In <a href='https://raggeduniversity.co.uk/wp-content/uploads/2025/03/1_x_Towards-universal-man-Rabindranath-Tagore-1961-b_compressed.pdf'>Towards Universal Man</a>, Rabindranath Tagore takes this form of education a step further. Tagore’s ideal model of education is similar to the problem-posing model in that it prioritizes learning outside of the simple transfer of information seen in the banking model. His philosophy also matches that of Odell’s theory of nothingness; he believes being in nature allows greater reflection, whereas being in a standard classroom isolates students from a holistic view of their lives. 
 
 Tagore and Freire’s views of education are clearly idealistic. Not every classroom can be perfectly egalitarian. Education needs to have some information transfer to prepare students for society. Schools can’t all be built in the midst of nature. But these models represent the ideal kind of education that allows students to learn about themselves, which is a necessary component of education as a whole and is useful for students’ lives. Whether education should focus on this loftier education or a more concrete form, their ideal allows students to better attune and understand their identities.
 
@@ -89,7 +91,7 @@ It seems impossible to imagine someone living a good life without understanding 
 
 But having a strong sense of identity doesn’t necessarily make a life a good one.
 
-Consider the thought experiment posed by Susan Wolf in Meaning in Life and Why It Matters. It’s easy to imagine someone unreasonably wealthy, or at least with a not-so-demanding job, who spends their life flitting around to keep themselves entertained. They travel to Europe and spend time at the beach. They go to music festivals and film festivals. They try new cuisines. They develop fashion. They have summer flings and brief relationships. In a sense, this is the carefree life many people dream about.
+Consider the thought experiment posed by Susan Wolf in <a href='https://personal.lse.ac.uk/ROBERT49/teaching/ph103/pdf/WolfSusanne_2010_Meaning-in-Life-and-Why-It-Matters.pdf'>Meaning in Life and Why It Matter</a>. It’s easy to imagine someone unreasonably wealthy, or at least with a not-so-demanding job, who spends their life flitting around to keep themselves entertained. They travel to Europe and spend time at the beach. They go to music festivals and film festivals. They try new cuisines. They develop fashion. They have summer flings and brief relationships. In a sense, this is the carefree life many people dream about.
 
 Unfortunately, Wolf finds that her construction is not living a good life, and I agree. They might be superficially happy all the time, but that happiness doesn’t go towards anything deeper. Their life has no purpose, and that purpose is a requisite for a good life. 
 
@@ -106,10 +108,10 @@ of career options that I can decide on when I get closer to the program's comple
 
 I claim that this person’s life is analogous to Wolf’s thought experiment. Having already spent some time in industry, this person might graduate in their late 20s. Surely they’ll be ready to jump into their interesting, fulfilling career, right? But that might be difficult for TheAbLord. They don’t know what they want to study, only “a general area… that interests me.” They expect to find career options later on rather than preparing for a specific career right now. They plan to use grad school to figure out more of their identity, hoping that someday they’ll be ready to apply it and life a good life.
 
-Now, this person might better understand their identity and interests after grad school, and I’d be happy for them if they did! And they went on to spend their entire life in college, as did Benjamin Bolger, they’d know exactly what they enjoy doing. But this endless stream of classes and grades is again missing something: purpose. As in Wolf’s thought experiment, a good life requires something deeper than flitting around and figuring out one’s identity. It has to be applied eventually.
+Now, this person might better understand their identity and interests after grad school, and I’d be happy for them if they did! And they went on to spend their entire life in college, as did <a href='https://en.wikipedia.org/wiki/Benjamin_Bolger'>Benjamin Bolger</a>, they’d know exactly what they enjoy doing. But this endless stream of classes and grades is again missing something: purpose. As in Wolf’s thought experiment, a good life requires something deeper than flitting around and figuring out one’s identity. It has to be applied eventually.
 
 This, in my opinion, is why we care about attunement. Attunement allows us to live better lives after we do it. After Jenny Odell spent time “doing nothing,” she might discover that she enjoys spending time in nature, allowing her to enjoy her life more afterwards. After a student spends time in education, they might understand the world and know how to navigate it. That enjoyment, that navigation, is the benefit they get. 
 
 Attunement alone doesn’t make a life better; one needs to act on the results of that attunement. 
 
-If you’re reading this, you’ve likely already been through over a decade of education. That’s a decade of attunement, a decade of figuring out your life. You might not realize it, but your identity is crystalline: defined, powerful, and distinct from others. Now don’t forget to use it.
+If you’re reading this, you’ve already been through over a decade of education. That’s a decade of attunement, a decade of figuring out your life. Your identity is crystalline: defined, powerful, and distinct from others. Please don’t forget to use it.
