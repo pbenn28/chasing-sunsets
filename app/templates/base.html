@@ -9,12 +9,17 @@
         {% else %}
         <meta property="og:title" content="Chasing Sunsets" />
         {% endif %}
+        {% if description %}
+        <meta property="og:description" content="{{ description }}" />
+        {% else %}
+        <meta property="og:description" content="Hi there! It's nice to meet you." />
+        {% endif %}
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="Chasing Sunsets" />
         <meta property="og:type" content="website" />
-        <meta property="og:description" content="Hi there! Welcome to my site." />
-        <meta property="og:image" content="https://www.chasingsunsets.dev/static/images/sunset_max.png"/>
-        <meta property="og:image:width" content="100" />
+        <meta property="og:image" content="https://www.chasingsunsets.dev/static/images/sunset_wide.jpg"/>
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="460" />
         <meta property="og:url" content="{{ request.url }}" />
 
         <link href="{{ url_for('static', filename='styles/style.css') }}" rel="stylesheet" />
@@ -23,7 +28,7 @@
             rel="stylesheet" />
         <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
         {% if title %}
-        <title> {{ title }} • Chasing Sunsets </title>
+        <title> {{ title }} • Peter Bennett </title>
         {% else %}
         <title> Peter Bennett </title>
         {% endif %}
