@@ -67,6 +67,7 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 0;
+    background-color: rgba(255, 0, 0, 0.1); /* Remove after testing */
 }
 
 .vertically-centered-group .content-wrapper {
