@@ -21,6 +21,7 @@ body {
 #contents {
     display: grid;
     width: 100%;
+    height: 100vh;
     min-height: 100vh;
     /* Explicit column sizes for desktop */
     grid-template-columns: minmax(50px, 1fr) 730px minmax(50px, 1fr);
