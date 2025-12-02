@@ -228,7 +228,7 @@ def projects_contents_former():
 def projects_post(slug):
     posts_dir = os.path.join(os.getcwd(), "app", "projects")
 
-    order = ["contents","gratta","useso","ssb","sias","smunc","scioly","dorm-lectures","oasis","chasing-sunsets","contents/former","wtp","ess","prometheus","hs-scibowl","hs-scioly","ms-scibowl","esods","cosmos","ieso","end"]
+    order = ["contents","gratta","useso","ssb","sias","smunc","scioly","dorm-lectures","hackuba","chasing-sunsets","contents/former","wtp","ess","prometheus","hs-scibowl","hs-scioly","ms-scibowl","esods","cosmos","ieso","end"]
 
     # Expected file path for the post
     post_path = os.path.join(posts_dir, slug + ".md")
