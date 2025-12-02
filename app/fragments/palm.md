@@ -3,38 +3,38 @@ title: "a palm drive"
 handle: "palm"
 ---
 
-a fire alarm <br>
-a text <br>
-a brisk walk <br>
-an antique show above the quad <br>
-an offer declined <br>
-a sweet treat, instinctive <br>
-a bike named skylar <br>
-a pause <br>
-a text <br>
-a jaunt through weddings and purple flowers <br>
-a maneuver to avoid paparazzi <br>
-a bike lane <br>
-a sidewalk <br>
-a memory <br>
-a memory <br>
-a memory <br>
+a fire alarm  
+a text  
+a brisk walk  
+an antique show above the quad  
+an offer declined  
+a sweet treat, instinctive  
+a bike named skylar  
+a pause  
+a text  
+a jaunt through weddings and purple flowers  
+a maneuver to avoid the paparazzi  
+a bike lane  
+a sidewalk  
+a memory  
+a memory  
+a memory  
 and a place where i will always feel comfort.
 
-i remember why i love you <br>
-and you <br>
-and you <br>
-and you <br>
-and you <br>
-and you <br>
-and you <br>
-and you <br>
-and you <br>
-and you <br>
-and you <br>
-and you <br>
-and you <br>
-and you <br>
-and you <br>
-and you <br>
+i remember why i love you  
+and you  
+and you  
+and you  
+and you  
+and you  
+and you  
+and you  
+and you  
+and you  
+and you  
+and you  
+and you  
+and you  
+and you  
+and you  
 and you.
