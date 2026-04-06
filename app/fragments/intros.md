@@ -3,6 +3,17 @@ title: "Intros"
 handle: "intros"
 ---
 
+### April 2026 - Idealists Collective
+i suppose i never introduced myself! i'm peter, you can find me at https://chasingsunsets.dev/. i'm studying physics and public policy at stanford; interested mainly in atomic/molecular/optical & computational physics as well as energy & infrastructure policy. i spend a lot of time thinking about how to make people's lives better, how to make my own life fulfilling, and how to take good photos. generally based in the US but currently studying abroad in beijing - come say hi! 
+
+### January 2026 - Ursprung
+Hi there! I'm Peter. 
+
+I'm currently at Stanford studying physics and public policy. For the last year, I've been working in a physics lab trying to discover a new fundamental force, spending my free time thinking about social issues and international politics. I'm hoping to eventually work in nuclear energy, first on the technical side and later on the policy side.
+
+I've also spent the last year of my life building my creative side. I've done a lot of writing recently, both academic and creative; you can see both on my website at https://chasingsunsets.dev/ !! I also recently hosted a weeklong hackathon in Guatemala, which I spent practicing photography and writing a screenplay based on The Lottery in Babylon by Jorge Luis Borges. I'm very excited to meet everyone and work on a new project, hopefully trying a new form of art along the way (perhaps something musical?). 
+
+
 ### July 2025 - SMUNC
 My name is Peter and I’ll be your Chief Justice in this committee. I’m currently a sophomore at Stanford studying physics and public policy and I’m a member of our Model UN travel team. My background is primarily in STEM—I’m an exam writer for the US Earth Science Organization and I’m currently doing fundamental physics research with the Gratta lab at Stanford. My interest in politics comes largely from a high school program called We the People, where I studied constitutional law and the underlying structure of government; more recently, I’ve been interested in energy, innovation, and housing policy. Outside of school, I love biking, climbing, Vietnamese coffee, surrealist fiction, collecting rocks, and making spreadsheets.
 
