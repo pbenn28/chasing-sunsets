@@ -195,7 +195,7 @@ def fragments_contents_work():
 def fragments_post(slug):
     posts_dir = os.path.join(os.getcwd(), "app", "fragments")
 
-    order = ["contents","recs","quotes","intros","todo","future-posts","contents/work","wasteland","grandma","air","burghers","palm","alaska","end"]
+    order = ["contents","recs","quotes","intros","todo","future-posts","contents/work","orpheus","orange","wasteland","grandma","air","burghers","palm","alaska","end"]
 
     # Expected file path for the post
     post_path = os.path.join(posts_dir, slug + ".md")
