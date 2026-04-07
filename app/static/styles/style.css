@@ -21,8 +21,8 @@ body {
 #contents {
     display: grid;
     width: 100%;
-    height: 100vh;
-    min-height: 100vh;
+    height: 100dvh;
+    min-height: 100dvh;
     /* Explicit column sizes for desktop */
     grid-template-columns: minmax(50px, 1fr) 730px minmax(50px, 1fr);
     grid-template-rows: 1fr;
@@ -61,8 +61,8 @@ body {
 
 .vertically-centered-group {
     top: 0;
-    height: 100vh;
-    min-height: 100vh;
+    height: 100dvh;
+    min-height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,8 +85,8 @@ body {
     
     #sidebar1, #sidebar2 {
         position: fixed;
-        top: calc(100vh - 100px);
-        bottom: 0;
+        top: calc(100dvh - 100px);
+        bottom: -env(safe-area-inset-bottom);
         height: auto;
         z-index: 100;
         min-height: auto;
@@ -127,7 +127,7 @@ body {
 
     .vertically-centered-group {
         bottom: calc(100px + env(safe-area-inset-bottom));
-        height: calc(100vh - 100px - env(safe-area-inset-bottom));
+        height: calc(100dvh - 100px - env(safe-area-inset-bottom));
     }
 
     .vertically-centered-group .content-wrapper {
@@ -303,8 +303,8 @@ blockquote p {
 
 #epilogue_form {
     width: 100%;
-    height: 50vh;
-    min-height: 40vh;
+    height: 50dvh;
+    min-height: 40dvh;
     padding: 1em;
     font-family: 'Garamond', 'Times New Roman', serif;
     font-size: 0.9em;
