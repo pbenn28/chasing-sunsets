@@ -85,10 +85,9 @@ body {
     
     #sidebar1, #sidebar2 {
         position: fixed;
-        top: calc(100vh - 80px);
+        top: calc(100vh - 80px - env(safe-area-inset-bottom));
         bottom: 0;
-        height: 80px;
-        padding-bottom: env(safe-area-inset-bottom); /* handles iPhone home bar */
+        height: auto;
         z-index: 100;
         min-height: auto;
         overflow: hidden;
