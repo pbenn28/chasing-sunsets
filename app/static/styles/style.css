@@ -87,7 +87,7 @@ body {
         position: fixed;
         top: calc(100vh - 80px);
         bottom: 0;
-        height: auto;
+        height: 80px;
         padding-bottom: env(safe-area-inset-bottom); /* handles iPhone home bar */
         z-index: 100;
         min-height: auto;
