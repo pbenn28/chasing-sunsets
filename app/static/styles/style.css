@@ -85,7 +85,7 @@ body {
     
     #sidebar1, #sidebar2 {
         position: fixed;
-        top: calc(100vh - 80px - env(safe-area-inset-bottom));
+        top: calc(100vh - 100px);
         bottom: 0;
         height: auto;
         z-index: 100;
@@ -94,8 +94,8 @@ body {
         display: flex;
         justify-content: center;
         align-items: flex-start;  /* was: center */
-        padding-top: calc((80px - 2em) / 2);  /* manually centers within the 100px zone */
-        padding-bottom: env(safe-area-inset-bottom);
+        padding-top: calc((100px - 2em) / 2);  /* manually centers within the 100px zone */
+        padding-bottom: 0;
         background-color: #eeeeee;
         color: #333333;
         cursor: pointer;
@@ -119,15 +119,15 @@ body {
     }
     
     #mainContents {
-        margin: auto auto calc(80px + env(safe-area-inset-bottom));
+        margin: auto auto calc(100px);
         width: 90vw;
         max-width: 690px; /* Slightly reduce width for mobile */
         padding: 0 20px; /* Reduce padding on mobile */
     }
 
     .vertically-centered-group {
-        bottom: calc(80px + env(safe-area-inset-bottom));
-        height: calc(100vh - 80px - env(safe-area-inset-bottom));
+        bottom: calc(100px);
+        height: calc(100vh - 100px);
     }
 
     .vertically-centered-group .content-wrapper {
