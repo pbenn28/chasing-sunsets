@@ -86,13 +86,16 @@ body {
     #sidebar1, #sidebar2 {
         position: fixed;
         bottom: 0;
-        height: 100px;
+        height: 80px;
+        padding-bottom: env(safe-area-inset-bottom); /* handles iPhone home bar */
         z-index: 100;
         min-height: auto;
         overflow: hidden;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;  /* was: center */
+        padding-top: calc((80px - 2em) / 2);  /* manually centers within the 100px zone */
+        padding-bottom: env(safe-area-inset-bottom);
         background-color: #eeeeee;
         color: #333333;
         cursor: pointer;
@@ -116,15 +119,15 @@ body {
     }
     
     #mainContents {
-        margin: auto auto 100px; /* Reduced top margin from 60px to 20px */
+        margin: auto auto calc(80px + env(safe-area-inset-bottom));
         width: 90vw;
         max-width: 690px; /* Slightly reduce width for mobile */
         padding: 0 20px; /* Reduce padding on mobile */
     }
 
     .vertically-centered-group {
-        bottom: 100px;
-        height: calc(100vh - 100px);
+        bottom: calc(80px + env(safe-area-inset-bottom));
+        height: calc(100vh - 80px - env(safe-area-inset-bottom));
     }
 
     .vertically-centered-group .content-wrapper {

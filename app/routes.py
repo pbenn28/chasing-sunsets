@@ -39,7 +39,7 @@ def parse_post(filepath):
 @app.route('/index')
 def start():
     print('Loaded start()')
-    return render_template('index.html')
+    return render_template('index.html', description="Hi! It's nice to meet you.")
 
 @app.route('/end')
 def end():
@@ -49,7 +49,7 @@ def end():
 # CONTENTS
 @app.route('/contents')
 def contents():
-    return render_template('contents.html')
+    return render_template('contents.html', description="Hi! It's nice to meet you.")
 
 @app.route('/contents/0')
 def contents0():
@@ -78,11 +78,11 @@ def contents4():
 @app.route('/prologue')
 @app.route('/prologue/1')
 def prologue_1():
-    return render_template('prologue_1.html')
+    return render_template('prologue_1.html', description="Hi! It's nice to meet you.")
 
 @app.route('/prologue/2')
 def prologue_2():
-    return render_template('prologue_2.html')
+    return render_template('prologue_2.html', description="Hi! It's nice to meet you.")
 
 @app.route('/praise')
 def praise():
