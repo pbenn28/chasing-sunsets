@@ -95,7 +95,7 @@ body {
         justify-content: center;
         align-items: flex-start;  /* was: center */
         padding-top: calc((100px - 2em) / 2);  /* manually centers within the 100px zone */
-        padding-bottom: env(safe-area-inset-bottom);
+        padding-bottom: 0;
         background-color: #eeeeee;
         color: #333333;
         cursor: pointer;
