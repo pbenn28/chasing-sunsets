@@ -3,10 +3,11 @@ import os
 import yaml
 import markdown
 import sqlite3
-from datetime import datetime
+from datetime import datetime, timezone
 import smtplib
 from email.mime.text import MIMEText
-from flask import render_template, request, redirect, url_for, abort
+from flask import render_template, request, redirect, url_for, abort, jsonify
+from app.static.python.sunset_check import *
 
 print("Loaded routes.py")
 
@@ -33,17 +34,33 @@ def parse_post(filepath):
         'content': markdown.markdown(post_content)
     }
 
-# START & END
 @app.route('/')
 @app.route('/start')
 @app.route('/index')
 def start():
-    print('Loaded start()')
-    return render_template('index.html', description="Hi! It's nice to meet you.")
+    ip_addr = request.headers.get('X-Forwarded-For', request.remote_addr).split(',')[0]
+    print("IP for sunset calculation: " + ip_addr)
+    lat, lon = get_ip_lat_log(ip_addr)
+
+    now = datetime.now(timezone.utc)
+
+    response = requests.get(
+        f"https://api.sunrise-sunset.org/json?lat={lat}&lng={lon}&formatted=0"
+    )
+    data = response.json()
+    
+    sunset_str = data["results"]["sunset"]  # e.g. "2026-04-11T02:34:21+00:00"
+    sunset_time = datetime.fromisoformat(sunset_str)  # timezone-aware UTC datetime
+
+    diff_min = (sunset_time - now).total_seconds() / 60
+
+    if 0 < diff_min < 90:
+        return render_template('index_sunset.html', description="Hi! It's nice to meet you.")
+    else:
+        return render_template('index.html', description="Hi! It's nice to meet you.")
 
 @app.route('/end')
 def end():
-    print('Loaded end()')
     return render_template('end.html')
 
 # CONTENTS

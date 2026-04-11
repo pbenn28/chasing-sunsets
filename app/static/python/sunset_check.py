@@ -6,9 +6,9 @@ def get_ip_lat_log(ip_address=""):
     try:
         response = requests.get(f"http://ip-api.com/json/{ip_address}?fields=lat,lon")
         response.raise_for_status()
-        data = json.loads(response)
-        lat = data["lat"]
-        lon = data["lon"]
-        return (lat,lon)
+        data = response.json()  # was json.loads(response)
+        print(data)
+        return data["lat"], data["lon"]
     except:
-        return((37.7749,-122.4194))
+        print("Error getting IP")
+        return (37.7749, -122.4194)
