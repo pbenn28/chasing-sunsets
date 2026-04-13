@@ -115,7 +115,8 @@ body {
     }
     
     #sidebar1:hover, #sidebar2:hover {
-        background-color: #ddd;
+        background-color: #000;
+        opacity: 0.13;
     }
     
     #mainContents {
@@ -147,7 +148,6 @@ body {
     align-items: center;
 }
 
-/* Remove the hover animations for mobile - sidebars are always visible */
 @media only screen and (min-width: 951px) {
     @keyframes darken {
         0%   {background-color: #ffffff; color: #ffffff}
@@ -397,5 +397,80 @@ blockquote p {
 }
 
 input::placeholder {
-  color: #aaa; /* Change to your desired color */
+  color: #aaa;
+}
+
+
+/* SUNSET */
+#sunset a {
+    background: #ffeabf;
+    background: linear-gradient(30deg,rgba(255, 234, 191, 1) 0%, rgba(255, 234, 191, 1) 42%, rgba(255, 252, 245, 1) 75%, rgba(255, 249, 204, 1) 92%, rgba(255, 249, 204, 1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+#sunset-contents {
+    display: grid;
+    width: 100%;
+    height: 100dvh;
+    min-height: 100dvh;
+    background: #de838c;
+    background: linear-gradient(30deg,rgba(222, 131, 140, 1) 0%, rgba(227, 131, 118, 1) 33%, rgba(242, 146, 102, 1) 66%, rgba(237, 162, 87, 1) 89%, rgba(232, 180, 107, 1) 100%);
+    /* Explicit column sizes for desktop */
+    grid-template-columns: minmax(50px, 1fr) 730px minmax(50px, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "left center right";
+}
+
+#sunset-sidebar1 {
+    grid-area: left;
+    color: transparent;
+    overflow: auto;
+    font-size: 30px;
+    z-index: 10
+}
+
+#sunset-sidebar2 {
+    grid-area: right;
+    color: transparent;
+    overflow: auto;
+    font-size: 30px;
+    z-index: 10
+}
+
+#sunset-sidebar1 a, #sunset-sidebar2 a {  
+    display: block;  
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sunset-sidebar1 a:visited, #sunset-sidebar2 a:visited {
+    color: inherit;
+}
+
+@media only screen and (min-width: 951px) {
+    @keyframes darken {
+        0%   {color: transparent}
+        100% {color: #fff}
+    }
+
+    @keyframes lighten {
+        0%   {color: #fff}
+        100% {color: transparent}
+    }
+
+    #sunset-sidebar1:hover, #sunset-sidebar2:hover {
+        transform-origin: top;
+        animation: darken 0.5s forwards;
+    }
+
+    #sunset-sidebar1:not(:hover), #sunset-sidebar2:not(:hover) {
+        transform-origin: top;
+        animation: lighten 0.5s forwards;
+    }
 }
