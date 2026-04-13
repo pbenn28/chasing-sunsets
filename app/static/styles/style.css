@@ -454,23 +454,23 @@ input::placeholder {
 }
 
 @media only screen and (min-width: 951px) {
-    @keyframes darken {
+    @keyframes sunset-darken {
         0%   {color: transparent}
         100% {color: #fff}
     }
 
-    @keyframes lighten {
+    @keyframes sunset-lighten {
         0%   {color: #fff}
         100% {color: transparent}
     }
 
     #sunset-sidebar1:hover, #sunset-sidebar2:hover {
         transform-origin: top;
-        animation: darken 0.5s forwards;
+        animation: sunset-darken 0.5s forwards;
     }
 
     #sunset-sidebar1:not(:hover), #sunset-sidebar2:not(:hover) {
         transform-origin: top;
-        animation: lighten 0.5s forwards;
+        animation: sunset-lighten 0.5s forwards;
     }
 }
