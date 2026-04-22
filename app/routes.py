@@ -61,6 +61,7 @@ def start():
         else:
             return render_template('index.html', description="Hi! It's nice to meet you.")
     except Exception as e:
+        print(f"Error: {e}")
         return render_template('index.html', description="Hi! It's nice to meet you.")
 
 
