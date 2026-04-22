@@ -54,6 +54,7 @@ def start():
         sunset_time = datetime.fromisoformat(sunset_str)  # timezone-aware UTC datetime
 
         diff_min = (sunset_time - now).total_seconds() / 60
+        print(f"Minutes until sunset: {diff_min}")
 
         if 0 < diff_min < 90:
             return render_template('index_sunset.html', description="Hi! It's nice to meet you.")
@@ -127,40 +128,6 @@ def blog_contents():
 
     return render_template('blog_contents.html', posts=posts)
 
-@app.route("/blog/<slug>")
-def blog_post(slug):
-    posts_dir = os.path.join(os.getcwd(), "app", "posts")
-
-    post_dates = {
-        "dropout": "260413",
-        "mission": "260410",
-        "safe": "260317",
-        "golumbia": "250827",
-        "visions": "250610",
-        "etch": "250320",
-        "crystallization": "241215"
-    }
-
-    order = ["contents","dropout","mission","safe","golumbia","visions","etch","crystallization","end"]
-
-    # Expected file path for the post
-    post_path = os.path.join(posts_dir, post_dates[slug])
-    post_path = post_path + "_" + slug + ".md"
-
-    if not os.path.exists(post_path):
-        print('Path does not exist')
-        abort(404)  # If file doesn't exist
-
-    try:
-        last_page = "/blog/" + order[order.index(slug)-1]
-        next_page = "/blog/" + order[order.index(slug)+1]
-    except ValueError:
-        print('Neighboring files do not exist')
-        abort(404)
-
-    post = parse_post(post_path)
-    return render_template(f"blog_post.html", **post, next_page=next_page, last_page=last_page)
-
 @app.route('/blog/submission', methods=['POST'])
 def blog_submission():
     # Get form content (avoid KeyError if missing)
@@ -199,6 +166,40 @@ def blog_thanks():
             posts.append(post)
 
     return render_template('blog_thanks.html', posts=posts)
+
+@app.route("/blog/<slug>")
+def blog_post(slug):
+    posts_dir = os.path.join(os.getcwd(), "app", "posts")
+
+    post_dates = {
+        "dropout": "260413",
+        "mission": "260410",
+        "safe": "260317",
+        "golumbia": "250827",
+        "visions": "250610",
+        "etch": "250320",
+        "crystallization": "241215"
+    }
+
+    order = ["contents","dropout","mission","safe","golumbia","visions","etch","crystallization","end"]
+
+    # Expected file path for the post
+    post_path = os.path.join(posts_dir, post_dates[slug])
+    post_path = post_path + "_" + slug + ".md"
+
+    if not os.path.exists(post_path):
+        print('Path does not exist')
+        abort(404)  # If file doesn't exist
+
+    try:
+        last_page = "/blog/" + order[order.index(slug)-1]
+        next_page = "/blog/" + order[order.index(slug)+1]
+    except ValueError:
+        print('Neighboring files do not exist')
+        abort(404)
+
+    post = parse_post(post_path)
+    return render_template(f"blog_post.html", **post, next_page=next_page, last_page=last_page)
 
 # FRAGMENTS
 @app.route('/notes')
