@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 import smtplib
 from email.mime.text import MIMEText
 from flask import render_template, request, redirect, url_for, abort, jsonify
+import requests
 from app.static.python.sunset_check import *
 
 print("Loaded routes.py")
@@ -45,7 +46,7 @@ def start():
 
         now = datetime.now(timezone.utc)
 
-        response = request.get(
+        response = requests.get(
             f"https://api.sunrise-sunset.org/json?lat={lat}&lng={lon}&formatted=0"
         )
         data = response.json()
