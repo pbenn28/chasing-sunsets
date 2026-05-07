@@ -65,6 +65,9 @@ def start():
         print(f"Error: {e}")
         return render_template('index.html', description="Hi! It's nice to meet you.")
 
+@app.route('/sunset')
+def sunset():
+    return render_template('index_sunset.html', description="Hi! It's nice to meet you.")
 
 @app.route('/end')
 def end():
