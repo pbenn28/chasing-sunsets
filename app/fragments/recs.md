@@ -10,6 +10,7 @@ handle: "recs"
 Ficciones, esp. <a href="https://web.itu.edu.tr/inceogl4/modernism/lotteryofbabylon.pdf">The Lottery in Babylon</a> <br>
 <a href="https://www.jstor.org/stable/pdf/20533140.pdf">Games Withour Play</a> <br>
 <a href="https://www.metropolitanreview.org/p/men-who-kill-themselves">Men Who Kill Themselves</a> <br>
+<a href="https://nataliercargill.substack.com/p/it-is-the-end-of-the-world-and-i">It is the end of the world and I am here to take you home</a> <br>
 
 ### Life reference:
 
@@ -19,6 +20,8 @@ Ficciones, esp. <a href="https://web.itu.edu.tr/inceogl4/modernism/lotteryofbaby
 <a href="https://sashachapin.substack.com/p/things-you-learn-dating-cate-hall">Dating Cate Hall</a> <br>
 <a href="https://skincontact.substack.com/p/21-observations-from-people-watching?r=20efuv&utm_campaign=post&utm_medium=web&triedRedirect=true">21 observations from people watching</a> <br>
 <a href="https://laurgao.github.io/2022/">The Sellout’s Dilemma</a> <br>
+<a href="https://sophieinkhaven.substack.com/p/the-many-lives-of-inkhaven-20">The Many Lives of Inkhaven 2.0</a> <br>
+<a href="https://journals.sagepub.com/doi/pdf/10.1177/0146167297234003">The Experimental Generation of Interpersonal Closeness</a> <br>
 
 ### Life advice:
 
@@ -28,6 +31,8 @@ Ficciones, esp. <a href="https://web.itu.edu.tr/inceogl4/modernism/lotteryofbaby
 <a href="https://replacingguilt.com/toc/">Replacing Guilt</a> <br>
 <a href="https://sharif.io/anna-alexei">Always Invite Anna</a> <br>
 <a href="https://sashachapin.substack.com/p/how-to-like-everything-more">How to like everything more</a> <br>
+<a href="https://www.experimental-history.com/p/good-conversations-have-lots-of-doorknobs?curius=3090">Good conversations have lots of doorknobs</a> <br>
+<a href="https://ergosphere.blog/posts/the-machines-are-fine/">The machines are fine. I'm worried about us.</a> <br>
 
 ### Science
 
@@ -52,6 +57,7 @@ Ficciones, esp. <a href="https://web.itu.edu.tr/inceogl4/modernism/lotteryofbaby
 <a href="https://www.scottishpoetrylibrary.org.uk/poem/valentine/">Carol Ann Duffy - Valentine</a> <br>
 
 ### Art:
+<a href="https://en.wikipedia.org/wiki/Unfinished_Painting">Keith Haring - Unfinished Painting</a>, and its <a href="https://x.com/DonnelVillager/status/1741394747594318275">finished corollary</a> <br>
 <a href="https://www.famsf.org/artworks/petunias">Georgia O'Keeffe - Petunias</a> <br>
 <a href="https://whitney.org/collection/works/65601">Firelei Báez - Untitled (Tabula Anemographica seu Pyxis Navtic)</a> <br>
 <a href="https://www.metmuseum.org/art/collection/search/480594">Jonas Lie - The Conquerors</a> (but you really have to see it in person) <br>

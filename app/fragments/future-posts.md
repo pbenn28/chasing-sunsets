@@ -35,7 +35,8 @@ People whose lives leave trails that you try to piece together
 Abundance <br>
 Gearsyness <br>
 Mission mode vs fallback mode, and why governance needs to start at the local level <br>
-The emergency theory of everything
+The emergency theory of everything <br>
+Orders of magnitude
 </p>
 
 ### Short stories

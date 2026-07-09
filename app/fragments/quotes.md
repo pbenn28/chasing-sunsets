@@ -48,3 +48,9 @@ The loving eye is “the eye of one who knows that to know the seen, one must co
 “Silly. Only grown-up men are scared of women.” - Kurt, <i>The Sound of Music</i>
 
 “Besides, the life of a writer is a lonely one. You think you are alone as the years go by, if the stars are on your side, you may discover that you are at the center of a vast circle of invisible friends whom you will never get to know but whom love you. And that is an immense reward.” - Jorge Luis Borges
+
+“If people could put rainbows in zoos, they’d do it.” - Hobbes
+
+“Not today… Maybe today you’re more in love with magic than me. I like being able to tell the difference. It makes the days it is true mean something.” - Olivia, The Prestige
+
+“Obsession is a young man’s game.” - Cutter, The Prestige

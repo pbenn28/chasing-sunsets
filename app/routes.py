@@ -35,9 +35,7 @@ def parse_post(filepath):
         'content': markdown.markdown(post_content)
     }
 
-@app.route('/')
-@app.route('/start')
-@app.route('/index')
+@app.route('/sunset')
 def start():
     try:
         ip_addr = request.headers.get('X-Forwarded-For', request.remote_addr).split(',')[0]
@@ -65,7 +63,9 @@ def start():
         print(f"Error: {e}")
         return render_template('index.html', description="Hi! It's nice to meet you.")
 
-@app.route('/sunset')
+@app.route('/')
+@app.route('/start')
+@app.route('/index')
 def sunset():
     return render_template('index_sunset.html', description="Hi! It's nice to meet you.")
 

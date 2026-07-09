@@ -36,4 +36,5 @@ Read a life-changing book <br>
 Become Jewish and do jiujitsu and call it Jewjitsu <br>
 Watch Borges Craft of Verse lectures <br>
 Read Wittgenstein <br>
-Learn embroidery and make my desk chair pretty
+Learn embroidery and make my desk chair pretty <br>
+Write from a Works in Progress commission
