@@ -1,0 +1,264 @@
+{% extends "base.html" %}
+
+{% block structure %}
+<body id="legislation">
+    <div id="legislation-page">
+        <p class="back-link"><a href="/">← Chasing Sunsets</a></p>
+
+        <h1>AI Legislation Tracker</h1>
+        <p class="dek">A running list of the bills, drafts, and frameworks in Congress that would shape how AI is built, deployed, and regulated in the United States.</p>
+
+        <p class="meta-line">
+            Tracking {{ bills|length }} bill{{ '' if bills|length == 1 else 's' }}
+            {% if last_updated %}· last legislative action recorded {{ last_updated }}{% endif %}
+        </p>
+
+        <details class="legend">
+            <summary>How to read this</summary>
+            <div class="legend-body">
+                <p>Each bill is scored against a written rubric across several independent dimensions, then combined into the numbers below. These are rubric-driven scores with a documented methodology, not one-off editorial judgment — but reasonable people can still disagree with the rubric itself, and every score has a full breakdown and rationale in the bill's expanded entry.</p>
+                <div class="legend-axis">
+                    <strong>Safety score (S)</strong>
+                    <div class="axis-bar-wrap">
+                        <div class="axis-bar"><div class="axis-marker" style="left: 50%;"></div></div>
+                        <div class="axis-labels"><span>Deregulation / acceleration</span><span>Safety / restriction</span></div>
+                    </div>
+                    <p>A composite of how much the bill restricts frontier AI developers, adjusted for how much it preempts state authority, how much government oversight capacity it builds, and how much it constrains (or accelerates) the physical buildout of compute and energy — data centers, permitting, siting, power. Positive means more safety/restriction, negative means more deregulation/acceleration. Each dimension's contribution to S has its own adjustable weight below the chart — moving one can flip a bill's sign, which is often the whole story.</p>
+                </div>
+                <div class="legend-axis">
+                    <strong>Impact</strong>
+                    <div class="dot-scale"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot half"></span><span class="dot"></span></div>
+                    <p>How much would change if the bill were enacted — combining how much of the industry it reaches, how far it pushes any single axis from neutral, how enforceable it is, and how much precedent it would set. This measures magnitude, not direction: a maximally deregulatory bill and a maximally restrictive one can score the same.</p>
+                </div>
+                <div class="legend-axis">
+                    <strong>P(enact)</strong>
+                    <div class="dot-scale"><span class="dot filled"></span><span class="dot filled"></span><span class="dot half"></span><span class="dot"></span><span class="dot"></span></div>
+                    <p>A modeled probability that the bill is ultimately enacted into law — anchored to external models like GovTrack's prognosis tool where available, otherwise estimated from historical base rates for bills at a comparable stage. Bills are sorted by <strong>Expected Impact</strong> (Impact × P(enact)) by default, which surfaces bills that are both consequential and plausible rather than either extreme alone.</p>
+                </div>
+                <p class="legend-note">Every dimension that feeds S has its own weight, adjustable with the sliders below the chart — including the export controls / geopolitical dimension, which is tracked and shown in each bill's breakdown but weighted at 0 by default, since it doesn't cleanly map to the safety/acceleration spectrum (there are coherent arguments for tightening or loosening controls on either side of that debate). Raise its weight above 0 if you want to fold it in.</p>
+            </div>
+        </details>
+
+        <details class="legend">
+            <summary>Scoring rubric &amp; equations</summary>
+            <div class="legend-body">
+                <p>Six independent dimensions, each scored against a written ladder, roll up into two composites. Full ladders and the reasoning behind each are in the project's scoring rubric doc — this is the short version.</p>
+                <dl class="rubric-axis-list">
+                    <dt>A · Frontier developer stringency (−5…+5, signed)</dt>
+                    <dd>Conduct standards on developers only — training moratoria, audits, disclosure, incident reporting. Physical-input constraints (compute, energy, siting) belong on F or D instead, never here.</dd>
+                    <dt>B · Preemption posture (−5…+3, signed)</dt>
+                    <dd>Does the bill preserve, narrow, or eliminate states' authority to regulate AI independently?</dd>
+                    <dt>C · Governance capacity (−3…+5, signed)</dt>
+                    <dd>Does it build or strip the government's own capacity to observe, evaluate, and enforce — distinct from capacity to build AI?</dd>
+                    <dt>D · External / geopolitical (−3…+5, signed)</dt>
+                    <dd>Export controls and chip-access posture. Weighted at 0 by default (see above) but always shown.</dd>
+                    <dt>F · Capability buildout constraint (−5…+5, signed)</dt>
+                    <dd>Domestic compute/energy chokepoints — data centers, permitting, siting, power allocation. A moratorium on facilities is +5 here, not on A, because it constrains an input rather than developer conduct.</dd>
+                    <dt>E · Consumer / near-term harm (0…5, unsigned, impact-only)</dt>
+                    <dd>Deepfakes, NCII, companion bots, discrimination, election integrity. Never enters the safety composite — it's a different kind of stringency.</dd>
+                </dl>
+                <p class="rubric-equation">S = clamp(w<sub>A</sub>·A + w<sub>B</sub>·B + w<sub>C</sub>·C + w<sub>D</sub>·D + w<sub>F</sub>·F, −5, +5)<br>defaults: w<sub>A</sub>={{ scoring_weights.w_A }}, w<sub>B</sub>={{ scoring_weights.w_B }}, w<sub>C</sub>={{ scoring_weights.w_C }}, w<sub>D</sub>={{ scoring_weights.w_D }}, w<sub>F</sub>={{ scoring_weights.w_F }}</p>
+                <p class="rubric-equation">Impact = 10 × (0.35·R + 0.30·Depth + 0.20·E<sub>f</sub> + 0.15·P), each component normalized 0–1<br>ExpectedImpact = Impact × P(enact) — the default sort key</p>
+                <p>S is never stored — only the raw axis values are, so the weight sliders below the chart recompute everything live without re-scoring a single bill.</p>
+            </div>
+        </details>
+
+        <details class="legend">
+            <summary>How the probability model works</summary>
+            <div class="legend-body">
+                <p>P(enact) isn't a vibes number — it's two modeled probabilities per bill: <strong>p(committee)</strong>, the chance it advances out of committee, and <strong>p(enact)</strong>, the chance it's ultimately signed into law. The chart and default sort use p(enact).</p>
+                <p>Where an external model exists — most often <a href="https://www.govtrack.us/" target="_blank" rel="noopener">GovTrack.us</a>'s published "prognosis" for a specific bill — the score is anchored to it directly, and the bill's rationale says so explicitly. Where no external model is available, the estimate is built from historical base rates for bills at a comparable stage (e.g. the share of House bills that clear committee at all in a given Congress), adjusted up or down for that bill's cosponsor count, bipartisan pairing, committee-chair alignment, and recent news-cycle attention. Bills that have already passed or been signed are simply set to 1.0 — there's no remaining uncertainty to model.</p>
+                <p>Research effort was allocated unevenly on purpose: bills further along in the legislative process got individual deep-research passes (live status checks, GovTrack cross-referencing), while early-stage bills with little momentum were scored in batches from their own text plus lighter live lookups. A bill's <code>confidence</code> field (shown in its expanded entry) reflects how that bill was scored.</p>
+                <p>Every bill also records a <code>text_source</code>: whether its axis scores were verified against the bill's actual introduced text (fetched from congress.gov) or only against a curated summary. A summary can omit a provision — most often a preemption or savings clause — that the real bill text contains, so any bill not yet verified against full text is capped at low confidence and left off the scatter chart above until it's checked, even if the underlying scores turn out to be correct.</p>
+            </div>
+        </details>
+
+        <div class="controls">
+            <input type="search" id="search-input" placeholder="Search title, sponsor, or bill number…" aria-label="Search bills">
+            <select id="filter-topic" aria-label="Filter by topic">
+                <option value="all">All topics</option>
+                {% for topic in topics %}
+                <option value="{{ topic }}">{{ topic }}</option>
+                {% endfor %}
+            </select>
+            <select id="filter-status" aria-label="Filter by status">
+                <option value="all">All statuses</option>
+                {% for key, meta in status_options.items() %}
+                <option value="{{ key }}">{{ meta.label }}</option>
+                {% endfor %}
+            </select>
+            <select id="filter-chamber" aria-label="Filter by chamber">
+                <option value="all">Both chambers</option>
+                <option value="House">House</option>
+                <option value="Senate">Senate</option>
+                <option value="Both">House &amp; Senate</option>
+            </select>
+            <select id="sort-select" aria-label="Sort bills">
+                <option value="expected-impact-desc">Sort: Expected impact (default)</option>
+                <option value="impact-desc">Sort: Largest impact</option>
+                <option value="s-desc">Sort: Most safety/restriction-focused</option>
+                <option value="s-asc">Sort: Most deregulation/accel-focused</option>
+                <option value="p-enact-desc">Sort: Most likely to pass</option>
+                <option value="date-desc">Sort: Most recent action</option>
+                <option value="topic">Sort: Group by topic</option>
+                <option value="alpha">Sort: Title (A–Z)</option>
+            </select>
+        </div>
+
+        <section id="chart-section">
+            <h3 class="chart-title">Where does Congress stand?</h3>
+            <p class="chart-dek">Each dot is a bill, placed by its safety score S (horizontal — negative is deregulation/acceleration, positive is safety/restriction) and its modeled probability of enactment (vertical). Dot size reflects Impact. The dashed line marks the <strong>enactment-probability-weighted average</strong> S — the center of gravity of what's actually likely to become law. The chart reflects the filters above and the weight controls below. Only bills scored against their actual full bill text are plotted here — see "How the probability model works" above for why; every tracked bill still appears in the list below regardless.</p>
+            <div id="chart-wrap">
+                <svg id="chart-svg" viewBox="0 0 720 460" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Scatter plot of AI bills by safety score and probability of enactment"></svg>
+            </div>
+            <div id="chart-tooltip" hidden></div>
+            <p id="chart-readout" class="chart-readout"></p>
+
+            <div class="weight-controls">
+                <p class="weight-controls-title">S = w<sub>A</sub>·A + w<sub>B</sub>·B + w<sub>C</sub>·C + w<sub>D</sub>·D + w<sub>F</sub>·F — adjust any weight to see bills move</p>
+                <div class="weight-row">
+                    <label for="wa-slider">Frontier stringency (w<sub>A</sub>)</label>
+                    <input type="range" id="wa-slider" class="weight-slider" data-weight="A" min="0" max="1.5" step="0.05" value="{{ scoring_weights.w_A }}">
+                    <span id="wa-value" class="weight-value">{{ '%.2f'|format(scoring_weights.w_A) }}</span>
+                </div>
+                <div class="weight-row">
+                    <label for="wb-slider">Preemption posture (w<sub>B</sub>)</label>
+                    <input type="range" id="wb-slider" class="weight-slider" data-weight="B" min="0" max="1.5" step="0.05" value="{{ scoring_weights.w_B }}">
+                    <span id="wb-value" class="weight-value">{{ '%.2f'|format(scoring_weights.w_B) }}</span>
+                </div>
+                <div class="weight-row">
+                    <label for="wc-slider">Governance capacity (w<sub>C</sub>)</label>
+                    <input type="range" id="wc-slider" class="weight-slider" data-weight="C" min="0" max="1.5" step="0.05" value="{{ scoring_weights.w_C }}">
+                    <span id="wc-value" class="weight-value">{{ '%.2f'|format(scoring_weights.w_C) }}</span>
+                </div>
+                <div class="weight-row">
+                    <label for="wd-slider">Export controls / geopolitical (w<sub>D</sub>)</label>
+                    <input type="range" id="wd-slider" class="weight-slider" data-weight="D" min="0" max="1.5" step="0.05" value="{{ scoring_weights.w_D }}">
+                    <span id="wd-value" class="weight-value">{{ '%.2f'|format(scoring_weights.w_D) }}</span>
+                </div>
+                <div class="weight-row">
+                    <label for="wf-slider">Buildout constraint (w<sub>F</sub>)</label>
+                    <input type="range" id="wf-slider" class="weight-slider" data-weight="F" min="0" max="1.5" step="0.05" value="{{ scoring_weights.w_F }}">
+                    <span id="wf-value" class="weight-value">{{ '%.2f'|format(scoring_weights.w_F) }}</span>
+                </div>
+                <button type="button" id="weights-reset">Reset to defaults</button>
+            </div>
+        </section>
+
+        <p id="results-count" class="results-count"></p>
+
+        <div id="bill-list">
+            {% for bill in bills %}
+            <details class="bill-card"
+                id="{{ bill.slug }}"
+                data-status="{{ bill.status }}"
+                data-chamber="{{ bill.chamber_origin }}"
+                data-topic="{{ bill.topic }}"
+                data-s="{{ bill.scoring.s_default }}"
+                data-impact="{{ bill.scoring.impact_score }}"
+                data-p-enact="{{ bill.scoring.likelihood.p_enact }}"
+                data-expected-impact="{{ bill.scoring.expected_impact }}"
+                data-scored="{{ bill.scoring.is_scored|lower }}"
+                data-in-scatter="{{ bill.scoring.in_scatter|lower }}"
+                data-date="{{ bill.last_action_date }}"
+                data-search="{{ (bill.title ~ ' ' ~ bill.short_name ~ ' ' ~ bill.sponsors|join(' ') ~ ' ' ~ bill.bill_numbers|join(' ') ~ ' ' ~ bill.tags|join(' ') ~ ' ' ~ bill.topic)|lower }}">
+                <script type="application/json" class="bill-scoring-data">{{ {
+                    "axes": bill.scoring.axes,
+                    "unsigned": bill.scoring.unsigned,
+                    "impact_components": bill.scoring.impact_components,
+                    "likelihood": bill.scoring.likelihood
+                } | tojson }}</script>
+                <summary>
+                    <div class="bill-summary-top">
+                        <span class="badge-group">
+                            <span class="status-badge {{ bill.status_class }}">{{ bill.status_label }}</span>
+                            <span class="topic-tag">{{ bill.topic }}</span>
+                            {% if not bill.scoring.is_scored %}<span class="unscored-badge">Not yet scored</span>{% elif not bill.scoring.in_scatter %}<span class="unscored-badge">Pending full-text verification</span>{% endif %}
+                        </span>
+                        <span class="bill-numbers">{{ bill.bill_numbers|join(' / ') }}{% if bill.congress %} · {{ bill.congress }}th Congress{% endif %}</span>
+                    </div>
+                    <h2 class="bill-title">{{ bill.short_name }}</h2>
+                    <p class="bill-sponsors">{{ bill.sponsors|join(', ') if bill.sponsors else 'Sponsor unspecified' }}</p>
+                    <p class="bill-oneliner">{{ bill.summary }}</p>
+                    <div class="axis-row">
+                        <div class="axis-item">
+                            <span class="axis-item-label">Safety score (S)</span>
+                            <div class="axis-bar-wrap">
+                                <div class="axis-bar s-bar"><div class="axis-marker s-marker" style="left: {{ ((bill.scoring.s_default + 5) / 10 * 100)|round(1) }}%;"></div></div>
+                            </div>
+                            <span class="axis-item-value s-value">{{ '%+.1f'|format(bill.scoring.s_default) }}</span>
+                        </div>
+                        <div class="axis-item">
+                            <span class="axis-item-label">Impact</span>
+                            <div class="dot-scale impact-dots"></div>
+                        </div>
+                        <div class="axis-item">
+                            <span class="axis-item-label">P(enact)</span>
+                            <span class="axis-item-value p-enact-value">{{ (bill.scoring.likelihood.p_enact * 100)|round(0)|int }}%</span>
+                        </div>
+                    </div>
+                </summary>
+
+                <div class="bill-body">
+                    <h3 class="bill-full-title">{{ bill.title }}</h3>
+                    {{ bill.body|safe }}
+
+                    {% if bill.scoring.is_scored %}
+                    <div class="axis-breakdown">
+                        <strong>Full axis breakdown</strong>
+                        <table class="axis-table">
+                            <tr><td>A · Frontier stringency</td><td class="axis-val">{{ '%+.1f'|format(bill.scoring.axes.A) }}</td><td>{{ bill.scoring.rationale.A }}</td></tr>
+                            <tr><td>B · Preemption posture</td><td class="axis-val">{{ '%+.1f'|format(bill.scoring.axes.B) }}</td><td>{{ bill.scoring.rationale.B }}</td></tr>
+                            <tr><td>C · Governance capacity</td><td class="axis-val">{{ '%+.1f'|format(bill.scoring.axes.C) }}</td><td>{{ bill.scoring.rationale.C }}</td></tr>
+                            <tr><td>D · External / geopolitical <em>(weighted at 0 by default)</em></td><td class="axis-val">{{ '%+.1f'|format(bill.scoring.axes.D) }}</td><td>{{ bill.scoring.rationale.D }}</td></tr>
+                            <tr><td>F · Capability buildout constraint</td><td class="axis-val">{{ '%+.1f'|format(bill.scoring.axes.F) }}</td><td>{{ bill.scoring.rationale.F }}</td></tr>
+                            <tr><td>E · Consumer / near-term harm</td><td class="axis-val">{{ bill.scoring.unsigned.E_consumer }}</td><td>{{ bill.scoring.rationale.E_consumer }}</td></tr>
+                        </table>
+                        <table class="impact-table">
+                            <tr><td>Reach (R)</td><td class="axis-val">{{ bill.scoring.impact_components.R }}</td><td>{{ bill.scoring.rationale.R }}</td></tr>
+                            <tr><td>Depth</td><td class="axis-val">{{ bill.scoring.impact_components.D }}</td><td>{{ bill.scoring.rationale.Depth }}</td></tr>
+                            <tr><td>Enforceability (E_f)</td><td class="axis-val">{{ bill.scoring.impact_components.E_f }}</td><td>{{ bill.scoring.rationale.E_f }}</td></tr>
+                            <tr><td>Precedent (P)</td><td class="axis-val">{{ bill.scoring.impact_components.P }}</td><td>{{ bill.scoring.rationale.P }}</td></tr>
+                        </table>
+                        <p class="likelihood-rationale"><em>Likelihood:</em> {{ bill.scoring.rationale.likelihood }}
+                            (p(committee)={{ bill.scoring.likelihood.p_committee }}, p(enact)={{ bill.scoring.likelihood.p_enact }}, basis: {{ bill.scoring.likelihood.basis }})</p>
+                        <p class="confidence-line">Confidence: {{ bill.scoring.confidence }} · Source: {{ bill.scoring.text_source|replace('_', ' ') }}{% if not bill.scoring.in_scatter %} (not shown on scatter chart){% endif %}{% if bill.scoring.scored_at %} · Scored {{ bill.scoring.scored_at }}{% endif %}</p>
+                    </div>
+                    {% else %}
+                    <p class="unscored-note">This bill hasn't been scored against the rubric yet.</p>
+                    {% endif %}
+
+                    <dl class="bill-facts">
+                        {% if bill.committees %}<dt>Committee(s)</dt><dd>{{ bill.committees|join(', ') }}</dd>{% endif %}
+                        {% if bill.cosponsor_count is not none %}<dt>Cosponsors</dt><dd>{{ bill.cosponsor_count }}</dd>{% endif %}
+                        {% if bill.tags %}<dt>Tags</dt><dd>{{ bill.tags|join(', ') }}</dd>{% endif %}
+                    </dl>
+
+                    {% if bill.timeline %}
+                    <div class="timeline-box">
+                        <strong>Timeline</strong>
+                        <ul class="timeline">
+                            {% for item in bill.timeline %}<li><span class="timeline-date">{{ item.date }}</span> {{ item.event }}</li>{% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+
+                    {% if bill.sources %}
+                    <p class="sources">Sources:
+                        {% for s in bill.sources %}<a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.label }}</a>{{ ', ' if not loop.last else '' }}{% endfor %}
+                    </p>
+                    {% endif %}
+                </div>
+            </details>
+            {% endfor %}
+        </div>
+
+        <p id="no-results" class="no-results" hidden>No bills match your filters.</p>
+
+        <p class="footnote">Know of a bill that should be here, or a status that's changed? This page is maintained by hand — <a href="mailto:pbenn@stanford.edu">let me know</a>.</p>
+    </div>
+
+    <link href="{{ url_for('static', filename='styles/legislation.css') }}" rel="stylesheet" />
+    <script src="{{ url_for('static', filename='javascript/legislation.js') }}"></script>
+</body>
+{% endblock %}

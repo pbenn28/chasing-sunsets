@@ -312,6 +312,156 @@ def epilogue_submission():
 def epilogue_thanks():
     return render_template('epilogue_thanks.html')
 
+# AI LEGISLATION TRACKER
+STATUS_META = {
+    "discussion_draft":   {"label": "Discussion Draft",        "class": "status-draft"},
+    "introduced":         {"label": "Introduced",              "class": "status-introduced"},
+    "committee":          {"label": "In Committee",            "class": "status-committee"},
+    "committee_passed":   {"label": "Cleared Committee",       "class": "status-committee-passed"},
+    "passed_one_chamber": {"label": "Passed One Chamber",      "class": "status-passed-one"},
+    "passed_both":        {"label": "Passed Both Chambers",    "class": "status-passed-both"},
+    "signed":             {"label": "Signed Into Law",         "class": "status-signed"},
+    "failed":             {"label": "Failed / Died",           "class": "status-failed"},
+    "vetoed":             {"label": "Vetoed",                  "class": "status-vetoed"},
+}
+
+SCORING_WEIGHTS = {
+    "w_A": 1.0,   # frontier developer stringency weight in composite S (the base axis)
+    "w_B": 0.6,   # preemption posture weight in composite S
+    "w_C": 0.3,   # governance capacity weight in composite S
+    "w_D": 0.0,   # external/geopolitical weight -- excluded from composite by default
+    "w_F": 0.75,   # capability buildout constraint weight in composite S
+}
+
+
+def _clamp(x, lo, hi):
+    return max(lo, min(hi, x))
+
+
+def compute_S(axes, weights=SCORING_WEIGHTS):
+    """Server-side default-weight S for SSR sort/display only. The frontend
+    recomputes this same formula live so the weight sliders never require a
+    re-score -- keep both in sync if this formula changes."""
+    raw = (
+        weights["w_A"] * axes["A"]
+        + weights["w_B"] * axes["B"]
+        + weights["w_C"] * axes["C"]
+        + weights["w_D"] * axes["D"]
+        + weights["w_F"] * axes["F"]
+    )
+    return _clamp(raw, -5.0, 5.0)
+
+
+def compute_impact(components):
+    r, d, ef, p = components["R"], components["D"], components["E_f"], components["P"]
+    return 10 * (0.35 * r + 0.30 * d + 0.20 * ef + 0.15 * p)
+
+
+def parse_bill(filepath):
+    with open(filepath, 'r') as f:
+        content = f.read()
+
+    parts = content.split('---', 2)
+    metadata = yaml.safe_load(parts[1]) or {}
+    body_content = parts[2].strip() if len(parts) > 2 else ''
+
+    slug = os.path.splitext(os.path.basename(filepath))[0]
+    status_key = metadata.get('status', 'introduced')
+    status_meta = STATUS_META.get(status_key, {"label": status_key.replace('_', ' ').title(), "class": "status-introduced"})
+
+    scoring_raw = metadata.get('scoring') or {}
+    is_scored = bool(scoring_raw)
+
+    axes = {k: scoring_raw.get('axes', {}).get(k, 0.0) for k in ('A', 'B', 'C', 'D', 'F')}
+    unsigned = {k: scoring_raw.get('unsigned', {}).get(k, 0.0) for k in ('E_consumer',)}
+    impact_components = {k: scoring_raw.get('impact_components', {}).get(k, 0.0) for k in ('R', 'D', 'E_f', 'P')}
+    likelihood = {
+        'p_committee': scoring_raw.get('likelihood', {}).get('p_committee'),
+        'p_enact': scoring_raw.get('likelihood', {}).get('p_enact', 0.0),
+        'basis': scoring_raw.get('likelihood', {}).get('basis', ''),
+    }
+    rationale = scoring_raw.get('rationale') or {}
+    text_source = scoring_raw.get('text_source', 'unknown')
+    in_scatter = text_source == 'full_text'
+    confidence = scoring_raw.get('confidence', 'unscored' if not is_scored else 'medium')
+    if is_scored and not in_scatter:
+        # A score not verified against the bill's actual text is never
+        # more than low-confidence, regardless of what was written down --
+        # see the text_source rule in docs/legislation-scoring-rubric.md.
+        confidence = 'low'
+    scored_at = scoring_raw.get('scored_at')
+
+    s_default = compute_S(axes, SCORING_WEIGHTS)
+    impact_score = compute_impact(impact_components)
+    expected_impact = impact_score * (likelihood['p_enact'] or 0.0)
+
+    return {
+        'slug': slug,
+        'title': metadata.get('title', 'Untitled Bill'),
+        'short_name': metadata.get('short_name') or metadata.get('title', 'Untitled Bill'),
+        'bill_numbers': metadata.get('bill_numbers', []),
+        'congress': metadata.get('congress'),
+        'status': status_key,
+        'status_label': status_meta['label'],
+        'status_class': status_meta['class'],
+        'chamber_origin': metadata.get('chamber_origin', 'House'),
+        'introduced_date': metadata.get('introduced_date', ''),
+        'last_action': metadata.get('last_action', ''),
+        'last_action_date': metadata.get('last_action_date', ''),
+        'sponsors': metadata.get('sponsors', []),
+        'cosponsor_count': metadata.get('cosponsor_count'),
+        'committees': metadata.get('committees', []),
+        'scoring': {
+            'is_scored': is_scored,
+            'axes': axes,
+            'unsigned': unsigned,
+            'impact_components': impact_components,
+            'likelihood': likelihood,
+            'rationale': rationale,
+            'confidence': confidence,
+            'text_source': text_source,
+            'in_scatter': in_scatter,
+            'scored_at': scored_at,
+            's_default': round(s_default, 2),
+            'impact_score': round(impact_score, 2),
+            'expected_impact': round(expected_impact, 3),
+        },
+        'topic': metadata.get('topic', 'Other'),
+        'tags': metadata.get('tags', []),
+        'sources': metadata.get('sources', []),
+        'summary': metadata.get('summary', ''),
+        'timeline': metadata.get('timeline', []),
+        'body': markdown.markdown(body_content),
+    }
+
+def load_bills():
+    bills_dir = os.path.join(os.getcwd(), "app", "legislation")
+    bills = []
+
+    for filename in sorted(os.listdir(bills_dir)):
+        if filename.endswith('.md'):
+            bills.append(parse_bill(os.path.join(bills_dir, filename)))
+
+    bills.sort(key=lambda b: (b['scoring']['expected_impact'], b['last_action_date']), reverse=True)
+    return bills
+
+@app.route('/legislation')
+def legislation():
+    bills = load_bills()
+    last_updated = max((b['last_action_date'] for b in bills if b['last_action_date']), default='')
+    topics = sorted({b['topic'] for b in bills})
+
+    return render_template(
+        'legislation.html',
+        bills=bills,
+        last_updated=last_updated,
+        topics=topics,
+        status_options=STATUS_META,
+        scoring_weights=SCORING_WEIGHTS,
+        title="AI Legislation Tracker",
+        description="A running, rubric-scored tracker of federal AI bills moving through Congress — sponsors, status, and where each one falls between safety/restriction and deregulation/acceleration."
+    )
+
 print("All registered routes:")
 for rule in app.url_map.iter_rules():
     print(f"  {rule.rule} -> {rule.endpoint}")
