@@ -218,6 +218,7 @@
     stroke: rgba(0,0,0,0.28);
     stroke-width: 1;
     transition: fill-opacity 0.15s ease;
+    touch-action: manipulation;
 }
 #chart-svg .pt:hover { fill-opacity: 1; stroke: #333; stroke-width: 1.5; }
 
@@ -600,7 +601,24 @@
 @media only screen and (max-width: 700px) {
     #legislation-page {
         padding: 1.8em 20px 3em;
+        display: flex;
+        flex-direction: column;
     }
+
+    /* Show the chart + its summary before the search/filter controls on
+       mobile, where a tall stacked control block otherwise pushes the
+       actual content below the fold. */
+    #legislation-page > .back-link { order: 1; }
+    #legislation-page > h1 { order: 2; }
+    #legislation-page > .dek { order: 3; }
+    #legislation-page > .meta-line { order: 4; }
+    #legislation-page > .legend { order: 5; }
+    #legislation-page > #chart-section { order: 6; }
+    #legislation-page > .controls { order: 7; }
+    #legislation-page > #results-count { order: 8; }
+    #legislation-page > #bill-list { order: 9; }
+    #legislation-page > #no-results { order: 10; }
+    #legislation-page > .footnote { order: 11; }
 
     .controls {
         flex-direction: column;
@@ -619,5 +637,63 @@
 
     .bill-numbers {
         text-align: left;
+    }
+
+    /* Weight sliders: a fixed-width label + a range input + a value box
+       reliably overflows narrow screens. Stack the label above the
+       slider+value row instead of forcing everything onto one line. */
+    .weight-row {
+        flex-wrap: wrap;
+    }
+
+    .weight-row label {
+        width: 100%;
+        text-align: left;
+    }
+
+    .weight-row input[type="range"] {
+        min-width: 0;
+        flex: 1 1 auto;
+    }
+
+    /* Axis/impact breakdown tables: a 3-column table with a nowrap first
+       column reliably pushes the rationale column off-screen. Stack each
+       row into a block instead: label + value on one line, rationale
+       below at full width. */
+    .axis-table, .axis-table tbody, .impact-table, .impact-table tbody {
+        display: block;
+        width: 100%;
+    }
+
+    .axis-table tr, .impact-table tr {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .axis-table td, .impact-table td {
+        display: block;
+        width: auto;
+        white-space: normal;
+        padding: 0.15em 0;
+    }
+
+    .axis-table td:first-child, .impact-table td:first-child {
+        white-space: normal;
+        font-weight: 600;
+        flex: 1 1 70%;
+        min-width: 0;
+    }
+
+    .axis-table td.axis-val, .impact-table td.axis-val {
+        flex: 0 0 auto;
+        margin-left: auto;
+        padding-left: 0.6em;
+    }
+
+    .axis-table td:last-child, .impact-table td:last-child {
+        flex: 1 1 100%;
+        width: 100%;
+        color: #555;
     }
 }

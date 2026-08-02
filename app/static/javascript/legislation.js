@@ -92,6 +92,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const readout = document.getElementById('chart-readout');
     const tooltip = document.getElementById('chart-tooltip');
 
+    // Tapping the chart background (not a point) dismisses an open tooltip
+    // instead of leaving it stuck open with no way to clear it on touch.
+    svg.addEventListener('pointerup', function (e) {
+        if (e.target === svg || e.target.tagName !== 'circle') {
+            tooltip.hidden = true;
+            activeTouchPt = null;
+        }
+    });
+
     function positionTooltip(e) {
         const off = 14;
         let x = e.clientX + off, y = e.clientY + off;
@@ -135,7 +144,10 @@ document.addEventListener('DOMContentLoaded', function () {
         return n;
     }
 
+    let activeTouchPt = null;
+
     function drawChart(visible) {
+        activeTouchPt = null;
         if (tooltip) tooltip.hidden = true;
         while (svg.firstChild) svg.removeChild(svg.firstChild);
 
@@ -240,8 +252,21 @@ document.addEventListener('DOMContentLoaded', function () {
             });
             pt.addEventListener('mousemove', positionTooltip);
             pt.addEventListener('mouseleave', function () { tooltip.hidden = true; });
-            pt.addEventListener('click', function () {
+            pt.addEventListener('pointerup', function (e) {
+                // On touch, the first tap on a point only reveals its name --
+                // it takes a second tap on the same point to open the bill.
+                // Otherwise a tap you meant as "what is that?" immediately
+                // navigates you away before you can read the tooltip.
+                if (e.pointerType === 'touch' && activeTouchPt !== pt) {
+                    tooltip.textContent = name;
+                    tooltip.hidden = false;
+                    positionTooltip(e);
+                    activeTouchPt = pt;
+                    e.preventDefault();
+                    return;
+                }
                 tooltip.hidden = true;
+                activeTouchPt = null;
                 const card = document.getElementById(c.id);
                 if (card) { card.open = true; card.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
             });
