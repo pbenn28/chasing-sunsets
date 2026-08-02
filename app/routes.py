@@ -445,7 +445,7 @@ def load_bills():
     bills.sort(key=lambda b: (b['scoring']['expected_impact'], b['last_action_date']), reverse=True)
     return bills
 
-@app.route('/legislation')
+@app.route('/ai-legislation')
 def legislation():
     bills = load_bills()
     last_updated = max((b['last_action_date'] for b in bills if b['last_action_date']), default='')
