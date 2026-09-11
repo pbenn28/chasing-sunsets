@@ -19,9 +19,9 @@ committees:
 - House Oversight and Government Reform
 scoring:
   axes:
-    A: 2.0
+    A: 0.5
     B: 1.0
-    C: 2.0
+    C: 1.0
     D: 0.0
     F: 0.0
   unsigned:
@@ -36,9 +36,9 @@ scoring:
     p_enact: 0.01
     basis: "base_rate_adjusted"
   rationale:
-    A: "Mandates pre-deployment evaluations and post-deployment impact assessments of covered algorithms, with disclosure to affected individuals — a real process requirement with enforcement behind it, though assessments are self-conducted rather than checked by an outside verifier."
-    B: "Doesn't use express preemption language, but Section 402 lets state attorneys general and state data-protection authorities sue on residents' behalf, with civil penalties up to the greater of $15,000 per violation or 4% of average gross annual revenue, and Section 405 states the Act can't be read to weaken any other applicable federal or state requirement. The bill's own enforcement design leans on continued state authority rather than displacing it."
-    C: "Enforcement runs through the FTC and state attorneys general, who gain new statutory authority and case work — expanding existing regulators' reach rather than creating a wholly new agency or evaluation body."
+    A: "Corrected under the frontier/systemic-risk-vs-near-term-consumer-harm guardrail: the pre-deployment evaluation and post-deployment impact-assessment mandate is targeted at 'covered algorithms' making consequential decisions in housing, employment, healthcare, and credit — algorithmic discrimination, the rubric's own canonical example of a harm that belongs on axis E, not frontier-scale training, catastrophic risk, or systemic AI oversight. Previously scored 2.0 by matching the mechanism's literal form to A's 'mandated process with enforcement' rung; under the guardrail this narrow civil-rights/discrimination subject caps near A's floor. Landing at 0.5 rather than 0 because the assessment-and-disclosure requirement is a real, binding process rather than mere disclosure-only language."
+    B: "Doesn't use express preemption language, but Section 402 lets state attorneys general and state data-protection authorities sue on residents' behalf, with civil penalties up to the greater of $15,000 per violation or 4% of average gross annual revenue, and Section 405 states the Act can't be read to weaken any other applicable federal or state requirement. Consistent with the guardrail's treatment of B: this savings/non-weakening language is scoped to the bill's own algorithmic-discrimination subject, not an affirmative guarantee of state authority over frontier AI development generally, so it's capped at the ordinary +1 savings-clause rung rather than the +2/+3 rungs the bill's enforcement design might otherwise suggest."
+    C: "Corrected under the frontier/systemic-risk-vs-near-term-consumer-harm guardrail: the FTC/state-AG authority this bill creates is scoped to enforcing an algorithmic-discrimination civil-rights standard, not building systemic AI oversight or evaluation capacity — the same category the guardrail says belongs on E rather than driving C toward its higher rungs. Previously scored 2.0 by reading 'new statutory authority for existing regulators' as matching C's rung 2 criteria in isolation; corrected down near C's floor to 1.0 to reflect that the capacity built is real but narrowly scoped to one harm domain."
     D: "No export-control, chip-access, or geopolitical content."
     E_consumer: "Creates a private right of action for algorithmic discrimination spanning housing, employment, healthcare, and credit — about as broad as this kind of provision gets."
     F: "No data-center, permitting, or energy content."

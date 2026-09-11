@@ -14,7 +14,7 @@ cosponsor_count: null
 committees: ["Senate Commerce, Science, and Transportation"]
 scoring:
   axes:
-    A: 1.5
+    A: 0.5
     B: -1.0
     C: 0.0
     D: 0.0
@@ -31,7 +31,7 @@ scoring:
     p_enact: 0.22
     basis: "govtrack_corroborated; post-committee base rate adjusted"
   rationale:
-    A: "RE-SCORED 2026-09-09 — FLAGGED: the prior A=2.0 rationale cited 'a data-use limit tied to a forthcoming maximum permitted period of use rule' as part of its basis; that is the same 30-day chatbot-memory retention cap and default-deletion requirement the Cruz amendment struck on a party-line 15-13 vote before the committee ordered the bill reported on 2026-08-05. With that provision gone, the bill's remaining conduct standards are: a ban on compulsive-use design features (push alerts, streaks, typing-bubble simulation), a ban on covert/targeted advertising to minors, and a ban on training on minors' data for commercial/algorithmic purposes, enforced via FTC rulemaking, state AG suits, and a private right of action. These are still real, ongoing conduct mandates on developers/deployers (above simple disclosure) but the loss of the data-retention/deletion mandate — the most concrete, self-executing obligation in the bill — removes its most binding single provision, so this drops from a solid +2 to +1.5: still squarely in the 'mandated process with enforcement' band (+2 rung) by virtue of the surviving design-feature and training-data bans and their private right of action, but scored down half a point to reflect that the substitute is materially weaker than what was scored on 8/1."
+    A: "RE-SCORED 2026-09-09 a second time, now under the frontier/systemic-risk-vs-near-term-consumer-harm guardrail (in addition to the 8/5 markup revision already reflected below): the 8/5 pass correctly noted that the Cruz amendment struck the bill's 30-day retention-cap/default-deletion mandate, dropping the prior A=2.0 to A=1.5 on the theory that the surviving compulsive-use-design ban, ad ban, and training-data ban still amounted to a 'mandated process with enforcement' near the +2 rung. Under the new guardrail, that framing itself needs correcting: all three surviving conduct standards — compulsive-use design features, covert/targeted advertising to minors, training on minors' data — are child-specific consumer protections aimed at harms already in ordinary chatbot deployment, not frontier-scale training, catastrophic/CBRN risk, or systemic AI oversight capacity. That is exactly the guardrail's test case for capping A near its floor (rarely above +0.5-+1) regardless of how real and FTC/state-AG/private-right-of-action-enforced the mandate is. Scored at 0.5 — above 0.0 because it is a genuine, enforced conduct mandate on chatbot providers (not mere disclosure), but well below the +1.5-2.0 range that would imply frontier-developer stringency."
     B: "Unchanged from 8/1 scoring — the Cruz amendment targeted the retention-cap provision, not the preemption/savings-clause language. The bill still preempts state law only where a state law directly conflicts with it, and explicitly preserves state laws offering minors greater protection. No adopted amendment altered this provision, so B is not re-scored."
     C: "Unchanged from 8/1 — no new agency, oversight body, or reporting regime is created. Enforcement still relies on existing FTC and state AG authority plus the private right of action."
     D: "Unchanged from 8/1 — nothing in the text touches export controls, chips, or compute."

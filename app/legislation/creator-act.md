@@ -23,7 +23,7 @@ scoring:
     E_consumer: 4.0
   impact_components:
     R: 0.75
-    D: 0.20
+    D: 0.80
     E_f: 1.00
     P: 0.60
   likelihood:
@@ -38,7 +38,7 @@ scoring:
     E_consumer: "Creates a private right of action with statutory damages of $10,000-$100,000 per work for intentional commercial infringement, rising to $50,000-$150,000 per work for willful violations involving intentional targeting and commercial exploitation -- a real, substantial private right of action with meaningful statutory damages, comparable to NO FAKES Act's private-suit mechanism but confined to one harm category (AI stylistic impersonation of visual artists) rather than spanning multiple consumer-harm types, so it lands at the same 'broad private right of action, one domain' level rather than the maximum multi-sector rung."
     F: "No data-center, permitting, interconnection, energy, or siting content."
     R: "Covers visual artists broadly and binds anyone who commercially exploits or publicly distributes a stylistic impersonation in or affecting interstate commerce -- a wide target class for this harm type -- but the bill's own safe harbors (commentary/criticism, parody/satire, research/education, platform notice-and-takedown safe harbor, and the general-purpose-AI carve-out) narrow real-world reach somewhat relative to a bill with no such exemptions, landing below NO FAKES Act's 0.95 but still capturing most commercial stylistic-impersonation conduct."
-    Depth: "max(|A|,|B|,|C|,|F|,E)/5 = max(0, 1.0, 0, 0, 4.0)/5 = 0.80, driven almost entirely by the consumer-harm private right of action."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis E (consumer/near-term harm) at 4.0/5."
     E_f: "Statutory damages available directly to artists and rights-holders through a private right of action -- the strongest enforcement rung on this scale, matching NO FAKES Act's enforcement mechanism."
     P: "A new, narrow federal IP-adjacent right layered onto existing right-of-publicity and copyright frameworks rather than a wholly new institution -- if enacted it would be a first-in-nation federal framework for 'stylistic impersonation' specifically, likely to be watched as a template given the parallel Andersen v. Stability AI-style litigation already underway, but its narrow scope (one right, one artist class) keeps it below a 'permanent institution or preemption ceiling' rung."
     likelihood: "GovTrack's prognosis for H.R. 9112 (checked 2026-09-09) gives roughly a 9% chance of advancing past committee and a 4% chance of enactment -- adopting GovTrack's figures directly. Introduced 2026-06-02 with bipartisan sponsorship (Van Duyne R-TX, Clarke D-NY, Foushee D-NC, Owens R-UT) and 4 cosponsors, referred to House Judiciary, with no markup or hearing reported as of this check roughly three months later. The bipartisan Congressional Creators Caucus backing and active stakeholder support (Adobe, artist groups) modestly outperform a typical single-sponsor bill at this stage, consistent with GovTrack's above-median prognosis for a newly introduced bill, but it remains far from advancing."

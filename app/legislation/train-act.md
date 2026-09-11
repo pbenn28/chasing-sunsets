@@ -14,7 +14,7 @@ cosponsor_count: null
 committees: ["House Judiciary", "Senate Judiciary"]
 scoring:
   axes:
-    A: 1.5
+    A: 1.0
     B: 0.0
     C: 0.0
     D: 0.0
@@ -23,7 +23,7 @@ scoring:
     E_consumer: 0.0
   impact_components:
     R: 1.0
-    D: 0.30
+    D: 0.20
     E_f: 0.8
     P: 0.8
   likelihood:
@@ -31,14 +31,14 @@ scoring:
     p_enact: 0.04
     basis: "base_rate_adjusted"
   rationale:
-    A: "Adds a new 17 U.S.C. 514 that compels any 'developer' — defined broadly to cover anyone who designs, produces, or substantially modifies a generative AI model and curates its training data — to disclose training material upon a court-issued subpoena. Noncompliance triggers a rebuttable presumption of infringement, and bad-faith requests can draw Rule 11 sanctions. It's a real, legally compelled disclosure duty, but it works case-by-case at a copyright holder's request rather than as a standing reporting regime."
+    A: "Guardrail check (frontier/systemic risk vs. near-term consumer harm): the compelled disclosure here — a new 17 U.S.C. 514 letting a copyright holder subpoena any 'developer' for training material, with a rebuttable presumption of infringement on noncompliance — is a copyright-discovery tool, not a mechanism aimed at frontier-scale training, catastrophic risk, or systemic AI oversight. Its subject is enabling infringement litigation, not observing or constraining frontier development. That caps it near the guardrail's floor even though the legal mechanism (subpoena, evidentiary presumption) is real and enforceable; scored 1.0, aligned with the identically-scoped CLEAR Act rather than the 1.5 previously assigned for the case-by-case subpoena mechanic."
     B: "No preemption or savings-clause language appears anywhere in the bill. The one 'nothing shall be construed' clause just limits subpoena scope to the requester's own copyrighted works and has nothing to do with state authority."
     C: "Creates a private civil-court subpoena mechanism for copyright holders rather than any new government body, database, or regulator."
     D: "No export-control, chip-access, or geopolitical-competition content."
     E_consumer: "Addresses copyright and training-data harms to rights holders, not the deepfake, NCII, companion-bot, discrimination, or election-integrity harms this site otherwise tracks under consumer protection."
     F: "The bill's sole substantive provision is the copyright-subpoena mechanism; nothing touches data centers, permitting, interconnection, or energy."
     R: "Applies to essentially the full universe of AI developers, with no revenue floor or sector carve-out limiting who can be subpoenaed."
-    Depth: "Driven mainly by the developer disclosure duty in axis A — the compelled-subpoena mechanism doesn't reach much further than that."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis A (frontier developer stringency) at 1.0/5."
     E_f: "Any copyright holder can get a subpoena from a federal court clerk on their own, without suing first or waiting on an agency — close to a private right of action, though it compels document production rather than creating a damages claim."
     P: "Modeled directly on the existing DMCA subpoena process, repurposed as a new framework for AI training-data disclosure — adapting an established tool rather than building something entirely new or a permanent institution."
     likelihood: "An unusually bipartisan lineup (Welch, Dean, Moran, plus original cosponsors Blackburn, Hawley, and Schiff) gives it real credibility, but neither chamber's version has seen a markup or floor vote through September 2026. Two offsetting signals since the last pass: Register of Copyrights Shira Perlmutter endorsed the TRAIN Act's subpoena approach in May 2026 Senate testimony, a positive for p_committee; but DOJ's September 1, 2026 statement of interest in NYT v. OpenAI, arguing AI training is fair use and warning that restricting it threatens national security, signals the administration's copyright/AI policy leans firmly deregulatory — a real headwind for enactment even if a committee vote were to happen. GovTrack.us was unreachable (403) this pass, so this stays a base-rate estimate rather than GovTrack-corroborated; p_committee nudged up slightly for the Copyright Office endorsement, p_enact held flat given the offsetting administration signal."

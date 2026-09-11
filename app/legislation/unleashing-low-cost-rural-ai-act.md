@@ -20,14 +20,14 @@ scoring:
   axes:
     A: 0.0
     B: 0.0
-    C: 1.0
+    C: 0.0
     D: 0.0
     F: 0.0
   unsigned:
     E_consumer: 0.0
   impact_components:
     R: 0.80
-    D: 0.20
+    D: 0.00
     E_f: 0.00
     P: 0.40
   likelihood:
@@ -37,12 +37,12 @@ scoring:
   rationale:
     A: "Directs a national laboratory to study AI data centers' impact on energy resources; no obligation of any kind falls on AI developers, so this axis isn't engaged."
     B: "No preemption or savings-clause language found in any available source. The implicit-preemption floor doesn't apply — A is 0, well below the +2 threshold, and the bill establishes a study, not a regulatory scheme."
-    C: "The Secretary of Energy must designate a National Laboratory to study AI/data-center growth's impact on energy resources, with a 180-day reporting deadline once enacted — a study with a real deadline, landing at the '+1' rung rather than an open-ended task force."
+    C: "Corrected 2026-09-09 under the frontier/systemic-risk-vs-near-term-harm guardrail: the National Laboratory study covers energy-resource impacts — infrastructure upgrades, alternative-energy feasibility, co-location with power generation, costs, reliability, land/water use, and NEPA/permitting options — a physical-input study, not a mechanism that observes, constrains, or governs AI development or deployment. It has a real 180-day reporting deadline, which is why it superficially reads as '+1 studies/task forces' territory, but the actual AI-governance effect is 0. Previously scored 1.0; corrected to 0.0."
     D: "No export-control or geopolitical content — purely a domestic energy-impact study."
     E_consumer: "No consumer-facing harm content — binds a federal research process, not distributors or deployers dealing with end users."
     F: "The study's scope includes 'means to expedite NEPA review or permitting requirements' for AI/data-center sites, but this is a directive to study and recommend, not an operative permitting rule, siting preemption, or cost-shifting mechanism itself — it doesn't constrain or accelerate buildout on its own, so it stays off this axis rather than being scored on the strength of what a future report might recommend."
     R: "Federal in scope, with no threshold or carve-out narrowing the study's coverage of the rural/remote AI data-center buildout it targets."
-    Depth: "Low — the bill's entire operative content is a single study directive with a 180-day reporting deadline; it doesn't itself change any developer obligation, preemption posture, or buildout constraint."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis A (frontier developer stringency) at 0.0/5."
     E_f: "A study-and-report obligation with no penalty, rulemaking, or enforcement mechanism attached to anyone."
     P: "A sector-specific, self-contained study bill focused on rural energy impacts, not a first-in-nation framework or new institution."
     likelihood: "Stalled at initial committee referral for roughly a year with no markup, hearing, or floor action found as of September 2026 despite bipartisan Costa (D-CA)/Moore (R-UT) sponsorship. Coverage is limited to trade press and local-district outlets (Ripon Advance, Fresno-area Business Journal, FedScoop, AgDaily) tied to a PJM ratepayer-cost figure, not a broader news cycle. No GovTrack prognosis figure could be retrieved (403 on direct fetch); p_enact held low consistent with base rates for single-committee-referral study bills with no subsequent action after a full year."

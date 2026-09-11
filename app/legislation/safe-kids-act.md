@@ -14,9 +14,9 @@ cosponsor_count: 1
 committees: ["Senate Commerce, Science, and Transportation"]
 scoring:
   axes:
-    A: 2.0
-    B: 3.0
-    C: 3.0
+    A: 0.5
+    B: 1.0
+    C: 1.0
     D: 0.0
     F: 0.0
   unsigned:
@@ -31,9 +31,9 @@ scoring:
     p_enact: 0.09
     basis: "base_rate_adjusted"
   rationale:
-    A: "Sec. 4 requires providers to conduct and document pre-deployment and annual risk assessments, implement documented risk mitigation and crisis-response protocols, and submit to annual independent third-party audits (Sec. 7) with FTC review and a public aggregated-findings report — a real mandated process with FTC enforcement (Sec. 8) that lands at the '+2 mandated process' rung and pushes close to, but short of, '+3 pre-deployment gating,' since the audit is an annual after-the-fact compliance check performed by an auditor the provider itself engages (subject to Commission independence standards) rather than a licensed verifier who must approve release before it happens."
-    B: "Sec. 9(a) states nothing in the Act shall be construed to prohibit or affect enforcement of any State law 'at least as protective of users of AI chatbots as this Act' — an affirmative guarantee that more-protective state law survives, not merely a conflict-only carve-out. Sec. 9(b) reinforces this: compliance with the Act's own audit/risk-assessment obligations is not a defense to liability under any other Federal or State law. This is the rubric's '+3' affirmative savings-clause-with-teeth rung."
-    C: "Sec. 6 requires the FTC to stand up a third-party incident-reporting mechanism and a public registry of AI chatbot child-safety policies within 180 days; Sec. 7(c) requires an annual FTC report aggregating audit findings, trends, and compliance rates across the industry, plus a qualified-researcher data-access process — a standing information flow into a government-run registry and report, matching the '+3' rung."
+    A: "RE-SCORED 2026-09-09 under the frontier/systemic-risk-vs-near-term-consumer-harm guardrail: Sec. 4's pre-deployment/annual risk assessments, crisis-response protocols, and Sec. 7 third-party audits are a real, enforced mandate, but its subject is child-safety design in deployed chatbots, not frontier-scale training, catastrophic/CBRN risk, or systemic AI oversight — the guardrail directs axis A to the floor (rarely above +0.5-+1) for exactly this pattern, regardless of how well-drafted or enforced the mandate is. Scored at 0.5 rather than 0.0 to reflect that it is still a real, FTC-enforced conduct mandate on chatbot providers (above a pure disclosure-only bill), but it is not frontier-developer stringency."
+    B: "RE-SCORED 2026-09-09 under the same guardrail: Sec. 9(a)'s savings clause is textually unconditional but scoped to state law 'at least as protective of users of AI chatbots as this Act' — i.e., it guarantees states may pass more-protective chatbot-safety law, not that states retain authority to regulate frontier AI development generally. Per the guardrail, that caps this at the '+1 ordinary savings clause' rung rather than the '+3 affirmative guarantee with teeth' rung, which is reserved for preservation language that is genuinely general rather than scoped to the bill's own narrow topic."
+    C: "RE-SCORED 2026-09-09 under the same guardrail: Sec. 6's FTC third-party incident-reporting mechanism and Sec. 7(c)'s annual aggregated-audit report are a genuine standing information flow, but what they observe is child-safety incidents and audit compliance in deployed chatbots, not frontier/systemic AI risk — the guardrail's own worked example is exactly this pattern (a chatbot bill's FTC incident-reporting requirement matching the '+3' rung textually while not being what that rung describes). Following the STOP CSAM Act's precedent for an analogous FTC/DOJ reporting regime (scored C=0.5), this drops to 1.0, reflecting that the registry is somewhat more structurally built-out (a standing public registry plus researcher data access, not just annual aggregate reporting) than STOP CSAM's reporting regime, but still capped near the floor rather than at +3."
     D: "No export-control or geopolitical content."
     E_consumer: "Sec. 5 bans advertising and cross-context behavioral advertising to child users and bans sale/sharing of children's personal information absent verifiable parental consent, all backed by FTC UDAP enforcement with civil penalties up to $10,000 per violation per user for willful violations (Sec. 8) — a broad cross-sector restriction with real agency-enforced penalties, though not a private right of action, landing between the '3' (criminal-liability-equivalent civil penalty regime) and '5' (private right of action) rungs; scored at 3."
     F: "No data-center or energy content."

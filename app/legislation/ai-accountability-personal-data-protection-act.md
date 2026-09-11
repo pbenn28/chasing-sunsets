@@ -18,8 +18,8 @@ committees:
 - Senate Judiciary
 scoring:
   axes:
-    A: 2.0
-    B: 3.0
+    A: 1.0
+    B: 1.0
     C: 0.0
     D: 0.0
     F: 0.0
@@ -35,9 +35,9 @@ scoring:
     p_enact: 0.05
     basis: "base_rate_adjusted"
   rationale:
-    A: "Creates a federal civil cause of action requiring express prior consent before personal data can be used to train AI — a real behavioral mandate on developers, enforced through lawsuits rather than a licensing or shutdown regime."
-    B: "Section 4 explicitly protects state law, stating that nothing in the Act preempts or limits any state law, rule, regulation, or common-law doctrine, and framing the federal right as a floor that states can exceed with greater protections — a savings clause with real teeth, naming common law specifically and not just statutes."
-    C: "A private right of action only — no new agency, database, or enforcement staff is created, so it doesn't expand government's own capacity to monitor or enforce."
+    A: "Guardrail check (frontier/systemic risk vs. near-term consumer harm): the mandate here is express prior consent before personal data can be used to train AI — a privacy/consent tort, not a mechanism aimed at frontier-scale training, catastrophic/CBRN risk, loss-of-control, or systemic AI oversight. Its subject is personal-data protection, which is exactly what axis E exists to hold. This is a genuine borderline case rather than an automatic floor discount, though: unlike a chatbot bill's child-safety mandate (which binds one narrow sector), this constrains a training *input* — personal data — across the entire AI industry, with no sectoral or demographic carve-out, so it isn't purely a narrow-population consumer bill either. That universality earns it some residual A weight rather than a full drop to 0, but the mandate still doesn't touch frontier-scale capability, compute, or catastrophic-risk conduct, so it lands well below the previous 2.0 (a 'mandated process with enforcement' read that took the private-right-of-action language at face value without asking whether the underlying subject was frontier governance). Scored 1.0 — real, universal, enforceable, but a consent/disclosure-type constraint on an input rather than governance of frontier development itself; the bill's true severity belongs on E_consumer (unchanged at 5.0)."
+    B: "Guardrail check: Section 4's savings clause ('nothing in the Act preempts or limits any state law, rule, regulation, or common-law doctrine') is the standard form of an ordinary savings clause — by construction it only speaks to what this Act itself would otherwise preempt, and this Act's entire subject is personal-data-training-consent. Per the guardrail, a savings clause scoped to the bill's own narrow topic doesn't earn the '+3 affirmative guarantee' rung just because its wording is unconditional; it says nothing about states' authority to regulate frontier AI development broadly. There is no independent language here preserving state AI-regulation authority outside this bill's own lane, so this caps at the ordinary-savings-clause rung. Also, since A now scores well below +2, the implicit-preemption floor that would otherwise have been irrelevant to a +3 read doesn't change this conclusion either way. Scored 1.0, down from 3.0."
+    C: "A private right of action only — no new agency, database, or enforcement staff is created, so it doesn't expand government's own capacity to monitor or enforce. Consistent with the frontier/systemic-risk guardrail as well: even if some capacity mechanism existed here, a personal-data-consent regime is not systemic AI oversight capacity — but the bill contains no such mechanism at all, so this remains 0 unchanged."
     D: "No export-control, chip-access, or geopolitical content."
     E_consumer: "Gives individuals a broad federal right to sue any AI or tech company that uses their personal data without consent."
     F: "No data-center, permitting, or energy content."

@@ -23,7 +23,7 @@ scoring:
     E_consumer: 0.0
   impact_components:
     R: 1.0
-    D: 0.30
+    D: 0.20
     E_f: 0.4
     P: 0.4
   likelihood:
@@ -38,7 +38,7 @@ scoring:
     E_consumer: "No deepfake, NCII, companion-bot, discrimination, or election-integrity content — purely a China-capabilities intelligence report."
     F: "No data-center, permitting, interconnection, siting, or ratepayer content."
     R: "A federal bill with no sectoral carve-out — the reporting obligation runs to the executive branch as a whole, covering all relevant China AI activity Commerce and State can assess."
-    Depth: "Driven mainly by the recurring reporting requirement (C) and the export-control-efficacy assessment (D) — a real but bounded intelligence product, not a structural change to any domestic AI governance regime."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis C (governance capacity) at 1.0/5."
     E_f: "The obligation runs to the executive branch to produce the report and briefings, with no stated penalty for noncompliance beyond ordinary congressional oversight pressure."
     P: "A recurring, multi-year reporting requirement rather than a one-off study, but it creates no lasting institution and is sector-specific and self-contained to China-AI intelligence assessment."
     likelihood: "H.R. 6275 has moved further than most bills in this tracker's 'reporting' category: it cleared the House Foreign Affairs Committee 47-0 on 2026-01-21 (amended), a lopsided bipartisan vote consistent with the low-controversy, assessment-only nature of the bill. No House floor vote has been scheduled since. S. 5382, introduced later (2026-08-07) by Sen. Husted with Sen. Warner as a bipartisan cosponsor, has not moved beyond referral to Senate Foreign Relations. GovTrack pages for both bills could not be loaded (403) so no numeric prognosis is available; p_committee is set high (0.9) to reflect that the House vehicle has already cleared committee by a wide margin and the Senate companion has strong bipartisan sponsorship in a similar vein to other low-controversy China-reporting bills on this tracker (e.g. the China Advanced Technology Monitoring Act). p_enact is set modestly at 0.2, reflecting that committee-passed reporting bills of this type frequently stall short of floor time even when uncontroversial, and this bill has not yet secured a demonstrated NDAA or other must-pass vehicle the way GAIN AI Act or AI OVERWATCH Act have."

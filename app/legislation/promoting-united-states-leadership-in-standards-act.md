@@ -26,7 +26,7 @@ scoring:
     E_consumer: 0.0
   impact_components:
     R: 0.60
-    D: 0.15
+    D: 0.20
     E_f: 0.20
     P: 0.40
   likelihood:
@@ -41,7 +41,7 @@ scoring:
     E_consumer: "No deepfake, NCII, companion-bot, discrimination, or election-integrity content — entirely about international standards-setting participation."
     F: "No data-center, permitting, siting, or energy content."
     R: "Reaches U.S. companies, universities, and technical experts who participate (or could participate) in AI and other critical-and-emerging-tech standards bodies — a real but self-selecting slice of the frontier and adjacent technical community, not the full developer universe, so R sits below a typical broad federal mandate."
-    Depth: "Modest — driven mainly by axis C's reporting mandate and axis D's geopolitical framing; no binding standard or enforcement mechanism anywhere in the bill."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis C (governance capacity) at 1.0/5."
     E_f: "The grants and reporting mandates carry no penalty structure; agencies act at their own discretion in administering the pilot program."
     P: "A sector-specific, self-contained pilot grant-and-reporting program tied to standards diplomacy — not a first-in-nation framework or a permanent new institution."
     likelihood: "GovTrack models this bill at roughly 10% chance of getting past committee and 5% chance of enactment — anchored directly to that published prognosis. As of 2026-09-09, no committee markup has been scheduled since introduction on 2025-04-02 (a predecessor version, S. 3849, was introduced in the 118th Congress and also did not advance), and this remains a two-sponsor bill with no additional cosponsors found, consistent with GovTrack's low modeled odds."

@@ -27,7 +27,7 @@ scoring:
     E_consumer: 0.0
   impact_components:
     R: 0.60
-    D: 0.10
+    D: 0.00
     E_f: 0.20
     P: 0.20
   likelihood:
@@ -42,7 +42,7 @@ scoring:
     F: "No data-center, permitting, interconnection, siting, or ratepayer content."
     E_consumer: "No deepfake, NCII, companion-bot, discrimination, or election-integrity content — the bill is entirely about AI-adoption training and grants for small businesses."
     R: "Reach is bounded by design: Commerce/SBA training resources and grants flow through SBA resource partners (SBDCs, Women's Business Centers, SCORE, Veteran Business Opportunity Centers, APEX Accelerators) to interested small businesses, with dedicated tracks for rural, tribal, and advanced-manufacturing businesses — broad in principle but mediated by appropriated funding levels and which small businesses opt in, so R sits at 0.60 rather than near 1.0."
-    Depth: "Shallow — no signed axis moves off zero; the bill is a resource/grant program with no conduct standard, preemption effect, governance-capacity build, or compute/energy lever."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis A (frontier developer stringency) at 0.0/5."
     E_f: "A voluntary training and grant program with no penalties, no mandatory participation, and no enforcement mechanism for anyone."
     P: "Confirmed against the introduced text: the bill's authorities (training-resource development, review/reporting, and the grant program) sunset three years after enactment — a time-limited program bolted onto existing SBA resource-partner infrastructure, not a new permanent institution. Scored at the sunset rung (0.2) rather than the sector-specific/self-contained rung (0.4)."
     likelihood: "Introduced 2026-02-12 by Moran and Cantwell (a reintroduction of a prior Congress's bipartisan bill per the sponsors' press releases), referred to Senate Commerce, with only 1 cosponsor and no committee action recorded as of this pass. Bipartisan sponsorship pairing and lack of controversial subject matter (small-business AI training, not developer regulation) support a moderate-for-committee-stage p_committee, but with no hearing or markup scheduled roughly seven months after introduction, p_enact stays low and consistent with base rates for single-cosponsor Commerce Committee bills at this stage. GovTrack.us and congress.gov prognosis pages were not reachable (403) during this pass; estimate is base-rate-adjusted rather than GovTrack-anchored."

@@ -26,7 +26,7 @@ scoring:
     E_consumer: 0.0
   impact_components:
     R: 0.3
-    D: 0.10
+    D: 0.00
     E_f: 0.2
     P: 0.4
   likelihood:
@@ -41,7 +41,7 @@ scoring:
     E_consumer: "No consumer or near-term-harm content."
     F: "No compute, energy, data-center, or siting provisions."
     R: "Reach is narrow by design — it only affects DoD's own contracting options for AI-relevant software and data acquisition, not the broader AI-developer or consumer population, so R is scored low relative to a domestic-industry-wide bill."
-    Depth: "All core axes are 0; the only real effect is a new discretionary procurement authority, which the rubric scores under axis A at 0 rather than as a deregulatory or restrictive move in either direction."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis A (frontier developer stringency) at 0.0/5."
     E_f: "No stated penalty, audit, or compliance mechanism — it's a permissive authorization, not an obligation with an enforcement channel."
     P: "A software/data-as-a-service acquisition authority for defense AI systems is a template that could be copied into future NDAA acquisition-reform provisions, but it is not itself a permanent institution or a first-in-nation framework outside the defense-acquisition context."
     likelihood: "No Senate companion identified and no evidence the bill's text was folded into the FY2026 or FY2027 NDAA acquisition-reform packages (which include a separate, unrelated bill also nicknamed 'SPEED Act', H.R. 3838). Referred to House Armed Services on introduction (2025-06-06) with a single cosponsor (Rep. Eugene Vindman, D-VA) added at introduction; no markup, hearing, CBO score, or floor vote since. GovTrack's bill page could not be fetched directly (blocked), so no numeric prognosis was independently confirmed; using historical base rates for single-cosponsor House bills referred to a single committee with over a year elapsed and no markup — a thin, low-momentum profile — for p_committee/p_enact rather than asserting an unverified GovTrack figure."

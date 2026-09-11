@@ -17,16 +17,16 @@ committees:
 - Senate Judiciary
 scoring:
   axes:
-    A: 2.0
+    A: 1.0
     B: -1.0
-    C: 2.0
+    C: 1.0
     D: 0.0
     F: 0.0
   unsigned:
-    E_consumer: 2.0
+    E_consumer: 2.5
   impact_components:
     R: 0.60
-    D: 0.40
+    D: 0.50
     E_f: 0.80
     P: 0.40
   likelihood:
@@ -34,14 +34,14 @@ scoring:
     p_enact: 0.02
     basis: "base_rate_adjusted"
   rationale:
-    A: "Requires companies to produce audit reports to DOJ/FTC on demand, bars using or distributing pricing algorithms trained on nonpublic competitor data (backed by civil penalties), and creates a rebuttable antitrust presumption along with a disclosure mandate enforceable as an FTC Act violation — a real, enforceable process, though it stops short of requiring pre-deployment licensing or certification."
-    B: "Says nothing about preempting or preserving state authority; the only related clauses simply preserve existing federal antitrust law. Because it sets up a genuine federal enforcement scheme without an express savings clause for states, it's treated as implicitly narrowing state latitude at the margins."
-    C: "Gives DOJ and FTC new transparency and reporting tools plus a litigation presumption to use against pricing collusion — a boost to existing regulators' authority rather than a new agency or standing database."
+    A: "Corrected under the frontier/systemic-risk-vs-near-term-consumer-harm guardrail: this bill's real subject is pricing-algorithm collusion — a narrow antitrust/commercial-practice harm falling on consumers in specific markets, structurally the same category (AI already in ordinary deployment causing a bounded, sectoral harm) the guardrail says belongs on E rather than driving A up. It is genuinely AI-specific (unlike the domain-general-mechanism guardrail's CyberTipline example) but, per the frontier-vs-narrow-harm guardrail, AI-specificity and frontier/systemic relevance are different questions — nothing here reaches frontier-scale training, deployment-scale systemic risk, or loss-of-control. Previously scored 2.0 by matching the audit/disclosure/penalty mechanism to A's 'mandated process with enforcement' rung; corrected down to 1.0, reflecting that this is a real, enforced conduct standard but on a narrow antitrust target, not frontier stringency."
+    B: "Says nothing about preempting or preserving state authority; the only related clauses simply preserve existing federal antitrust law. This −1 is the mechanical implicit-preemption floor (A ≥ +2 previously triggered it; even at the corrected A = 1.0, the underlying fact pattern — a federal enforcement scheme with no express savings clause — still supports treating this as narrowing state latitude at the margins) and is unaffected by the frontier-vs-narrow-harm guardrail, which speaks to affirmative savings-clause scoring (capping generous clauses), not to this floor rule."
+    C: "Corrected under the frontier/systemic-risk-vs-near-term-consumer-harm guardrail: the DOJ/FTC transparency and reporting tools this bill creates are scoped entirely to policing one antitrust practice (pricing-algorithm collusion via nonpublic competitor data), not to building systemic AI oversight or evaluation capacity — the category the guardrail says belongs on E. Previously scored 2.0 by reading 'new authority for existing regulators' as matching C's rung 2 in isolation; corrected down near C's floor to 1.0."
     D: "No export-control or geopolitical content."
-    E_consumer: "Backs the prohibition with civil penalties rather than criminal liability — more teeth than a bare labeling requirement, but not a criminal statute."
+    E_consumer: "Bumped from 2.0 to 2.5 as part of the A/C correction under the frontier/systemic-risk-vs-near-term-consumer-harm guardrail: with the bill's real severity now concentrated on this axis rather than split across A/C, its civil-penalty-backed prohibition plus DOJ/FTC audit-demand power and a litigation presumption sit meaningfully above a bare disclosure rule (rung 1) though still short of criminal liability (rung 3) — 2.5 reflects real enforceable teeth without a private right of action or criminal exposure."
     F: "No data-center, permitting, or energy content."
     R: "Reaches pricing algorithms across many consumer-facing industries, but only where they're built on nonpublic competitor data — a real but bounded slice of the pricing-algorithm landscape."
-    Depth: "Driven mainly by the enforcement mechanisms in Secs. 3-6 (audit reports, the use prohibition, and the litigation presumption) — the bill doesn't reach much further than that core antitrust toolkit."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis E (consumer/near-term harm) at 2.5/5."
     E_f: "DOJ/FTC enforcement backed by civil penalties and a legal presumption gives this real bite, though it stops short of creating a private right of action."
     P: "A narrow antitrust fix aimed at one practice — pricing-algorithm collusion via nonpublic data — rather than a broad AI-governance framework."
     likelihood: "Re-verified 9/9/26: S. 232 itself has had no markup or vote and remains parked in Senate Judiciary with no floor action — no direct committee movement on this specific bill. However, the surrounding policy area heated up materially since 8/1: the Senate Judiciary Crime & Counterterrorism Subcommittee held a bipartisan hearing on 8/4/26 ('Your Data, Their Profit: The Consumer Cost of AI Surveillance Pricing,' chaired by Hawley with Durbin as ranking member), producing a stated bipartisan Hawley-Blumenthal intent to draft new surveillance-pricing legislation, and DOJ signaled in June 2026 that criminal enforcement of algorithmic pricing collusion remains on the table. None of that is committee action on S. 232 itself — it's a related but distinct proposal (real-time 'surveillance pricing' vs. S. 232's narrower nonpublic-competitor-data collusion prohibition) — but it signals rising bipartisan salience in the same policy neighborhood that could pull S. 232 or its provisions into a future vehicle. p_committee nudged up slightly (0.07 to 0.08) to reflect that salience; p_enact held, since no actual legislative vehicle exists yet and any successor bill would likely be a fresh Hawley-authored text rather than S. 232 advancing as-is."

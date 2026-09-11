@@ -14,9 +14,9 @@ cosponsor_count: 1
 committees: ["Senate Commerce, Science, and Transportation"]
 scoring:
   axes:
-    A: 2.0
-    B: 3.0
-    C: 3.0
+    A: 0.5
+    B: 1.0
+    C: 1.0
     D: 0.0
     F: 0.0
   unsigned:
@@ -31,9 +31,9 @@ scoring:
     p_enact: 0.05
     basis: "base_rate_adjusted"
   rationale:
-    A: "Sec. 3 imposes a mandated conduct regime on 'covered entities': baseline AI-identity and human-oversight disclosures, mandatory detection of high-stakes decisions (health, estate, guardianship, financial) with specific disclosure obligations, mandatory crisis detection using evidence-based methods and required referral to human/crisis resources, a consent requirement before using conversation data to train models, and a prohibition on deceptive/manipulative engagement-maximizing design — backed by FTC enforcement (Sec. 5) and mandatory incident reporting (Sec. 4). This is a real, enforced process mandate matching the '+2' rung; it does not reach '+3' because there is no outside licensed verifier or pre-deployment certification gate — compliance is self-implemented and audited only through incident reporting after the fact."
-    B: "Sec. 5(d) is an express, affirmative savings clause: nothing in the Act 'shall be construed to prohibit or otherwise affect the enforcement of any State law...that is at least as protective of users as this Act' — textually close to the SAFE KIDS Act's equivalent provision. Sec. 9 goes further, broadly preserving 'any right, claim, remedy, presumption, or defense available at law or in equity, including under consumer protection, privacy, or civil rights laws' — an unusually explicit preservation of tort/common-law backstops on top of the statutory savings clause. This matches the rubric's '+3' affirmative-guarantee-with-teeth rung."
-    C: "Sec. 4 requires covered entities to report 'material adverse incidents' involving high-stakes decisions or crises annually to both NIH and the FTC, with the agencies required to jointly publish aggregate, de-identified data on a public website at least annually — a genuine standing information flow into a government-held incident dataset, matching the '+3' rung, distinct from the one-time NIST voluntary-guidelines study in Sec. 6 (which is advisory only)."
+    A: "RE-SCORED 2026-09-09 under the frontier/systemic-risk-vs-near-term-consumer-harm guardrail: Sec. 3's disclosure, high-stakes-decision-detection, crisis-detection, training-data-consent, and deceptive-design provisions are a real, FTC-enforced conduct regime, but its subject is senior-specific chatbot-safety harms in ordinary deployment, not frontier-scale training, catastrophic/CBRN risk, or systemic AI oversight capacity. The guardrail directs axis A to the floor (rarely above +0.5-+1) for exactly this pattern even where the mandate is well-drafted and enforced. Scored at 0.5 rather than 0.0 to reflect that it is a real, enforced conduct mandate on chatbot providers (above pure disclosure), but not frontier-developer stringency."
+    B: "RE-SCORED 2026-09-09 under the same guardrail: Sec. 5(d)'s savings clause and Sec. 9's broader remedy-preservation language are textually unconditional, but both are scoped to protecting 'users' of this Act's chatbot-safety regime specifically, not to states' authority over AI regulation generally — they guarantee states may enact more-protective senior/chatbot-safety law, which the guardrail explicitly identifies as capped at the '+1 ordinary savings clause' rung rather than '+3,' regardless of how unconditional or broadly worded the clause is within its own narrow topic."
+    C: "RE-SCORED 2026-09-09 under the same guardrail: Sec. 4's NIH/FTC 'material adverse incident' reporting regime is a genuine standing information flow, but it observes senior-chatbot-safety incidents (high-stakes-decision and crisis events), not frontier or systemic AI risk — the guardrail's worked example is precisely this pattern. Following the STOP CSAM Act's precedent for an analogous annual FTC/DOJ reporting regime (scored C=0.5), this drops to 1.0, reflecting a somewhat more built-out dual-agency (NIH+FTC) public-data-publication structure than STOP CSAM's regime, but still held near the floor rather than at +3."
     D: "No export-control or geopolitical content."
     E_consumer: "Sec. 3's disclosure, high-stakes-decision, and crisis-intervention mandates plus Sec. 5's enforcement structure — FTC UDAP authority, civil penalties up to $50,000 per knowing/reckless violation, and a parallel state-AG (and other state consumer-protection officer) parens patriae track that can obtain damages and restitution — give this real teeth beyond a labeling-only regime, close to the criminal-liability-equivalent '3' rung, though there's no broad private right of action for individual users and a 60-day cure period softens first-violation exposure."
     F: "No data-center or energy content."

@@ -23,7 +23,7 @@ scoring:
     E_consumer: 0.0
   impact_components:
     R: 0.90
-    D: 0.80
+    D: 0.00
     E_f: 0.80
     P: 0.40
   likelihood:
@@ -38,7 +38,7 @@ scoring:
     F: "No data-center, permitting, siting, or ratepayer content — the bill is entirely an export-control measure."
     E_consumer: "No deepfake, NCII, companion-bot, discrimination, or election-integrity content."
     R: "A federal export-control bill covering the full universe of advanced AI accelerators (H200-class and above) and all 'countries of concern' as defined by existing arms-embargo status — near-total reach within its target class of controlled hardware, with a small discount for the two-year Commerce definitional-update mechanism introducing some scope uncertainty."
-    Depth: "Driven by the D-axis export-control score; this is the only axis the bill moves, and it moves it substantially."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis A (frontier developer stringency) at 0.0/5."
     E_f: "Enforcement runs through Commerce Department export-license denial and the existing civil/criminal penalty regime under export-control law (EAR/IEEPA-adjacent authority), not a private right of action."
     P: "A sector-specific, self-contained chip-export restriction rather than a permanent new institution; it could be a template other export-control bills copy, but it doesn't itself create an enduring structure."
     likelihood: "Introduced 2025-12-18 by Rep. Meeks (House Foreign Affairs ranking member) with 13 House Democratic cosponsors, directly responding to the Trump administration's approval of H200 chip sales to China. As of this writing the bill has NOT received a committee markup — a January 21, 2026 House Foreign Affairs markup reported by Roll Call and initially thought to involve this bill was in fact a distinct measure sponsored by Rep. Brian Mast (which passed 42-2); H.R. 6879 itself remains unmarked-up and sits in a Republican-controlled committee as an all-Democrat bill opposing an administration (of the sponsor's own opposing party) decision, which caps its near-term prospects. GovTrack does not publish a numeric prognosis for this bill. p_committee and p_enact are set low and base-rate-adjusted given single-party sponsorship, no committee action in nine months, and the administration's contrary policy stance — though the underlying chip-export-control debate remains live and could resurface via an NDAA rider or similar vehicle, as GAIN AI Act did."

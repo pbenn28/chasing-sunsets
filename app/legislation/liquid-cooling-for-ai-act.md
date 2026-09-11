@@ -20,14 +20,14 @@ scoring:
   axes:
     A: 0.0
     B: 0.0
-    C: 1.0
+    C: 0.0
     D: 0.0
     F: 0.0
   unsigned:
     E_consumer: 0.0
   impact_components:
     R: 1.00
-    D: 0.20
+    D: 0.00
     E_f: 0.40
     P: 0.20
   likelihood:
@@ -37,12 +37,12 @@ scoring:
   rationale:
     A: "Places no obligations on AI developers — its only substance is a GAO/DOE study of liquid cooling for AI compute clusters, an infrastructure topic rather than anything touching developer conduct."
     B: "No preemption or savings-clause language anywhere in the bill. States appear only as one of several stakeholder groups GAO is told to consult during its review."
-    C: "Directs GAO to complete a technology assessment and DOE to evaluate it and advise Congress, with a real reporting deadline — solid government fact-finding, though it doesn't create any new enforcement authority or staff up a regulator."
+    C: "Corrected 2026-09-09 under the frontier/systemic-risk-vs-near-term-harm guardrail: the GAO/DOE technology assessment studies liquid-cooling engineering for AI compute clusters and HPC facilities generally — a physical-infrastructure/cooling-technology study, not a mechanism that observes, constrains, or governs AI development or deployment. It has a real reporting deadline, which is why it superficially reads as '+1 studies/task forces' territory, but the actual AI-governance effect is 0: nothing here builds capacity to observe or evaluate AI systems themselves. Previously scored 1.0; corrected to 0.0."
     D: "No export-control, chip-access, or geopolitical-competition content beyond generic references to U.S. AI competitiveness."
     E_consumer: "No deepfake, NCII, discrimination, or election content — this is an infrastructure and cooling-technology bill, not a consumer-harm bill."
     F: "The bill's only actions are a GAO technology assessment and non-binding DOE guidance to Congress — nothing here caps, subsidizes, expedites, or otherwise binds data-center permitting, siting, or power/water allocation in either direction."
     R: "A federal bill directing federal agencies (GAO, DOE), so its jurisdictional reach is full."
-    Depth: "Driven mainly by the GAO/DOE study requirement — a real but modest reporting mandate that doesn't extend much further."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis A (frontier developer stringency) at 0.0/5."
     E_f: "GAO must produce an assessment and DOE must advise Congress, but nothing attaches a penalty, rulemaking authority, or right of action to that obligation."
     P: "A one-time technology assessment and advisory report — it doesn't stand up a lasting institution or set a template other bills would copy."
     likelihood: "Re-verified 2026-09-09: no Energy and Commerce or Science Committee markup found; secondary trackers show cosponsor counts in the same 10-11 range as the prior check, not materially changed. A Senate companion (S. 3269, Coons-McCormick, with Schiff and Budd cosponsoring) exists and adds a bipartisan bicameral pairing, which is a mild positive for eventual movement, but neither chamber's bill has had committee action roughly a year after introduction. Advisory, non-controversial bills like this tend to clear committee more easily than average, but the continued lack of markup activity keeps odds modest; holding prior estimate."

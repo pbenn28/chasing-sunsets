@@ -14,9 +14,9 @@ cosponsor_count: 3
 committees: ["Senate Commerce, Science, and Transportation"]
 scoring:
   axes:
-    A: 2.0
+    A: 0.5
     B: -1.0
-    C: 1.0
+    C: 0.5
     D: 0.0
     F: 0.0
   unsigned:
@@ -31,9 +31,9 @@ scoring:
     p_enact: 0.32
     basis: "base_rate_adjusted"
   rationale:
-    A: "Requires chatbot companies to build 'family account' infrastructure, verifiable parental consent for teens, parental monitoring of conversations, restrictions on manipulative or engagement-maximizing design features, and a ban on targeted ads to minors. Providers implement these features themselves — there's no outside licensed verifier or pre-deployment certification gate."
-    B: "Section 9(a) preempts state law only where it conflicts with the Act, and Section 9(b)(1) explicitly preserves states' ability to pass laws offering children greater protection — narrow, conflict-only preemption rather than a broad displacement of state authority."
-    C: "Section 10 requires an NSF-commissioned study on AI chatbots' effects on children and teens within a year, and Section 11 requires a GAO report on the Act's effectiveness within two years — real studies with concrete deadlines, though no standing incident-reporting system or new enforcement staffing is created."
+    A: "CORRECTED 2026-09-09 (known issue) per the frontier/systemic-risk-vs-near-term-consumer-harm guardrail. Requires chatbot companies to build 'family account' infrastructure, verifiable parental consent for teens, parental monitoring of conversations, restrictions on manipulative/engagement-maximizing design, and a ban on targeted ads to minors. This textually matches the '+2 mandated process' rung, but the mandate's subject is parental controls and design restrictions for child safety, not frontier-scale training, catastrophic/CBRN risk, loss-of-control, or systemic AI oversight — nothing here reaches frontier developers as such. Per the guardrail, a real enforced child-safety/consumer conduct mandate like this belongs near A's floor (rarely above +0.5-+1), with severity carried on axis E instead. Previously scored 2.0; corrected to 0.5."
+    B: "Section 9(a) preempts state law only where it conflicts with the Act, and Section 9(b)(1) explicitly preserves states' ability to pass laws offering children greater protection — narrow, conflict-only preemption rather than a broad displacement of state authority. This is an express textual conflict-preemption clause (not an implicit-preemption-floor inference tied to axis A), so the A correction above doesn't change this score: -1.0 (conflict preemption only) stands on its own textual merits."
+    C: "CORRECTED 2026-09-09 per the frontier/systemic-risk-vs-near-term-consumer-harm guardrail. Section 10's NSF-commissioned study and Section 11's GAO report both examine chatbots' effects on children/teens and this Act's own child-safety effectiveness — a narrow child-safety study pipeline, not a mechanism observing frontier-scale or systemic AI risk or building general government AI-oversight capacity. Per the guardrail, this belongs near C's floor (rarely above +0.5-+1) despite textually resembling the '+1' study rung. Previously scored 1.0; corrected to 0.5."
     D: "No export-control or geopolitical content."
     E_consumer: "A broad parental-control and design-restriction regime for minors' chatbot use, including a ban on targeted advertising to minors — a real cross-sector consumer-protection mandate built on consent and design requirements rather than a private right of action or a new criminal offense."
     F: "No data-center or energy content."

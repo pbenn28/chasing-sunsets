@@ -14,9 +14,9 @@ cosponsor_count: null
 committees: ["House Energy and Commerce", "House Judiciary", "Senate Commerce, Science, and Transportation"]
 scoring:
   axes:
-    A: 1.0
+    A: 0.5
     B: -1.0
-    C: 1.0
+    C: 0.5
     D: 0.0
     F: 0.0
   unsigned:
@@ -31,9 +31,9 @@ scoring:
     p_enact: 0.22
     basis: "base_rate_adjusted"
   rationale:
-    A: "Title IV requires AI chatbots to disclose they aren't human, bars them from claiming to be licensed professionals, mandates crisis-hotline referrals when a minor raises self-harm or suicide, and requires 'take a break' prompts after three hours of continuous use, backed by FTC and state-AG enforcement. A real, enforced conduct standard for chatbot deployers, though it doesn't touch frontier model training or release itself."
-    B: "Sec. 704 preempts state law only where it actually conflicts with the Act, while expressly preserving state tort, contract, and product-liability law and any state or local law that protects minors more than this Act does -- the same conflict-preemption-plus-savings-clause structure is written permanently into COPPA. States remain free to legislate more protectively; only direct conflicts are barred."
-    C: "Directs a four-year NIH study on chatbots' mental-health effects on minors, with a real reporting deadline -- an advisory/research function rather than a new standing regulator, since the FTC/state-AG enforcement in the bill polices the Act's own terms rather than building new observational capacity."
+    A: "CORRECTED 2026-09-09 per the frontier/systemic-risk-vs-near-term-consumer-harm guardrail. Title IV requires AI chatbots to disclose they aren't human, bars them from claiming to be licensed professionals, mandates crisis-hotline referrals when a minor raises self-harm or suicide, and requires 'take a break' prompts after three hours of continuous use, backed by FTC and state-AG enforcement. This is a real, enforced conduct standard, but its subject is child-safety disclosure/crisis-referral/design (screen-time break prompts), not frontier-scale training, catastrophic/CBRN risk, loss-of-control, or systemic AI oversight -- it doesn't touch frontier model training or release. Per the guardrail this belongs near A's floor (rarely above +0.5-+1); previously scored 1.0, corrected to 0.5 for consistency with comparable child-safety conduct mandates elsewhere in this cluster (e.g. chatbot-act.md, chat-act.md) now scored at the same level."
+    B: "Sec. 704 preempts state law only where it actually conflicts with the Act, while expressly preserving state tort, contract, and product-liability law and any state or local law that protects minors more than this Act does -- the same conflict-preemption-plus-savings-clause structure is written permanently into COPPA. States remain free to legislate more protectively; only direct conflicts are barred. This is an express textual conflict-preemption clause (not an implicit-preemption-floor inference tied to axis A), so the A correction above doesn't change this score: -1.0 stands on its own textual merits."
+    C: "CORRECTED 2026-09-09 per the frontier/systemic-risk-vs-near-term-consumer-harm guardrail. The four-year NIH study observes chatbots' mental-health effects on minors -- a narrow child-safety research pipeline, not a mechanism building government capacity to observe or evaluate frontier-scale or systemic AI risk. Per the guardrail this belongs near C's floor (rarely above +0.5-+1) despite textually resembling the '+1' study rung. Previously scored 1.0; corrected to 0.5."
     D: "No export-control, chip-access, or geopolitical-competition content."
     E_consumer: "Reaches a wide swath of consumer AI products -- social media, gaming, and chatbots alike -- with FTC and state-AG civil enforcement behind specific mandates like crisis-hotline referrals, non-human disclosure, and break prompts. Stronger than a bare labeling rule, though enforcement is civil rather than criminal and there's no broad right for individuals to sue."
     F: "No data-center, permitting, or energy/ratepayer content."

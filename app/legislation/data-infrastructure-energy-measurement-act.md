@@ -19,7 +19,7 @@ scoring:
   axes:
     A: 0.0
     B: 0.0
-    C: 1.0
+    C: 0.0
     D: 0.0
     F: 1.0
   unsigned:
@@ -36,7 +36,7 @@ scoring:
   rationale:
     A: "Contains no provisions regulating the training or deployment of an AI model. Its substance — directing NIST, with DOE, to develop best practices, definitions, and technical standards for measuring data-center energy and water use — is about a physical input (electricity, water, infrastructure), not developer conduct, and there's no disclosure mandate, procurement condition, or incident-reporting obligation placed on AI developers themselves."
     B: "The bill's only mention of states is a data-sharing collaboration clause directing NIST to promote exchange of metrics with academia and industry at the federal and state level — not an authority or preemption provision. It is a bounded measurement and best-practices program, not an ongoing regulatory scheme, so it doesn't raise preemption questions either way."
-    C: "Directs NIST, working with DOE, to run a research and measurement program — a technical precursor to future oversight, but it creates no new enforcement authority, incident database, or dedicated evaluation body."
+    C: "Corrected 2026-09-09 under the frontier/systemic-risk-vs-near-term-harm guardrail: the NIST/DOE research and measurement program develops methodology for measuring data-center energy and water use — the bill's own text is 'framed around data centers and energy measurement generally,' not AI development or deployment specifically, and it creates no enforcement authority, incident database, or dedicated evaluation body. This is a physical-input measurement-standards exercise, not a mechanism that observes, constrains, or governs AI — the actual AI-governance effect is 0. Previously scored 1.0; corrected to 0.0."
     D: "No export-control, chip-access, or geopolitical-competition content."
     E_consumer: "No deepfake, NCII, companion-bot, discrimination, or election-integrity content — the bill is entirely about data-center energy and water measurement methodology."
     F: "Directs NIST and DOE to develop best practices, definitions, and technical standards for measuring data-center (including AI training and inference) energy and water use, aimed at improving demand forecasting and siting decisions. It builds measurement infrastructure and a real technical deliverable, but doesn't yet impose a binding reporting mandate on any operator, and it neither restricts nor accelerates buildout directly."

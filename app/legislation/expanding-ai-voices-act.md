@@ -27,7 +27,7 @@ scoring:
     E_consumer: 0.0
   impact_components:
     R: 0.30
-    D: 0.20
+    D: 0.10
     E_f: 0.20
     P: 0.40
   likelihood:
@@ -42,7 +42,7 @@ scoring:
     E_consumer: "No deepfake, NCII, companion-bot, discrimination, or election-related provisions -- entirely a research-capacity grant-eligibility bill."
     F: "No data-center, permitting, siting, or energy content."
     R: "Reach is deliberately narrow by design -- eligibility is capped at institutions outside the top 100 in federal R&D expenditure, HBCUs, MSIs, Tribal Colleges, and nonprofits/consortia thereof, a small slice of the higher-education research universe rather than the broad frontier-developer or general-public classes other bills reach."
-    Depth: "The only nonzero signed axis is A at -0.5, giving a shallow Depth score; a grant-eligibility codification with no conduct standard doesn't push far from neutral on any axis."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis A (frontier developer stringency) at 0.5/5."
     E_f: "Purely a competitive-grant program with no penalty structure of any kind -- an institution either wins an award or doesn't; there's no obligation to enforce."
     P: "A sector-specific codification of one existing NSF program's eligibility criteria, self-contained within one grant program rather than a template other domains would copy, but it does create a durable (non-sunsetting) statutory basis for the program going forward."
     likelihood: "Introduced 2026-01-20 with bipartisan sponsorship (Foushee-D, Nunn-R) and 3 cosponsors (2D, 1R), referred to a single House committee with no markup as of 2026-09-09; GovTrack's own modeled prognosis for H.R. 7158 places it at roughly 17% to be enacted, which we treat as directionally too high for a bill that hasn't yet had a committee markup and adjust down using base rates for narrow, single-committee capacity-building bills at this stage -- retaining the bipartisan-sponsorship and named tech-industry-support (Google, IBM per press coverage) as reasons it clears committee more often than a purely partisan bill would, but still a long way from enactment absent a legislative vehicle."

@@ -28,7 +28,7 @@ scoring:
     E_consumer: 0.0
   impact_components:
     R: 0.90
-    D: 0.10
+    D: 0.00
     E_f: 0.20
     P: 0.40
   likelihood:
@@ -43,7 +43,7 @@ scoring:
     E_consumer: "No deepfake, NCII, companion-bot, discrimination, or election-integrity content — this is a small-business AI-literacy education bill."
     F: "No data-center, permitting, interconnection, siting, or ratepayer content."
     R: "A federal program aimed at the entire small-business population via SBA resource partners (SBDCs, Women's Business Centers, SCORE, etc.), with no revenue floor or sector carve-out narrowing eligibility — though, like other voluntary-resource bills in this tracker, actual reach depends on uptake of resources SBA is not mandated to make anyone use."
-    Depth: "All signed axes and E_consumer sit at or near 0 — the only real Depth driver is the modest A-adjacent disclosure duty on SBA itself, giving Depth = 0.5/5 = 0.10 by the same convention used for comparable pure-education bills in this tracker."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis A (frontier developer stringency) at 0.0/5."
     E_f: "SBA faces a binding 180-day statutory deadline, but the bill attaches no penalty, audit, civil-penalty structure, or right of action to anyone's conduct, and use of the resulting materials by small businesses is entirely voluntary."
     P: "A sector-specific, self-contained SBA education program modeled on existing SBA resource-partner infrastructure — not a first-in-nation framework, permanent new institution, or template likely to be copied into other domains."
     likelihood: "House passage confirmed: passed the full House by voice vote under suspension of the rules on 2026-01-20 (confirmed via Rep. Downing's press release and corroborating House-passage coverage), then received in the Senate and referred to the Senate Small Business and Entrepreneurship Committee on 2026-01-26. Direct fetches of congress.gov and govtrack.us bill pages returned 403s and were corroborated via WebSearch/press releases/LegiScan instead. Having already cleared the House with bipartisan sponsorship (5 House cosponsors/sponsors spanning both parties) and zero recorded opposition (voice vote, no roll call), p_committee in the Senate is set high given the bill's low-controversy, no-appropriations profile typical of bills that clear a Senate committee via unanimous consent or voice vote; p_enact remains modest because most House-passed messaging-type bills referred to a Senate committee still stall absent a floor-time push, and no Senate committee action has been reported as of this scoring date."

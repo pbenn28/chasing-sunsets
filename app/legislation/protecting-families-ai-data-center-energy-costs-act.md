@@ -19,14 +19,14 @@ scoring:
   axes:
     A: 0.0
     B: 0.0
-    C: 1.0
+    C: 0.0
     D: 0.0
     F: 0.0
   unsigned:
     E_consumer: 0.0
   impact_components:
     R: 1.00
-    D: 0.20
+    D: 0.00
     E_f: 0.40
     P: 0.20
   likelihood:
@@ -36,12 +36,12 @@ scoring:
   rationale:
     A: "The bill's entire operative content — a FERC technical conference and report on electricity rate structures for large loads — regulates power allocation and ratepayer cost treatment, not the training or deployment of AI models, so it places no obligation on AI developers."
     B: "The conference's recommendations are limited to matters under FERC's own jurisdiction. State regulators are named participants and also receive the resulting report, but nothing in the text expands, narrows, or displaces state authority."
-    C: "Requires FERC to convene a conference with DOE, utilities, states, and ratepayer advocates, then report recommendations to Congress within 180 days — a real reporting deadline, but the bill doesn't grant FERC new enforcement power, only a convening and reporting duty."
+    C: "Corrected 2026-09-09 under the frontier/systemic-risk-vs-near-term-harm guardrail: the FERC conference and report concern electricity rate structures and ratepayer cost allocation for large loads — a physical-input/ratepayer-protection mechanism, not one that observes, constrains, or governs AI development or deployment. It has a real reporting deadline, which is why it superficially reads as '+1 studies/task forces' territory, but the actual AI-governance effect is 0. Previously scored 1.0; corrected to 0.0."
     D: "No export-control or geopolitical-competition content."
     E_consumer: "Addresses ratepayer and energy-cost harm rather than the deepfake, discrimination, or election-integrity harms this measure otherwise tracks — even though the bill is consumer-protective in the everyday sense."
     F: "Targets a real chokepoint — electricity and ratepayer costs tied to AI data centers — but its only mechanism is a mandatory FERC conference and a report to Congress. It doesn't itself impose a cost allocation, tariff, cap, or siting restriction, and it contains no subsidy or permitting shortcut either, so it's best read as a study rather than a binding constraint or an accelerant."
     R: "A federal bill directing FERC, so its reach is national by default."
-    Depth: "A study-and-conference bill at its core — FERC's convening and reporting mandate is the main substantive element, and nothing else in the bill adds meaningfully more weight."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis A (frontier developer stringency) at 0.0/5."
     E_f: "FERC must convene the conference and report back, but the bill attaches no penalty, rulemaking mandate, or private right of action to that obligation."
     P: "The bill's only operative content is a single technical conference plus a one-time report to two congressional committees — not a permanent institution, though it could plausibly seed future FERC rulemaking."
     likelihood: "Re-checked 2026-09-09: no House floor vote, Rules Committee scheduling, or further committee action found in the five weeks since the 7/20 full-committee markup (44-0). No new cosponsors identified. The unanimous, bipartisan committee vote still makes this a strong bet to have cleared committee (p_committee unchanged at 0.80, since the vote is a completed fact, not a probability going forward), but the absence of any floor-scheduling signal so far this fall — in a crowded floor calendar and with Senate companion action still needed — keeps p_enact at prior levels rather than raising it."

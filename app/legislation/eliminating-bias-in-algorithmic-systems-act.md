@@ -22,14 +22,14 @@ scoring:
   axes:
     A: 0.0
     B: 0.0
-    C: 2.0
+    C: 1.0
     D: 0.0
     F: 0.0
   unsigned:
     E_consumer: 0.0
   impact_components:
     R: 0.85
-    D: 0.40
+    D: 0.20
     E_f: 0.20
     P: 0.60
   likelihood:
@@ -39,12 +39,12 @@ scoring:
   rationale:
     A: "Every obligation in the bill runs to federal agencies (establishing civil-rights offices, reporting) — no source found any provision binding private AI developers directly, so this axis isn't engaged even though the bill's subject is algorithmic bias."
     B: "No preemption or savings-clause language of any kind was found — the bill is entirely agency-facing and doesn't touch state authority to regulate private AI developers. The implicit-preemption floor doesn't apply: A is 0, well short of the +2 threshold that would trigger it."
-    C: "Requires every federal agency that uses, funds, or oversees 'covered algorithms' to establish a dedicated Office of Civil Rights staffed with technologists and civil-rights experts, plus a DOJ-led interagency working group within one year of enactment and recurring reports to Congress every two years — this is real enforcement/oversight staffing at existing regulators plus a standing reporting flow, landing at '+2' rather than the '+3' rung reserved for a mandatory-reporting pipeline into a database, since the mechanism here is new offices and periodic reports rather than a continuous incident-reporting system."
+    C: "Corrected under the frontier/systemic-risk-vs-near-term-consumer-harm guardrail, which the rubric explicitly extends to axis C: the governance capacity this bill builds — agency-internal Offices of Civil Rights, a DOJ interagency working group, biennial reports to Congress — is entirely scoped to bias/discrimination in agencies' own use of 'covered algorithms,' the rubric's own canonical example of a narrow harm domain that belongs on E, not to systemic AI oversight capacity or frontier-risk evaluation. That the mandate applies government-wide across every federal agency doesn't rescue it — breadth-across-agencies is not the same as building capacity to observe/evaluate/enforce AI risk generally, and there is no channel here touching frontier developers or deployment-scale risk at all. Previously scored 2.0 by matching the offices-plus-reporting mechanism to C's literal rung-2/3 wording; corrected down near C's floor to 1.0 to reflect real but narrowly-scoped institutional capacity."
     D: "No export-control or geopolitical content."
     E_consumer: "All obligations run to federal agencies overseeing their own algorithm use, not to distributors, deployers, or developers dealing with consumers, so this bill has no near-term consumer-harm content of the kind this axis measures."
     F: "No data-center, compute, siting, or energy content."
     R: "Federal in scope and applies government-wide to every agency using, funding, or overseeing covered algorithms, with no revenue threshold or sector carve-out narrowing coverage — reaches nearly the entire intended target class."
-    Depth: "Driven by the governance-capacity axis (C) alone — new agency civil-rights offices plus an interagency working group are a real institutional build, but the bill has no effect on any other axis, so its overall depth is moderate rather than sweeping."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis C (governance capacity) at 1.0/5."
     E_f: "Reporting to Congress with a deadline, but no civil penalty, private right of action, or agency-enforcement mechanism against anyone who fails to comply."
     P: "Establishes a template (agency-embedded civil-rights offices for algorithmic oversight) that is a reintroduction of a 118th Congress bill (S. 3478) and could be copied across agencies or years, but it is not yet a permanent institution with enforcement teeth or a preemption ceiling of its own."
     likelihood: "Introduced 2026-01-15 with 16 House cosponsors (all Democratic) and 6 Senate cosponsors (all Democratic) — a purely single-party sponsorship pattern with no bipartisan pairing found. No hearing, markup, or floor action identified for either chamber as of September 2026. This is a reintroduction of a substantively similar 118th Congress bill (S. 3478) that also died in committee, which anchors the base rate lower rather than higher. No GovTrack prognosis figure could be retrieved (403 on direct fetch); p_enact held near the low end typical for single-party message bills reintroduced without new momentum."

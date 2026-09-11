@@ -17,9 +17,9 @@ committees:
 - House Energy and Commerce
 scoring:
   axes:
-    A: 1.5
+    A: 0.5
     B: 0.0
-    C: 2.0
+    C: 0.5
     D: 0.0
     F: 0.0
   unsigned:
@@ -34,9 +34,9 @@ scoring:
     p_enact: 0.02
     basis: "base_rate_adjusted"
   rationale:
-    A: "Adds generative-AI and voice-cloning systems to the FCC's existing robocall rules under 47 U.S.C. 227(d)(3), so they must meet the same caller-ID disclosure and 5-second line-release requirements as other automated calls. A real but narrow technical mandate, with nothing touching compute or energy."
+    A: "Corrected 9/9/26 under the frontier/systemic-risk-vs-near-term-consumer-harm guardrail: this mandate binds the party placing an AI-generated robocall — caller-ID disclosure and a 5-second line-release requirement under 47 U.S.C. 227(d)(3) — not any developer of frontier or advanced AI systems, and it has no connection to training, deployment-scale risk, or systemic AI oversight. It's a domain-general robocall/telemarketing compliance duty that happens to name generative-AI voice systems as one covered category. Previously scored 1.5 (treating it as a 'mandated process with enforcement'); corrected down to a token +0.5 disclosure-only floor, with the real severity captured on E_consumer instead."
     B: "Contains no preemption or state-law language of any kind; it's a straightforward federal amendment to telecom rules."
-    C: "Extends the FCC's authority to a class of systems (generative-AI voice calls) it didn't previously regulate."
+    C: "Corrected 9/9/26 under the frontier/systemic-risk-vs-near-term-consumer-harm guardrail: the FCC gaining enforcement authority over a new category of robocalls is not a standing AI-oversight information flow — it's the existing robocall-enforcement apparatus absorbing one more covered call type, with no observation of model training or deployment risk. Previously scored 2.0 by literally matching 'new authority for an existing regulator'; corrected down near the floor, since the mechanism's object is robocall abuse, not AI governance."
     D: "No export-control, chip-access, or geopolitical content."
     E_consumer: "Addresses AI-generated robocalls with a concrete compliance requirement beyond a simple label, though it stops short of criminal penalties or letting individuals sue."
     F: "No data-center, permitting, or energy content."

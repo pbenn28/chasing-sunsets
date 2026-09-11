@@ -31,7 +31,7 @@ scoring:
     E_consumer: 0.0
   impact_components:
     R: 0.70
-    D: 0.10
+    D: 0.00
     E_f: 0.20
     P: 0.40
   likelihood:
@@ -46,7 +46,7 @@ scoring:
     F: "No data-center, permitting, interconnection, siting, or ratepayer content."
     E_consumer: "No deepfake, NCII, companion-bot, discrimination, or election-integrity content — the bill is entirely about SBDC counseling services for small-business AI adoption."
     R: "SBDCs operate nationwide (roughly 1,000 service-delivery points across all states), so the new counseling mandate reaches the full existing SBDC client base once implemented — but actual reach depends on SBDC staffing/training capacity and outreach effort, and the introduced text authorizes zero additional funding (explicit CUTGO-compliance clause: 'No additional amounts are authorized to carry out this Act'), which caps how quickly and broadly that capacity actually expands. R lands at 0.70 to reflect nationwide nominal coverage tempered by the unfunded mandate."
-    Depth: "Shallow — every signed axis sits at zero; this is a counseling-mandate bill with no conduct standard, preemption effect, governance-capacity build, or compute/energy lever."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis A (frontier developer stringency) at 0.0/5."
     E_f: "SBDCs are under a 'shall' obligation to provide the new AI counseling services, but there is no penalty, rulemaking authority, or private right of action attached — it is an internal program mandate on a federally funded network, not an enforceable obligation on any outside party."
     P: "Sector-specific and self-contained — folds a new counseling topic into the existing, permanent SBDC program structure rather than creating a new institution; a durable but modest addition to a program other jurisdictions don't independently replicate."
     likelihood: "Introduced 2025-10-17, passed House Small Business Committee, then passed the full House 395-14 under suspension of the rules on 2026-01-20 (confirmed via the sponsor's own press release and Fox News coverage of the roll call) — an overwhelming, near-unanimous bipartisan vote typical of a low-controversy small-business-assistance bill. Received in the Senate and referred to the Senate Small Business and Entrepreneurship Committee on 2026-01-26, where a companion bill (S. 3586, Young-Cantwell) already sat since January 7, 2026; as of this pass (early September 2026) no Senate committee hearing, markup, or floor action has been reported for either the House-passed bill or its Senate companion — roughly 7.5 months of no recorded Senate movement. p_committee is set well above a typical introduced-stage bill given the decisive House vote and existence of an identical bipartisan Senate companion, but not treated as resolved because Senate committee action has not yet occurred. p_enact reflects that non-controversial House-passed small-business bills with a matching bipartisan Senate companion clear the Senate at a meaningfully higher rate than an average bill, but still requires actual floor time this Congress. GovTrack's own prognosis page was not reachable (403) during this pass; estimate is base-rate-adjusted and cross-checked against the confirmed House vote margin rather than directly GovTrack-anchored."

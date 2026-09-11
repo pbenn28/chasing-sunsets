@@ -26,7 +26,7 @@ scoring:
     E_consumer: 0.0
   impact_components:
     R: 0.70
-    D: 0.20
+    D: 0.10
     E_f: 0.80
     P: 0.80
   likelihood:
@@ -41,7 +41,7 @@ scoring:
     F: "The tax attaches to AI data centers, computing infrastructure, and AI services by revenue/compute threshold, but it is a tax on equity and revenue, not a constraint or accelerant acting on a physical input (compute hardware, power, siting, water) the way axis F is scored — a 50% one-time equity levy changes who owns the capacity, not how much can be built or how easily, so this scores 0 on F rather than being mis-scored as a buildout constraint."
     E_consumer: "No deepfake, NCII, companion-bot, discrimination, or election content; the dividend to individuals is a fiscal transfer, not a consumer-harm stringency mechanism."
     R: "Applies to any corporation or partnership in an 'applicable AI trade or business' (AI data centers, AI computing infrastructure, AI services trained above 10^25 operations, advanced robotics) with gross receipts over $200M — a threshold clearly aimed at capturing the frontier/hyperscale tier of the industry, so R is high but not full: many mid-sized AI firms and the entire open-source/non-commercial ecosystem fall outside the $200M and compute thresholds entirely, docking it below the FAIR Act's near-total-reach analog."
-    Depth: "max(|A|=0.5, |B|=0, |C|=0, |F|=0, E=0)/5 = 0.10 on the strict Depth formula — but this understates what this bill actually does, since its overwhelming real-world magnitude (a one-time transfer of 50% equity in the largest AI companies, ~$7T by sponsor estimate) doesn't load onto any of the five governance/harm axes the rubric measures. Recorded per the formula at 0.10 to stay faithful to the stated methodology; flagging explicitly that Depth as defined is not capturing this bill's actual scale, which is instead a taxation/wealth-distribution event, not an AI-governance event, no matter how large."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis A (frontier developer stringency) at 0.5/5."
     E_f: "Backed by real enforcement: FTC-enforced structural separation within 90 days, a $1M flat penalty for failure to file, and an escalated 60%-equity default for underpayment — among the stronger enforcement postures in the tracker, at the 0.8 agency-rulemaking-plus-penalties band."
     P: "Would create a permanent institution (the Independent Commission for Democratic AI) with standing shareholder-governance authority over the designated companies in perpetuity — the clearest possible case of the 1.0 'creates a permanent institution' rung."
     likelihood: "GovTrack's own modeled prognosis for S. 4825 gives it a 1% chance of passing committee and 0% chance of enactment — explicitly anchoring to that figure here rather than a softer base rate, since GovTrack's own bill-specific model is available and this is exactly the case the rubric asks to anchor to it. Zero cosponsors, referred only to Finance, introduced by an independent senator with no history of bills of this scope advancing, in an election year where the bill functions more as a messaging vehicle than a legislative vehicle."

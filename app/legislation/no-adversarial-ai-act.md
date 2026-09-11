@@ -22,14 +22,14 @@ scoring:
   axes:
     A: 0.5
     B: 0.0
-    C: 2.0
+    C: 1.0
     D: 2.0
     F: 0.0
   unsigned:
     E_consumer: 0.0
   impact_components:
     R: 0.95
-    D: 0.40
+    D: 0.20
     E_f: 0.60
     P: 0.60
   likelihood:
@@ -39,12 +39,12 @@ scoring:
   rationale:
     A: "Bars executive agencies from procuring foreign-adversary AI — a condition on federal purchasing, not a broader obligation on how developers build or deploy AI."
     B: "No preemption, savings-clause, or state-directed language anywhere in the text. It directs the Federal Acquisition Security Council (FASC) to build and maintain a foreign-adversary-AI exclusion list under existing procurement authority, entirely silent on state regulatory authority."
-    C: "FASC must build the exclusion list within 60 days and OMB publish it within 180 days, updated at least every six months, with a process for listed entities to petition for removal — real new standing process for an existing body, short of a full incident-reporting regime."
+    C: "Corrected under the frontier/systemic-risk guardrail: FASC must build the exclusion list within 60 days and OMB publish it within 180 days, updated at least every six months, with a petition process for delisting — a real, deadline-bound administrative process, but its object is a procurement exclusion list (which vendors the government may buy from), not oversight capacity over frontier-scale training, catastrophic risk, or systemic AI governance. Previously scored 2.0 under the '+2 new authority for existing regulator' rung, but that rung is meant for authority over AI governance substance, not a narrow buyer-side blacklist mechanism that happens to be triggered by 'foreign adversary AI.' Lands at the 'studies/standing process with real deadlines' floor rung (+1) instead."
     D: "Restricts government use of adversary-nation AI on national-security grounds — a binding access restriction rather than just a study, though not an export or chip control."
     E_consumer: "No consumer-facing harm content — this is purely a government-procurement, national-security measure."
     F: "No data-center, permitting, or energy content."
     R: "Covers the entire executive-agency procurement universe for foreign-adversary AI by design."
-    Depth: "Driven mainly by the new FASC listing process and the access restriction on adversary AI — the bill doesn't reach much further than that."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis C (governance capacity) at 1.0/5."
     E_f: "FASC and OMB administer and enforce the procurement bar directly, backed by a petition/delisting process — meaningful agency enforcement, though without civil penalties or a private right of action."
     P: "Extends the existing FASC framework (created under the 2018 FASCSA) to cover adversary AI specifically, building on an established process rather than standing up something entirely new."
     likelihood: "The Senate bill has just one cosponsor, but its House companion carries the backing of the China Select Committee's chairman and ranking member with bipartisan cosponsors — a stronger signal of momentum than the raw cosponsor count suggests, and the kind of national-security procurement measure that sometimes gets folded into a must-pass vehicle like the NDAA. Re-checked as of 2026-09-09: no committee markup on either the Senate or House bill, and no confirmation this text (or equivalent adversarial-AI-procurement language) was folded into the FY2026 NDAA conference report, which finalized around this period with its own separate AI security provisions. Likelihood estimate holds unchanged pending clearer evidence either way."

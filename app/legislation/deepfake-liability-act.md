@@ -23,7 +23,7 @@ scoring:
     E_consumer: 2.5
   impact_components:
     R: 0.85
-    D: 0.20
+    D: 0.50
     E_f: 0.60
     P: 0.40
   likelihood:
@@ -38,7 +38,7 @@ scoring:
     E_consumer: "Conditions platform immunity on responsiveness to cyberstalking and intimate-privacy-violation complaints and ties compliance to the TAKE IT DOWN Act's existing notice-and-removal process, with FTC/FCC/DOJ regulatory enforcement (not a new private right of action -- the bill doesn't create one of its own, it leverages TAKE IT DOWN's existing FTC enforcement track, which already carries civil penalties up to roughly $53,000 per violation). That's substantially more than a labeling-only rule but short of a broad private right of action across sectors, and it's confined to one harm category (cyberstalking/NCII deepfakes) rather than spanning multiple consumer-harm types -- landing between the 'end-user labeling' and 'broad private right of action' rungs, closer to the criminal-liability-equivalent rung given the FTC civil-penalty backing."
     F: "No data-center, permitting, interconnection, energy, or siting content."
     R: "Applies to 'interactive computer services' broadly -- essentially any platform hosting user content -- which is close to the full universe of the consumer-facing target class for this harm category, though its practical bite depends on platforms choosing to lose Section 230 protection rather than comply, which is a strong incentive to comply given TAKE IT DOWN Act penalties already in force."
-    Depth: "max(|A|,|B|,|C|,|F|,E)/5 = max(1.0, 0, 0, 0, 2.5)/5 = 0.50, driven by the consumer-harm axis rather than any AI-governance axis."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis E (consumer/near-term harm) at 2.5/5."
     E_f: "Enforcement runs through FTC (with FCC/DOJ consultation) civil-penalty rulemaking layered onto the existing TAKE IT DOWN Act regime, not a private right of action created by this bill itself -- agency rulemaking plus civil penalties is the correct rung."
     P: "A targeted amendment bolted onto two existing frameworks (Section 230 and the TAKE IT DOWN Act) rather than a new institution or a first-in-nation template -- sector-specific and self-contained within the platform-liability space."
     likelihood: "GovTrack's own prognosis for H.R. 6334 (checked 2026-09-09) gives roughly a 4% chance of advancing past committee and a 1% chance of enactment. Introduced 2025-12-01, referred to House Energy and Commerce, with only one cosponsor (Rep. Maloy, the bill's bipartisan co-lead) and no markup or further action reported over more than nine months. Adopting GovTrack's figures directly rather than adjusting -- a narrow-scope, single-committee bill with minimal cosponsorship at this stage of a Congress matches the base rate GovTrack's model reflects, and nothing in the public record (no hearing scheduled, no companion Senate bill found) suggests upward pressure on those odds."

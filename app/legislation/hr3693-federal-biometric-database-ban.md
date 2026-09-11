@@ -19,7 +19,7 @@ scoring:
   axes:
     A: 0.0
     B: 0.0
-    C: -3.0
+    C: -1.0
     D: 0.0
     F: 0.0
   unsigned:
@@ -36,7 +36,7 @@ scoring:
   rationale:
     A: "Restricts what the federal government itself may do with biometric data, not AI developers, so it doesn't touch this dimension at all."
     B: "Contains no preemption, savings-clause, or state-related language of any kind."
-    C: "Bars a federal agency from establishing or maintaining biometric identity-verification databases -- the bill's entire operative content is this one prohibition."
+    C: "Per the frontier/systemic-risk-vs-near-term-harm guardrail, an outright ban on federal biometric-identity-verification databases is real government-use AI governance, but it's narrow-domain (biometric surveillance of a specific population) rather than systemic AI oversight capacity in the frontier sense — so despite literally matching the '-3, affirmatively bars an agency from collecting information or acting in the domain' rung's wording, it's capped near the floor. Corrected from -3.0 to -1.0; the bill's real severity is carried on E_consumer instead."
     D: "No export-control or geopolitical content."
     E_consumer: "A flat ban on federal databases of fingerprints, iris scans, and facial features is a meaningful privacy protection, though it doesn't come with criminal penalties or a right to sue."
     F: "No buildout or energy content."

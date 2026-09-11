@@ -19,14 +19,14 @@ scoring:
   axes:
     A: 0.0
     B: 0.0
-    C: 3.0
+    C: 0.0
     D: 0.0
     F: 1.0
   unsigned:
     E_consumer: 0.0
   impact_components:
     R: 1.0
-    D: 0.6
+    D: 0.20
     E_f: 0.8
     P: 0.6
   likelihood:
@@ -36,12 +36,12 @@ scoring:
   rationale:
     A: "Binds data-center operators to an energy and water reporting obligation, not developers of AI systems, and imposes no standard on training or deploying a model — a purely input-side disclosure requirement."
     B: "The bill affirmatively preserves state regulatory and enforcement authority over this reporting regime and routes data through states first, with no preemption language anywhere in the text."
-    C: "Sets up a standing, mandatory information flow: data-center energy and water reporting funnels through the states into EPA, DOE, and USDA for regional analyses."
+    C: "Corrected 2026-09-09 under the frontier/systemic-risk-vs-near-term-harm guardrail: the reporting pipeline funnels data-center energy and water usage (not AI model behavior, training, or deployment data) through states to EPA, DOE, and USDA. It textually matches axis C's '+3 standing information flow' rung, but the mechanism doesn't observe, constrain, or govern AI development or deployment at all — it's a physical-input reporting regime that would exist in identical form for any large power/water consumer, AI-related or not. No genuine AI-specific governance channel is present, so the actual AI-governance effect is 0, not +3. Previously scored 3.0; corrected to 0.0."
     D: "No export-control, chip-access, or geopolitical content."
     E_consumer: "No consumer-harm, deepfake, NCII, or algorithmic-discrimination content."
     F: "Requires data-center operators, including prospective facilities, to disclose and report energy and water use, including five-year usage projections — a disclosure and reporting regime with no siting restriction, capacity cap, moratorium, subsidy, or expedited permitting attached either way."
     R: "A federal bill covering all data-center operators nationwide, including prospective facilities that must report projected five-year usage."
-    Depth: "Driven mainly by the mandatory reporting pipeline into federal agencies — a real but bounded governance mechanism rather than a sweeping regulatory regime."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis F (capability buildout constraint) at 1.0/5."
     E_f: "Backed by real penalties: a joint EPA/DOE/USDA fine of $20,000 per day for negligent violations of the federal reporting requirement, plus state fines and enforcement under state-run programs."
     P: "A sector-specific reporting-and-aggregation pipeline (operator to state to EPA/DOE/USDA) rather than a permanent institution or a template likely to be copied elsewhere."
     likelihood: "Re-verified 2026-09-09: still no documented cosponsors and no bipartisan pairing; no Senate Energy and Natural Resources Committee hearing or markup found on this bill specifically. No signs of momentum since introduction — holding prior estimate."

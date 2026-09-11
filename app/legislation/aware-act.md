@@ -18,7 +18,7 @@ committees:
 - House Energy and Commerce
 scoring:
   axes:
-    A: 1.0
+    A: 0.0
     B: 0.0
     C: 0.0
     D: 0.0
@@ -27,7 +27,7 @@ scoring:
     E_consumer: 0.5
   impact_components:
     R: 1.0
-    D: 0.20
+    D: 0.10
     E_f: 0.40
     P: 0.40
   likelihood:
@@ -35,14 +35,14 @@ scoring:
     p_enact: 0.22
     basis: "base_rate_adjusted"
   rationale:
-    A: "Directs the FTC to develop and publish educational resources for parents, educators, and minors within 180 days, modeled on the FTC's existing Youville program. No standard, audit, or reporting duty falls on chatbot developers themselves — this is public-facing disclosure content, not an industry obligation."
+    A: "CORRECTED 2026-09-09 per the frontier/systemic-risk-vs-near-term-consumer-harm guardrail: this directs the FTC to develop and publish educational resources for parents, educators, and minors on children's chatbot use within 180 days — a child-safety education deliverable, not a frontier-developer conduct standard. Even setting the guardrail aside, no obligation of any kind runs against chatbot developers (frontier or otherwise) — the duty runs entirely to the FTC to produce a pamphlet, not to any AI company to change conduct — so this doesn't reach even the guardrail's already-low 0-0.5 ceiling for narrow child-safety mandates. Previously scored 1.0 ('disclosure only'); corrected to 0.0 (studies/task-forces/definitions rung), since there's no developer-facing disclosure duty at all, only a government-produced consumer-education product."
     B: "The entire bill is an FTC educational-resource mandate with definitions attached — no preemption or savings-clause language appears anywhere."
     C: "Tasks the FTC with producing public educational materials, not with new enforcement staffing, an incident-reporting channel, or an evaluation body — a one-time deliverable rather than an ongoing oversight function."
     D: "No export-control, chip, or geopolitical content."
     E_consumer: "Doesn't impose any labeling or safety requirement on chatbot providers — it only obligates the FTC to publish educational content about minors' chatbot use, so it's harm-adjacent without binding industry directly."
     F: "No data-center, permitting, or energy content."
     R: "A federal bill; the FTC's resource-production duty isn't scoped by revenue or size thresholds."
-    Depth: "Driven mainly by the FTC's disclosure obligation (A) — a real but narrow requirement that doesn't extend into industry practice."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis E (consumer/near-term harm) at 0.5/5."
     E_f: "The FTC faces a binding 180-day statutory deadline to produce the resources, but there's no penalty aimed at any regulated party and no rulemaking or civil-penalty structure."
     P: "A one-time, sector-specific FTC educational-resource mandate — it doesn't create a lasting institution or a framework likely to be copied elsewhere."
     likelihood: "Superseded by events: AWARE Act's substance, folded into the KIDS Act (H.R. 7757) at the 2026-03-05 full-committee markup, passed the full House 267-117 on 2026-06-29 as part of that package — so p_committee is now 1.0 for the substance of this bill (H.R. 5360 itself was never separately marked up, but its content cleared both House committee and House floor inside H.R. 7757). However, H.R. 7757 has stalled in Senate Commerce: Senate KOSA sponsors have publicly called the House package's omission of a 'duty of care' standard a dealbreaker, and Senate Commerce instead advanced its own KOSA text in early August 2026 rather than taking up H.R. 7757 as passed. No GovTrack prognosis specific to the AWARE Act's narrow FTC-education provision is available since it no longer moves as a standalone bill; p_enact is set using a base rate for House-passed provisions embedded in a package stuck in a genuine bicameral policy dispute — real but well short of a lock, since any Senate vehicle that eventually passes would likely need to reconcile or could drop this provision in conference."

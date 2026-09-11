@@ -18,8 +18,8 @@ committees:
 - Senate Commerce, Science, and Transportation
 scoring:
   axes:
-    A: 2.0
-    B: -1.0
+    A: 0.5
+    B: 0.0
     C: 0.0
     D: 0.0
     F: 0.0
@@ -35,8 +35,8 @@ scoring:
     p_enact: 0.04
     basis: "base_rate_adjusted"
   rationale:
-    A: "Requires companies running companion AI chatbots to set up mandatory user accounts, tiered age verification (including a freeze-and-reverify step for existing accounts), verifiable parental consent for minors, active monitoring for suicidal ideation, and blocking of sexually explicit content to minors — backed by FTC enforcement and compliance guidance. Age and identity verification is left to the company's own 'commercially available' methods with a good-faith safe harbor, rather than an outside licensed verifier."
-    B: "The bill doesn't include a savings clause protecting state law; its only preemption-adjacent language preserves FTC and state-AG enforcement of this federal standard, not states' separate authority to regulate companion chatbots on their own terms. With a real federal regulatory scheme in place and no savings clause, existing state chatbot laws could be displaced to the extent they conflict."
+    A: "CORRECTED 2026-09-09 per the frontier/systemic-risk-vs-near-term-consumer-harm guardrail. Requires companies running companion AI chatbots to set up mandatory user accounts, tiered age verification, verifiable parental consent for minors, active monitoring for suicidal ideation, and blocking of sexually explicit content to minors — backed by FTC enforcement. This textually matches the '+2 mandated process' rung, but its subject is child/companion-bot safety (age verification, parental consent, content blocking for minors), not frontier-scale training, catastrophic/CBRN risk, loss-of-control, or systemic AI oversight. Per the guardrail, a real enforced child-safety mandate like this belongs near A's floor (rarely above +0.5-+1), with the actual severity carried on axis E. Previously scored 2.0; corrected to 0.5."
+    B: "CORRECTED 2026-09-09: previously scored -1.0 on implicit-preemption-floor-style reasoning (a 'real federal regulatory scheme' with no savings clause), but that reasoning depended on treating the Sec. A conduct mandate as a federal AI-governance scheme triggering the floor (which requires A >= +2). Now that A is corrected to 0.5 (this is a child/companion-chatbot-safety regime, not a frontier/systemic AI regulatory scheme), the implicit-preemption floor's trigger condition doesn't hold, and even setting that aside, the bill's only preemption-adjacent language preserves FTC/state-AG enforcement of this federal standard rather than expressly preempting or expressly preserving states' separate chatbot-regulation authority -- the text is actually silent on preemption. Corrected from -1.0 to 0.0."
     C: "Suicidal-ideation notifications go to parents, not into any government database, and the bill doesn't create new enforcement staffing or an evaluation body — it doesn't add to the government's own oversight capacity."
     D: "No export-control or geopolitical content."
     E_consumer: "A child-safety bill targeting a specific, serious harm — sexually explicit chatbot content reaching minors — enforced through FTC and state-AG action, functioning like a hard access-restriction regime alongside comparable bills such as the GUARD Act, though it doesn't create a new criminal offense outright."

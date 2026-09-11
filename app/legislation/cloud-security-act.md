@@ -27,7 +27,7 @@ scoring:
     E_consumer: 0.0
   impact_components:
     R: 0.6
-    D: 0.0
+    D: 0.10
     E_f: 0.2
     P: 0.60
   likelihood:
@@ -42,7 +42,7 @@ scoring:
     E_consumer: "No deepfake, NCII, companion-bot, algorithmic-discrimination, or election-integrity content — a cloud/export-control bill with no consumer-facing provisions."
     F: "No data-center siting, permitting, interconnection, or ratepayer provisions — this concerns who may access compute remotely and what providers may disclose, not domestic buildout of compute capacity."
     R: "Covers major U.S. cloud infrastructure providers as the practical target class (hyperscalers, since only large-scale cloud compute is realistically relevant to advanced-AI-chip rental by state adversaries) — likely captures the great majority of chip-rental exposure via AWS/Azure/Google Cloud/similar, but discounted from 1.0 because the bill doesn't establish a comprehensive rental-access control regime the way the (separately enacted, House-passed) Remote Access Security Act does — this bill is narrower, addressing only the cloud provider's legal ability to report, not a ban or licensing regime on the rental itself."
-    Depth: "Depth = max(|A|,|B|,|C|,|F|,E)/5 excludes axis D by design. With A=0, B=0, C=0.5, F=0, E=0, the binding component is C=0.5, giving Depth = 0.5/5 = 0.10 — reflecting that this bill's real substance sits in axis D (excluded from Depth) and its domestic governance footprint is minimal."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis C (governance capacity) at 0.5/5."
     E_f: "No civil penalty, no mandatory disclosure duty, and no private right of action — this is a voluntary permission structure (a safe harbor), squarely at the 'voluntary' rung rather than 'obligation with no stated penalty,' since providers face no obligation to report at all, only permission to do so without SCA liability."
     P: "Narrowly sector-specific (cloud-provider disclosure permissions layered onto chip export enforcement) and self-contained — it doesn't create a new institution or a preemption ceiling, and isn't yet established as a template other legislation is copying, though it complements a growing family of cloud/remote-access export-control bills (Remote Access Security Act, H.R. 2683, already House-passed) addressing the same loophole from a different angle."
     likelihood: "No GovTrack numeric prognosis found for H.R. 9546. Introduced late June 2026 with only its two lead sponsors listed as backers in press coverage (no broader cosponsor list surfaced), and no markup or committee action reported as of Sept. 2026 — roughly ten weeks with no visible movement. Base-rated as a lower-profile bill relative to the Chip Security Act/MATCH Act/AI OVERWATCH package, which has active NDAA-vehicle attention; this bill has not been reported as part of that bundle. p_committee and p_enact set toward the low end for a two-sponsor, committee-stalled bill in a crowded chip-export-control legislative field, with some upward adjustment for bipartisan (D-NJ/R-MI) sponsorship and Select Committee on China backing."

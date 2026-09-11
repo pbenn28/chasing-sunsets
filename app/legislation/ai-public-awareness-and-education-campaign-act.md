@@ -31,7 +31,7 @@ scoring:
     E_consumer: 1.0
   impact_components:
     R: 0.90
-    D: 0.10
+    D: 0.20
     E_f: 0.20
     P: 0.40
   likelihood:
@@ -46,7 +46,7 @@ scoring:
     E_consumer: "Directs Commerce to educate the public on how to identify and differentiate AI-generated media including deepfakes and chatbot-generated content, and on individuals' existing legal rights with respect to AI — squarely a consumer/near-term-harm-facing awareness measure. It's an end-user-facing information campaign rather than a labeling mandate on any specific company, so it lands at the '1: end-user labeling/disclosure-adjacent' rung rather than higher, since there's no private right of action or criminal liability attached."
     F: "No data-center, permitting, siting, or energy content."
     R: "A federal public-education campaign aimed at the general public, with no sector carve-outs or thresholds narrowing its reach — R sits high for its class (a consumer/awareness bill) since it's designed to reach the broad population rather than a narrow subset."
-    Depth: "Modest — the campaign is real and specifically scoped (deepfake identification, legal rights, workforce opportunities) but carries no enforcement or standard-setting mechanism; Depth is driven mainly by E_consumer's 1.0."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis E (consumer/near-term harm) at 1.0/5."
     E_f: "No penalty, rulemaking, or enforcement mechanism attached to the campaign — Commerce designs and runs it at its own discretion, which is a stated-but-voluntary-in-effect obligation on the agency rather than any regulated party."
     P: "A self-contained, sector-specific federal awareness campaign — not a first-in-nation regulatory framework or a permanent new institution, though a nationwide Commerce-run AI literacy campaign could be a template other agencies point to later."
     likelihood: "GovTrack's modeled prognosis for S. 1699 is roughly 71% to clear committee and 22% to be enacted — anchored directly to that published figure, reflecting the bill's bipartisan four-sponsor pairing (Young/Schatz in the Senate, plus Rounds and Kelly as added Senate cosponsors) and its low-controversy, non-regulatory subject matter. The House companion, H.R. 7151, was introduced separately on 2026-01-20 by Reps. Barragán and Obernolte and referred to Energy and Commerce; as of 2026-09-09 no committee markup has occurred in either chamber. Non-regulatory awareness-campaign bills with this profile clear committee at above-average rates but still rarely reach the floor in a given Congress, consistent with GovTrack's numbers."

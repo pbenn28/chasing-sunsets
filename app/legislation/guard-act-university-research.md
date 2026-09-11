@@ -16,14 +16,14 @@ scoring:
   axes:
     A: -0.5
     B: 0.0
-    C: 4.0
+    C: 0.0
     D: 0.0
     F: 0.0
   unsigned:
     E_consumer: 0.0
   impact_components:
     R: 0.9
-    D: 0.80
+    D: 0.10
     E_f: 0.6
     P: 1.00
   likelihood:
@@ -33,12 +33,12 @@ scoring:
   rationale:
     A: "Authorizes the Secretary of Defense to fund university-hosted AI research institutes with no strings attached beyond the standard grant-administration conditions — this is capacity-and-money for AI R&D, not a conduct standard on developers, so it scores at the compute-subsidy rung rather than anywhere on the substantive-obligation ladder."
     B: "No preemption or savings-clause language anywhere in either the standalone bills or the enacted NDAA section — this is a defense-research-funding authorization with no touchpoint to state AI regulation at all, and the implicit-preemption floor does not apply since axis A is well below +2."
-    C: "Establishes a National Security and Defense Artificial Intelligence Institute program (enacted as NDAA Section 224): the Secretary of Defense may designate eligible U.S. host institutions (universities and senior military colleges) to run AI research institutes, with five-year renewable funding, mandated cross-sector partnerships, and workforce-development components — a genuine new statutory authority and funded evaluation/research body, matching the 'authorizes and funds a dedicated evaluation body' rung."
+    C: "Corrected under the frontier/systemic-risk guardrail: this program funds university-hosted institutes to *do* AI research for defense applications and build a workforce pipeline — it does not observe, evaluate, or enforce anything about frontier or systemic AI risk, so it does not belong at the 'authorizes and funds a dedicated evaluation body' rung despite the bill's use of the word 'institute.' The rubric's own axis-C note that 'compute subsidies and R&D money build capacity to build AI; this axis is only about capacity to govern it' applies directly — a national-security research-and-talent-pipeline institute is capacity to build, not a testbed, incident database, or oversight body. There is no evaluation function, no standing reporting-into-government mechanism, and no enforcement or oversight authority anywhere in the program. Corrected from +4 to 0 (none) — the institute is functionally continuous with axis A's own −0.5 characterization of the same program as 'capacity-and-money for AI R&D,' just funneled through universities rather than directly to developers."
     D: "No export-control, chip-access-restriction, or foreign-diversion content — this is a domestic university-research funding authority, not a geopolitical lever in itself (even though its stated purpose is competing with China on AI R&D talent)."
     E_consumer: "No deepfake, NCII, companion-bot, discrimination, or election-integrity content."
     F: "No data-center, permitting, interconnection, siting, or ratepayer content."
     R: "Reaches any eligible U.S. host institution (universities and senior military colleges) that seeks designation — broad within its target class of defense-adjacent research institutions, though narrower than an industry-wide developer bill since only institutions the Secretary of Defense selects actually receive funding."
-    Depth: "Driven by the new statutory research-institute authority (C), which is a real, if narrowly scoped-to-defense-R&D, institutional change."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis A (frontier developer stringency) at 0.5/5."
     E_f: "Enforcement is not the relevant lens for a funding-authorization program; administered through standard DoD grant oversight rather than civil penalties or a private right of action."
     P: "Creates a new, statutorily-authorized, renewable federal institution (the National Security and Defense AI Institute program) — the top rung, since a permanent institution is exactly the kind of precedent this component is designed to capture."
     likelihood: "The National Security and Defense AI Institute concept is already law: it was incorporated as Section 224 of the FY2026 NDAA (S. 1071), which the President signed on 2025-12-18. Sponsor press releases from both Rep. Ronny Jackson (R-TX), the House bill's lead sponsor, and Sen. John Cornyn (R-TX), the Senate bill's lead sponsor, publicly claim credit for getting this language into the enacted NDAA, and GovTrack's own status text for H.R. 5466 states that 'provisions of this bill were incorporated into other bills which were enacted, so there will not likely be further activity on this bill' — the standard GovTrack language for a donor bill whose substance became law through a different vehicle. p_committee and p_enact are both set to 1.0 because the underlying policy is enacted, not merely advancing; this mirrors how the tracker would treat any bill whose language is confirmed folded into a signed must-pass vehicle. Some residual uncertainty exists on exact textual attribution — NDAA conference reports are typically drafted/merged rather than copy-pasted from a single donor bill, and no direct text citation to 'H.R. 5466' or 'S. 3454' appears inside Section 224 itself — but sponsor-office claims plus GovTrack's incorporation language are strong, mutually corroborating evidence that the policy substance is now law."

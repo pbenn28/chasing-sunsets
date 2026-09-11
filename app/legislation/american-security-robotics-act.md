@@ -29,7 +29,7 @@ scoring:
     E_consumer: 0.0
   impact_components:
     R: 0.85
-    D: 0.40
+    D: 0.10
     E_f: 0.60
     P: 0.40
   likelihood:
@@ -44,7 +44,7 @@ scoring:
     E_consumer: "No deepfake, NCII, discrimination, or election content — purely a government-procurement, national-security measure aimed at foreign-made robots."
     F: "No data-center, compute, permitting, siting, or energy content."
     R: "Covers the entire executive-agency universe for the specific hardware class (unmanned ground vehicles/robots) from a covered foreign-adversary entity, though narrower in scope than a bill covering all AI systems or all hardware."
-    Depth: "Modest — the only axis moving off neutral by more than a point is D (geopolitical access restriction); A stays near the procurement floor and B, C, F are flat."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis A (frontier developer stringency) at 0.5/5."
     E_f: "No stated penalty provision surfaced in press or available text beyond the procurement bar itself; enforcement would run through normal federal acquisition compliance channels (FAR-type bar enforced by contracting officers/IGs) rather than civil penalties or a private right of action."
     P: "A sector-specific, self-contained procurement restriction on one hardware category (ground robots/UGVs from adversary entities) — follows the template of prior foreign-adversary-AI procurement bars rather than establishing new precedent."
     likelihood: "GovTrack.us gives H.R. 8189 an 11% chance of getting past committee and a 4% chance of enactment, in line with base rates for freshman-Congress procurement bills referred to a single committee with zero House cosponsors as of this check. The bipartisan, bicameral pairing (Stefanik in the House; Cotton and Schumer co-leading the Senate companion, S. 4235) is a positive signal relative to a typical single-sponsor bill, and this is the kind of narrow national-security procurement text that sometimes rides on the NDAA — but no evidence of NDAA inclusion or committee action was found as of 2026-09-09, six months after introduction."

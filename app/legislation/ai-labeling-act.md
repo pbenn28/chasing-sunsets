@@ -19,16 +19,16 @@ committees:
 - Senate Commerce, Science, and Transportation
 scoring:
   axes:
-    A: 2.0
-    B: -1.0
-    C: 2.0
+    A: 1.0
+    B: 0.0
+    C: 1.0
     D: 0.0
     F: 0.0
   unsigned:
     E_consumer: 2.0
   impact_components:
     R: 0.95
-    D: 0.44
+    D: 0.40
     E_f: 0.80
     P: 0.80
   likelihood:
@@ -36,14 +36,14 @@ scoring:
     p_enact: 0.08
     basis: "base_rate_adjusted"
   rationale:
-    A: "Requires generative AI providers to apply visible, embedded labels and bind machine-readable provenance metadata (system/version, creation date) to covered AI-generated content, to ensure users can detect that content without undue cost, and to disclose chatbot identity — plus a ban on tools built mainly to strip or falsify those disclosures (Sec. 3(a)). This is a mandated process with real enforcement (FTC unfair/deceptive-practices authority, DOJ civil actions, statutory damages) rather than a bare publish-a-framework disclosure rule, so it lands at +2 rather than +1 — but it stops short of any risk-assessment, audit, or incident-reporting standard on the underlying model itself, so it doesn't reach +3."
-    B: "No preemption language anywhere in the text. Sec. 5(g)(2) preserves state AGs' ability to bring their own proceedings under existing state civil/criminal law — that's an enforcement-authority preservation, not an affirmative savings clause protecting states' power to set independent AI-labeling standards, and it doesn't address whether a state could impose a stricter or different labeling regime. Because A scores +2 here, the bill establishes an ongoing federal regulatory scheme (FTC rulemaking, NIST-led technical standards, safe harbors) with no express savings clause on state AI-labeling authority, the implicit-preemption floor applies: B floors at -1."
-    C: "Directs a NIST-led federal working group (with FTC) to develop and publish binding technical standards for labeling, detection, interoperability, and enforcement within one year — new, dedicated standards-setting capacity tied to enforcement, not just a study. Scored +2 rather than +3 because the ongoing information flow this creates is technical-standards development, not a mandatory incident-reporting database into government hands."
+    A: "Guardrail check (frontier/systemic risk vs. near-term consumer harm): the mandate here — visible/embedded labels and machine-readable provenance metadata on AI-generated content, chatbot self-disclosure, plus an anti-circumvention ban (Sec. 3(a)) — is a content-labeling/deepfake-provenance regime. Its subject is exactly axis E's paradigm case (deepfakes, AI-generated content labeling), not frontier-scale training, catastrophic risk, or systemic AI oversight; nothing in it reaches the underlying model's training, capabilities, or deployment risk. The previous 2.0 scored the mechanism's textual match to the '+2 mandated process with enforcement' rung (real FTC/DOJ enforcement, statutory damages) without asking whether the mandate's subject was frontier governance at all. Per the guardrail, a real enforced conduct mandate whose subject is content labeling belongs near the floor — rarely above +0.5-+1. Scored 1.0; the bill's actual severity is carried on E_consumer (unchanged at 2.0)."
+    B: "Guardrail check: with A now scored well below +2, the implicit-preemption floor (which triggers only at A ≥ +2) no longer applies — the previous -1.0 floor read was downstream of the inflated A score. On its own terms, the bill has no preemption language, and Sec. 5(g)(2)'s preservation of state AG enforcement authority under existing law doesn't speak to a state's power to set its own AI-labeling standard, but also doesn't cut against one. Even setting the floor logic aside, this is a content-labeling-specific regulatory scheme (FTC/NIST labeling standards), not a frontier-AI regulatory scheme — so even if a scheme-silence argument applied, it would only ever reach an implicit floor on state labeling authority specifically, not on frontier AI regulation broadly, which is what axis B is meant to track. Scored 0 (silent), up from -1.0."
+    C: "Guardrail check: the NIST-led working group developing binding technical standards for labeling, detection, interoperability, and enforcement is real, dedicated standing capacity — but capacity to govern content-labeling and provenance-detection specifically, not systemic AI oversight capacity in the frontier/catastrophic-risk sense the guardrail describes. A standing information flow whose subject is deepfake-labeling standards belongs near the floor on this axis (rarely above +0.5-+1) even though it's a genuine ongoing program rather than a one-off study. Scored 1.0, down from 2.0."
     D: "No export-control, chip-access, or geopolitical content."
     E_consumer: "An end-user labeling and disclosure mandate (chatbot self-identification, visible/machine-readable content labels) backed by civil penalties and a private right of action for AI providers/platforms harmed by circumvention — stronger than a bare labeling-only rung 1, since the anti-circumvention regime carries real statutory damages, but the private right of action runs to injured providers/platforms, not to individual consumers directly, so it doesn't reach the broad-private-right-of-action rung 5. Scored 2, between labeling-only and criminal liability."
     F: "No data-center, permitting, siting, or energy provisions."
     R: "Applies to any provider of a generative AI system and any covered online platform of consequential size, with no revenue or size floor identified in the text — reaches essentially the entire developer- and platform-facing universe for AI-generated content."
-    Depth: "Driven by the A axis (+2) and the enforceable civil-penalty regime backing E_consumer (2) — a real but disclosure/labeling-centered bill rather than one that reaches training conduct or compute inputs."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis E (consumer/near-term harm) at 2.0/5."
     E_f: "FTC rulemaking plus civil penalties (up to $25,000 per violation, treble for repeat violations) plus a private right of action for harmed providers/platforms — a strong enforcement stack, just short of a broad consumer-facing private right of action."
     P: "A first-in-nation-style comprehensive federal labeling/provenance framework (NIST technical standards, FTC enforcement, anti-circumvention regime) that revives and expands the 2023 AI Labeling Act — likely to be a durable template other labeling bills get measured against, even though it hasn't passed."
     likelihood: "Bipartisan three-senator sponsorship (Schatz-D, Curtis-R, Warner-D) but still sitting at its initial Commerce Committee referral as of this scoring pass, roughly 2.5 months after introduction, with no hearing or markup yet reported. GovTrack.us was unreachable for this pass; base-rate adjustment for a bipartisan-but-not-leadership-priority Commerce Committee bill in a Congress already crowded with competing AI-transparency proposals (CLEAR Act, TRAIN Act) suggests modest committee odds and low enactment odds this Congress."

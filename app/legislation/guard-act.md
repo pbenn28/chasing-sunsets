@@ -15,7 +15,7 @@ committees: ["Senate Judiciary", "House Judiciary", "House Energy and Commerce"]
 scoring:
   axes:
     A: 0.0
-    B: 3.0
+    B: 1.0
     C: 0.0
     D: 0.0
     F: 0.0
@@ -32,7 +32,7 @@ scoring:
     basis: "govtrack_corroborated"
   rationale:
     A: "Places no obligation on frontier or advanced AI developers as such — its duties (age verification, a companion-bot access ban, disclosure) bind any company deploying a consumer chatbot product, and the disclosure duty is a consumer-facing UX requirement rather than a developer-transparency measure like model cards or training-data provenance."
-    B: "Includes an unusually strong savings clause: states remain free to enforce any state law or regulation that is at least as protective of chatbot users as this Act, and nothing else in the bill touches state authority. That's an affirmative guarantee that states can go further, not just boilerplate acknowledging their existing power."
+    B: "CORRECTED 2026-09-09 per the frontier/systemic-risk-vs-near-term-consumer-harm guardrail. The savings clause guarantees states may enforce law 'at least as protective of chatbot users as this Act' -- an affirmative, unconditional guarantee, but one scoped entirely to the bill's own narrow topic (chatbot-safety/child-safety law for chatbot users), not to states' authority to regulate frontier or systemic AI development broadly. Per the guardrail, a savings clause of this kind doesn't earn the '+3 affirmative guarantee with teeth' rung just because it's textually unconditional -- that rung is reserved for preservation of state authority over AI regulation generally. Previously scored 3.0; corrected to 1.0 (ordinary savings clause), since the clause is genuinely unconditional and worth crediting above 0, but not general enough to clear the higher rungs."
     C: "Enforcement runs through civil and criminal penalties on companies rather than through any new federal agency, evaluation body, or incident-reporting pipeline."
     D: "No export-control, chip-access, or geopolitical-competition content."
     E_consumer: "Creates criminal penalties for companies that knowingly make chatbots available that produce sexualized content involving minors or that solicit or induce suicide, self-harm, or violence, plus civil penalties and an outright ban on minors accessing 'AI companion' chatbots, backed by mandatory age verification."

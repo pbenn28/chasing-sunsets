@@ -20,16 +20,16 @@ committees:
 - House Energy and Commerce
 scoring:
   axes:
-    A: 2.0
+    A: 0.5
     B: 1.0
-    C: 3.0
+    C: 1.0
     D: 0.0
     F: 0.0
   unsigned:
     E_consumer: 2.0
   impact_components:
     R: 0.75
-    D: 0.60
+    D: 0.40
     E_f: 0.80
     P: 0.60
   likelihood:
@@ -37,14 +37,14 @@ scoring:
     p_enact: 0.01
     basis: "base_rate_adjusted"
   rationale:
-    A: "Requires covered entities to conduct bias, privacy, and performance impact assessments of automated decision systems, with documentation and annual reporting to the FTC. That's a binding, enforceable process, though it stops short of requiring sign-off from an outside licensed verifier before deployment."
-    B: "Section 11 expressly states that nothing in the Act preempts state, tribal, city, or local law, and Section 9(b) lets state attorneys general bring their own enforcement actions alongside the FTC. State AI laws are explicitly left intact."
-    C: "Covered entities must keep documentation and file annual summary reports with the FTC, which also gains rulemaking and enforcement authority — a recurring reporting pipeline into a federal regulator rather than a one-off study."
+    A: "Corrected under the frontier/systemic-risk-vs-near-term-consumer-harm guardrail: the impact-assessment mandate tests automated decision systems for bias, privacy, and performance risk — algorithmic discrimination/bias, the rubric's own canonical example of what belongs on axis E, not frontier-scale training, catastrophic risk, or systemic AI oversight. Previously scored 2.0 ('mandated process with enforcement') by reading the mechanism's literal form; under the guardrail a real, enforced impact-assessment regime aimed at a narrow bias/discrimination harm belongs near A's floor. Landing at 0.5 rather than 0 because there is a genuine binding process requirement (documentation, annual FTC reporting) rather than mere disclosure."
+    B: "Section 11 expressly states that nothing in the Act preempts state, tribal, city, or local law, and Section 9(b) lets state attorneys general bring their own enforcement actions alongside the FTC. State AI laws are explicitly left intact. Consistent with the guardrail's treatment of B: this is a savings clause scoped to the bill's own bias/impact-assessment subject, not an affirmative guarantee of state authority over frontier AI development generally — it caps at the ordinary +1 rung rather than +2/+3 regardless of how unconditional the clause reads."
+    C: "Corrected under the frontier/systemic-risk-vs-near-term-consumer-harm guardrail: the FTC reporting pipeline this creates is a standing flow of bias/privacy/performance impact-assessment summaries, not a systemic AI oversight or evaluation capacity — it's agency enforcement of a narrow discrimination-adjacent mandate, the same category the guardrail says belongs on E rather than driving C to its '+3 standing information flow' rung. Previously scored 3.0 by matching the rung's literal wording; corrected down near C's floor to 1.0, reflecting that FTC gains real but narrowly-scoped rulemaking/enforcement authority rather than general AI-governance capacity."
     D: "No export-control or geopolitical provisions."
     E_consumer: "FTC-enforced impact assessments apply across sectors, but the bill relies on agency enforcement alone — no private right of action, no criminal penalties."
     F: "No data-center, permitting, or energy provisions."
     R: "A federal bill, but its assessment mandate only kicks in for 'large entities meeting revenue and data thresholds,' so smaller developers fall outside its reach."
-    Depth: "Driven mainly by the reporting mandate (C) and consumer-harm scope (E) — a real compliance regime, but a fairly conventional one rather than a sweeping restructuring."
+    Depth: "Recomputed after the frontier/systemic-risk guardrail correction — now driven by axis E (consumer/near-term harm) at 2.0/5."
     E_f: "Backed by FTC rulemaking and civil-penalty authority, not a private right of action."
     P: "At least the third time this concept has been introduced since 2019 (the 117th Congress had a version too) — a familiar template being recycled rather than a genuinely new approach."
     likelihood: "As of 9/9/26, both S. 2164 (Senate Commerce) and H.R. 5511 (House Energy and Commerce) remain at initial committee referral with no markup or hearing on either side — congress.gov and GovTrack were both unreachable this pass (403 on both), so this is a base-rate estimate, not GovTrack-corroborated. Sponsorship/cosponsor list is still all-Democratic (Wyden plus Warren, Booker, Heinrich, Luján, Merkley, Hirono, Schatz on the Senate side), same partisan pattern as 8/1. No hearing, markup, or news catalyst has emerged since. p_committee/p_enact held at prior values."

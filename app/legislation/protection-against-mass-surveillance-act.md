@@ -19,7 +19,7 @@ scoring:
   axes:
     A: 0.0
     B: 0.0
-    C: -3.0
+    C: -1.0
     D: 0.0
     F: 0.0
   unsigned:
@@ -36,7 +36,7 @@ scoring:
   rationale:
     A: "Binds federal agencies' own procurement and use of surveillance systems, not AI developers, so it doesn't create any developer-facing obligation."
     B: "Silent on state authority to regulate AI developers; it does condition state, local, and Tribal use of federal funds on not deploying covered surveillance systems, but leaves states' own regulatory power untouched."
-    C: "Bars every federal agency from buying, deploying, operating, accessing, or contracting for automated mass-surveillance systems — facial recognition, other biometrics, license-plate readers, and persistent-surveillance imaging — a sweeping government-wide prohibition."
+    C: "Bars every federal agency from buying, deploying, operating, accessing, or contracting for automated mass-surveillance systems — facial recognition, other biometrics, license-plate readers, and persistent-surveillance imaging. Per the frontier/systemic-risk-vs-near-term-harm guardrail, an outright ban on government-use biometric/mass surveillance is real government-use AI governance, but it's narrow-domain (biometric and locational surveillance of the public), not systemic AI oversight capacity in the frontier sense — so despite its sweeping, whole-of-government scope textually matching the '-3, affirmatively bars an agency from collecting information or acting in the domain' rung, it's capped near the floor. Corrected from -3.0 to -1.0; the bill's real severity is carried on E_consumer instead."
     D: "No export-control or geopolitical content."
     E_consumer: "A categorical ban spanning facial recognition, other biometrics, and license-plate readers, requiring deletion of already-collected data, though it stops short of creating a penalty or private right of action for violations."
     F: "No data-center or energy buildout content."

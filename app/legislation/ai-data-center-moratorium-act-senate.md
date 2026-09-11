@@ -16,7 +16,7 @@ scoring:
   axes:
     A: 0.0
     B: -2.0
-    C: 3.0
+    C: 0.0
     D: 0.0
     F: 5.0
   unsigned:
@@ -33,7 +33,7 @@ scoring:
   rationale:
     A: "Doesn't regulate the act of training or deploying a model. Its operative provisions — a construction/upgrade moratorium and DOE reporting on data-center facilities — act on a physical input, not developer conduct. Lifting the moratorium is conditioned on Congress later passing separate safety-review and worker-protection legislation, but that's a trigger for future action, not a standard this bill itself imposes."
     B: "Never uses the word 'preempt' and has no express savings clause, but Section 3(b) bars any construction or upgrading of covered AI data centers nationwide until Congress enacts specified follow-on legislation, with no carve-out letting a state or locality authorize construction on its own during the freeze. Combined with DOE's authority to condition future permitting on compliance, this effectively locks state and local siting and permitting authority out of the picture for as long as the moratorium runs."
-    C: "Directs the Secretary of Energy to issue quarterly public reports on data centers' energy and water use, emissions, and labor practices — a standing, mandatory information flow into a federal reporting regime."
+    C: "Corrected 2026-09-09 under the frontier/systemic-risk-vs-near-term-harm guardrail: the DOE quarterly reporting mandate covers data centers' energy and water use, emissions, and labor practices — a physical-input and workplace reporting regime, not a mechanism that observes, constrains, or governs AI development or deployment. It textually matches axis C's '+3 standing information flow' rung, but the object being reported on is facility-level energy/water/emissions/labor data, which would exist in identical form for any large industrial or crypto-mining facility and carries no AI-specific governance channel. Previously scored 3.0; corrected to 0.0."
     D: "No export-control, chip-access, or geopolitical content."
     E_consumer: "No consumer-harm, deepfake, NCII, or algorithmic-discrimination content."
     F: "A nationwide moratorium on constructing or upgrading any AI data center above 20MW of capacity — a hard stop on new compute buildout until Congress acts. It restrains growth rather than accelerating it: nothing here subsidizes construction, expedites permitting, or preempts siting review in industry's favor — the bill halts construction outright."
