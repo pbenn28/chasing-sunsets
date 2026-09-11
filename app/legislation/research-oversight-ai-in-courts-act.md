@@ -13,7 +13,7 @@ last_action: Referred to the House Committee on the Judiciary
 last_action_date: '2026-03-19'
 sponsors:
 - Rep. Harriet Hageman (R-WY)
-cosponsor_count: 4
+cosponsor_count: 5
 committees:
 - House Judiciary
 scoring:
@@ -31,8 +31,8 @@ scoring:
     E_f: 0.00
     P: 0.20
   likelihood:
-    p_committee: 0.40
-    p_enact: 0.20
+    p_committee: 0.45
+    p_enact: 0.22
     basis: "base_rate_adjusted"
   rationale:
     A: "Sets up a task force to study AI speech-to-text and automatic transcription tools used in the federal courts, with a mandate limited to assessment and recommendations — it places no requirements on AI developers themselves."
@@ -45,10 +45,10 @@ scoring:
     Depth: "Driven entirely by the task force itself -- a modest study-and-recommend mechanism with no other moving parts."
     E_f: "Produces recommendations only; no penalties, rulemaking, or right of action attached to anything in the bill."
     P: "An 18-month task force that reports and then winds down, not a lasting institution."
-    likelihood: "A bipartisan, bicameral pairing (identical House and Senate versions) still sitting at initial committee referral. Narrow, study-only bills like this tend to clear committee and pass by voice vote more often than average, but still need floor time to get there."
+    likelihood: "A bipartisan, bicameral pairing (identical House and Senate versions) still sitting at initial committee referral as of 2026-09-09 — no Judiciary markup identified in either chamber. Rep. Glenn Grothman (R-WI), a House Judiciary Committee member, signed on as an additional cosponsor in June 2026, a modest positive signal since committee-member cosponsorship often correlates with a bill actually getting scheduled for markup, though it hasn't yet translated into action. Narrow, study-only bills like this tend to clear committee and pass by voice vote more often than average, but still need floor time to get there."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - courts
 - speech recognition
@@ -56,10 +56,16 @@ tags:
 sources:
 - label: Congress.gov
   url: https://www.congress.gov/bill/119th-congress/house-bill/7997
+- label: The JCR — Grothman joins as cosponsor
+  url: https://www.thejcr.com/2026/06/01/house-judiciary-committee-member-glenn-grothman-joins-as-co-sponsor-of-ncra-ai-courts-legislation/
 summary: Bipartisan bill to create a task force studying AI speech-to-text technology in federal courts.
 timeline:
 - date: '2026-03-19'
   event: Introduced in the House (companion S. 4154 in the Senate); referred to Judiciary
+- date: '2026-06-01'
+  event: Rep. Glenn Grothman (R-WI), a House Judiciary Committee member, joins as an additional cosponsor
+- date: '2026-09-09'
+  event: Re-verified — no Judiciary Committee markup identified in either chamber; cosponsor_count updated to 5
 ---
 
 The bill would establish a task force to study legal and ethical issues arising from the use of AI speech-to-text and automatic speech recognition technology in the U.S. judicial system. It is a bipartisan, bicameral measure with an identical Senate companion, S. 4154.

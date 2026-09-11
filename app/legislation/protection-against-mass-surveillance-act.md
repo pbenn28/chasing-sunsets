@@ -12,7 +12,7 @@ last_action: Referred to the House Committee on Oversight and Government Reform
 last_action_date: '2026-07-21'
 sponsors:
 - Rep. Tim Burchett (R-TN)
-cosponsor_count: null
+cosponsor_count: 7
 committees:
 - House Oversight and Government Reform
 scoring:
@@ -30,9 +30,9 @@ scoring:
     E_f: 0.40
     P: 0.80
   likelihood:
-    p_committee: 0.15
-    p_enact: 0.02
-    basis: "base_rate_heuristic_no_live_lookup"
+    p_committee: 0.20
+    p_enact: 0.03
+    basis: "base_rate_adjusted"
   rationale:
     A: "Binds federal agencies' own procurement and use of surveillance systems, not AI developers, so it doesn't create any developer-facing obligation."
     B: "Silent on state authority to regulate AI developers; it does condition state, local, and Tribal use of federal funds on not deploying covered surveillance systems, but leaves states' own regulatory power untouched."
@@ -44,10 +44,10 @@ scoring:
     Depth: "Driven by the government-wide surveillance ban and the sweeping consumer-facing prohibition alike — the two most substantial pieces of the bill."
     E_f: "No civil penalty, rulemaking, or private right of action anywhere in the bill; enforcement rests on the prohibition itself plus the funding condition and an exclusionary rule for improperly obtained evidence."
     P: "A whole-of-government ban paired with a funding condition on state and local recipients is a sweeping, first-in-nation design that other jurisdictions could plausibly copy."
-    likelihood: "Introduced only about a week before scoring, with a single sponsor and no cosponsors yet — too fresh to have built any real momentum."
+    likelihood: "As of 2026-09-09, cosponsor count has grown from 0 to 7 in the roughly seven weeks since introduction, including gun-rights-adjacent conservative interest in the Flock-camera provisions — a faster-than-typical pickup rate that nudges the estimate up modestly. Still no committee markup, and House leadership canceled the final two weeks of the September session, so near-term floor or markup action is very unlikely regardless of cosponsor growth."
   confidence: medium
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - facial recognition
 - surveillance
@@ -55,10 +55,14 @@ tags:
 sources:
 - label: Congress.gov
   url: https://www.congress.gov/bill/119th-congress/house-bill/9800
+- label: Cosponsor growth and House September schedule cancellation (re-verified 2026-09-09)
+  url: https://www.congress.gov/bill/119th-congress/house-bill/9800/cosponsors
 summary: House bill barring federal agencies from mass-surveillance systems including facial recognition.
 timeline:
 - date: '2026-07-21'
   event: Introduced and referred to House Oversight and Government Reform
+- date: '2026-09-09'
+  event: Cosponsor count grown to 7; no committee markup scheduled, and House canceled its final two September session weeks
 ---
 
 The bill would bar federal agencies from purchasing, deploying, operating, accessing, or contracting for automated mass-surveillance systems — including facial recognition, other biometrics (fingerprint, iris, voice, gait), and automated license-plate readers — prohibit state and local use of federal funds for such systems, and require deletion of collected data.

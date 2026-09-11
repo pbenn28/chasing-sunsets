@@ -46,10 +46,10 @@ scoring:
     Depth: "A modest bill overall — its only real substance is the commissioned study of bias in maternity-care technology, with the grant program adding little additional weight."
     E_f: "Grants are discretionary and the study is merely 'sought' by HHS, with no penalty and no regulated party bound to comply."
     P: "Narrow and sector-specific to maternal health technology, with no lasting institution created."
-    likelihood: "Bipartisan sponsorship (Luján and Sullivan) with a House companion (H.R. 8317), but only one cosponsor and no committee action since introduction. Its near-identical predecessor from the last Congress, S. 1699, stalled the same way, so momentum remains weak."
+    likelihood: "Re-verified 2026-09-09: bipartisan sponsorship (Luján and Sullivan) with a House companion (H.R. 8317) still pending, but still only one Senate cosponsor and no HELP committee hearing or markup since introduction. Its near-identical predecessor from the last Congress, S. 1699, stalled the same way, so momentum remains weak — unchanged from the 8/1 assessment."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - healthcare
 - maternal health
@@ -61,6 +61,8 @@ summary: Senate bill promoting maternal health tech and studying AI-driven racia
 timeline:
 - date: '2025-03-11'
   event: Introduced and referred to Senate HELP
+- date: '2026-09-09'
+  event: Status re-verified — still pending in Senate HELP; House companion H.R. 8317 also pending with no committee action
 ---
 
 The bill would support technology in maternal health care, directing HHS to seek a National Academies study of innovative technology (including AI) and patient-monitoring devices in maternity care and their effects on racial or ethnic biases, and establishing grants for technology-enabled collaborative learning models.

@@ -44,10 +44,10 @@ scoring:
     Depth: "A pure funding and education authorization that barely moves off neutral on any dimension."
     E_f: "No compliance obligation or penalty structure — NSF administers grants and scholarships entirely at its own discretion."
     P: "A sector-specific, self-contained NSF education program — not a first-in-nation framework or a template likely to be copied elsewhere."
-    likelihood: "Ordered reported 33-0 by House Science, with 28 cosponsors split evenly 14 Republicans/14 Democrats — a strong bipartisan signal. A nearly identical bill was tried last Congress (also clearing Senate committee) but never got enacted, which tempers the outlook here despite the strong committee showing."
+    likelihood: "Ordered reported 33-0 by House Science, with 28 cosponsors split evenly 14 Republicans/14 Democrats — a strong bipartisan signal. Re-verified 2026-09-09: no House floor vote has been scheduled in the ~2.5 months since committee passage, and no new cosponsor or Senate-companion movement was found. A nearly identical bill was tried last Congress (also clearing Senate committee) but never got enacted, which tempers the outlook here despite the strong committee showing."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - education
 - NSF
@@ -56,12 +56,16 @@ tags:
 sources:
 - label: Congress.gov
   url: https://www.congress.gov/bill/119th-congress/house-bill/5351
+- label: Rep. Fong press release, House Science Committee passage
+  url: https://fong.house.gov/media/press-releases/fong-ai-education-bill-passes-committee
 summary: House Science Committee advanced a bill expanding NSF AI education, scholarships, and workforce programs.
 timeline:
 - date: '2025-09-15'
   event: Introduced and referred to House Science
 - date: '2026-06-25'
   event: Ordered reported (amended), 33-0
+- date: '2026-09-09'
+  event: Re-verified — no House floor vote scheduled yet; no new cosponsors found
 ---
 
 The bill expands NSF AI education and workforce programs — including scholarships and fellowships for undergraduate and graduate AI study, regional Centers of Excellence at community colleges, and research on AI in education. It was among ten AI bills advanced by the House Science Committee in June 2026.

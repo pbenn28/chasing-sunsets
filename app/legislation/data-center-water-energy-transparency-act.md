@@ -44,10 +44,10 @@ scoring:
     Depth: "Driven mainly by the mandatory reporting pipeline into federal agencies — a real but bounded governance mechanism rather than a sweeping regulatory regime."
     E_f: "Backed by real penalties: a joint EPA/DOE/USDA fine of $20,000 per day for negligent violations of the federal reporting requirement, plus state fines and enforcement under state-run programs."
     P: "A sector-specific reporting-and-aggregation pipeline (operator to state to EPA/DOE/USDA) rather than a permanent institution or a template likely to be copied elsewhere."
-    likelihood: "No documented cosponsors and no bipartisan pairing, with no signs of hearings or other momentum — a committee-stage bill with long odds."
+    likelihood: "Re-verified 2026-09-09: still no documented cosponsors and no bipartisan pairing; no Senate Energy and Natural Resources Committee hearing or markup found on this bill specifically. No signs of momentum since introduction — holding prior estimate."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - data centers
 - energy

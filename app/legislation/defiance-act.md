@@ -47,10 +47,10 @@ scoring:
     Depth: "Driven mainly by the strength of the consumer-harm remedy — this is a targeted civil-liability statute, not a broad regulatory regime."
     E_f: "Victims enforce their own rights directly in court through statutory damages, with no agency gatekeeping required."
     P: "Builds on the already-enacted TAKE IT DOWN Act's criminal/takedown framework and follows a template several states have already adopted for NCII civil remedies, rather than breaking new ground."
-    likelihood: "Passed the Senate by unanimous consent in January 2026 and has strong bipartisan cosponsorship in the House (53 cosponsors split evenly across parties), leaving House floor scheduling as the main remaining hurdle rather than committee passage."
+    likelihood: "Passed the Senate by unanimous consent in January 2026 and has strong bipartisan cosponsorship in the House, but as of 9/9/26 — nearly eight months later — Speaker Johnson still has not scheduled a floor vote despite public pressure from Ocasio-Cortez, Lee, and advocacy groups (Problem Solvers Caucus endorsement, NOW action alerts). House floor scheduling, not committee passage, remains the sole hurdle, but the lengthening delay without a scheduling commitment is a mild negative signal against near-term enactment."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - deepfakes
 - NCII
@@ -64,6 +64,8 @@ timeline:
   event: Introduced in both chambers; referred to Judiciary Committees
 - date: '2026-01-13'
   event: Passed the Senate by unanimous consent; held at the House desk
+- date: '2026-09-09'
+  event: Re-verified — still no House floor vote scheduled; Ocasio-Cortez, Problem Solvers Caucus, and advocacy groups continue pressing Speaker Johnson for a vote
 ---
 
 The DEFIANCE Act creates and expands federal civil causes of action for people harmed by nonconsensual intimate imagery, including AI-generated “intimate digital forgeries.” Victims could sue those who produce, disclose, or possess-with-intent-to-distribute such images, with liquidated damages of $150,000 (or $250,000 where tied to sexual assault, stalking, or harassment) and a ten-year statute of limitations. It complements the already-enacted TAKE IT DOWN Act, which is criminal and platform-takedown focused, by adding a civil remedy.

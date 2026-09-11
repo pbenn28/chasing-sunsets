@@ -5,11 +5,11 @@ bill_numbers:
 - H.R. 6529
 congress: 119
 topic: Data Centers & Energy
-status: committee
+status: committee_passed
 chamber_origin: House
 introduced_date: '2025-12-09'
-last_action: Forwarded by the Subcommittee on Energy to the full House Energy and Commerce Committee, 44-0
-last_action_date: '2026-06-24'
+last_action: House Energy and Commerce Committee held a full committee markup and voted 44-0 to forward H.R. 6529 to the full House of Representatives
+last_action_date: '2026-07-20'
 sponsors:
 - Rep. Greg Landsman (D-OH)
 cosponsor_count: 4
@@ -44,10 +44,10 @@ scoring:
     Depth: "A study-and-conference bill at its core — FERC's convening and reporting mandate is the main substantive element, and nothing else in the bill adds meaningfully more weight."
     E_f: "FERC must convene the conference and report back, but the bill attaches no penalty, rulemaking mandate, or private right of action to that obligation."
     P: "The bill's only operative content is a single technical conference plus a one-time report to two congressional committees — not a permanent institution, though it could plausibly seed future FERC rulemaking."
-    likelihood: "Cleared its Energy Subcommittee 44-0 in June 2026 and, after a brief delay, was subsequently advanced out of the full House Energy and Commerce Committee in a late-July 2026 markup alongside related data-center/ratepayer bills, including the Ratepayer Protection Act, which cleared 52-0. That unanimous, bipartisan committee support (Landsman-Griffith, 4 cosponsors) makes it a strong bet to clear committee, but it still needs a floor vote, Senate action, and a signature in a crowded calendar before becoming law."
+    likelihood: "Re-checked 2026-09-09: no House floor vote, Rules Committee scheduling, or further committee action found in the five weeks since the 7/20 full-committee markup (44-0). No new cosponsors identified. The unanimous, bipartisan committee vote still makes this a strong bet to have cleared committee (p_committee unchanged at 0.80, since the vote is a completed fact, not a probability going forward), but the absence of any floor-scheduling signal so far this fall — in a crowded floor calendar and with Senate companion action still needed — keeps p_enact at prior levels rather than raising it."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - data centers
 - energy costs
@@ -56,12 +56,16 @@ tags:
 sources:
 - label: Congress.gov
   url: https://www.congress.gov/bill/119th-congress/house-bill/6529
+- label: House Energy & Commerce Committee
+  url: https://energycommerce.house.gov/posts/the-house-committee-on-energy-and-commerce-advances-17-bills-to-the-full-house-of-representatives
 summary: House bill directing FERC to hold a conference on shielding ratepayers from AI data center energy costs.
 timeline:
 - date: '2025-12-09'
   event: Introduced and referred to House Energy and Commerce
 - date: '2026-06-24'
   event: Forwarded by subcommittee to full committee, 44-0
+- date: '2026-07-20'
+  event: Full House Energy and Commerce Committee marked up and voted 44-0 to forward H.R. 6529 to the full House
 ---
 
 The bill would direct FERC to convene a technical conference within 90 days of enactment — with DOE, utilities, transmission providers, state regulators, ratepayer advocates, and large-load operators including AI data centers — on rate structures to shield residential and small-commercial ratepayers from cost increases tied to large loads, then report recommendations to Congress within 180 days.

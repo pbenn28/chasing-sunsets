@@ -41,10 +41,10 @@ scoring:
     Depth: "Its structural weight comes mainly from the criminal liability for AI-generated NCII, with the new FTC enforcement power adding secondary heft."
     E_f: "Enforced through FTC rulemaking and civil penalties (about $53,000 per violation) plus criminal liability for the underlying conduct. Victims don't get their own civil cause of action under this law — that was added separately by the DEFIANCE Act."
     P: "The first federal law targeting AI-generated NCII with a mandatory platform-takedown regime, and it's already been built on by the DEFIANCE Act's civil-remedy companion. It doesn't create a new standalone agency; enforcement runs through the FTC's existing authority."
-    likelihood: "Already law. S. 146 passed the Senate by unanimous consent, cleared the House 409-2, and was signed as Public Law 119-12 in May 2025. The FTC began enforcing the platform takedown requirement in May 2026, sending compliance letters to major platforms."
+    likelihood: "Already law and fully enacted — p_enact remains 1.0. S. 146 passed the Senate by unanimous consent, cleared the House 409-2, and was signed as Public Law 119-12 in May 2025. The FTC began enforcing the platform takedown requirement in May 2026, sending compliance/warning letters to at least 15 major platforms. As of September 2026, no formal FTC enforcement action (civil penalty complaint) has been publicly reported yet beyond those warning letters — the enforcement posture remains a compliance-deadline story rather than a litigated-penalty story so far."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags: ["deepfakes", "NCII", "platform takedowns", "signed into law"]
 sources:
   - label: "Congress.gov"
@@ -63,6 +63,8 @@ timeline:
     event: "Signed into law by President Trump as Public Law 119-12"
   - date: "2026-05-19"
     event: "Statutory deadline for platform takedown procedures; FTC begins enforcement, launches TakeItDown.ftc.gov"
+  - date: "2026-09-09"
+    event: "Re-verified: no formal FTC enforcement action or civil penalty complaint publicly reported since the May 2026 warning letters; compliance letters confirmed sent to at least 15 platforms (Alphabet, Amazon, Apple, Automattic, Bumble, Discord, Match Group, Meta, Microsoft, Pinterest, Reddit, SmugMug, Snapchat, TikTok, X)"
 ---
 The TAKE IT DOWN Act makes it a federal crime to knowingly publish nonconsensual intimate images of real people — including AI-generated deepfake pornography — without consent. It also requires covered online platforms to build a removal process and take down such content, and known copies of it, within 48 hours of a valid victim request, with the FTC empowered to enforce compliance.
 

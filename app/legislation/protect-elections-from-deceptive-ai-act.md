@@ -14,7 +14,7 @@ last_action_date: '2025-09-10'
 sponsors:
 - Sen. Amy Klobuchar (D-MN)
 - Rep. Julie Johnson (D-TX)
-cosponsor_count: 4
+cosponsor_count: 8
 committees:
 - Senate Rules and Administration
 - House Administration
@@ -47,10 +47,10 @@ scoring:
     Depth: "Driven almost entirely by the private-right-of-action remedy for election deepfakes — the bill doesn't otherwise touch developers, agencies, or federal preemption."
     E_f: "Targeted candidates can sue directly for injunctive relief and damages — a private right of action, the strongest enforcement mechanism on the ladder."
     P: "Federal version of a restriction several states have already enacted against election deepfakes — extends an existing multi-state approach rather than breaking new ground."
-    likelihood: "Both the Senate version (introduced March 2025) and House companion (introduced September 2025) remain parked in committee with no markup scheduled. Bipartisan Senate cosponsors (including Hawley, Collins, Coons, and Bennet) help its odds somewhat, but with no hearing activity in nearly a year, its prospects remain thin."
+    likelihood: "As of September 2026, both the Senate version (introduced March 2025) and House companion (introduced September 2025) remain parked in committee with no markup scheduled in the 119th Congress. H.R. 5272's cosponsor list has grown to 8 (bipartisan, including Fitzpatrick, Houlahan, Gonzales, Alford, Hoyle, and Foushee), and the Senate version still carries bipartisan cosponsors (Hawley, Collins, Coons, Bennet) from an earlier, similar bill that cleared Senate Rules 9-2 in the prior Congress — but that markup was on the 118th Congress predecessor (S. 2770), not this bill, and no comparable markup has occurred this Congress. Prospects remain thin without a scheduled hearing."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - deepfakes
 - elections
@@ -60,12 +60,16 @@ sources:
   url: https://www.congress.gov/bill/119th-congress/senate-bill/1213
 - label: Congress.gov (House)
   url: https://www.congress.gov/bill/119th-congress/house-bill/5272
+- label: Legisletter AI Regulation Tracker
+  url: https://legisletter.org/issues/ai-regulation
 summary: Bans materially deceptive AI-generated media about federal candidates, with takedown and damages remedies.
 timeline:
 - date: '2025-03-31'
   event: S. 1213 introduced by Sen. Klobuchar; referred to Senate Rules
 - date: '2025-09-10'
   event: H.R. 5272 introduced by Rep. Johnson; referred to House Administration
+- date: '2026-09-09'
+  event: No committee markup yet in the 119th Congress; H.R. 5272 cosponsor count has grown to 8. Re-verified status per Legisletter's AI legislation tracker.
 ---
 
 The bill amends the Federal Election Campaign Act to prohibit distributing materially deceptive AI-generated audio or visual media relating to candidates for federal office. Targeted candidates could seek injunctive relief (court-ordered takedown) and damages, with exceptions for news broadcasts, satire, and parody.

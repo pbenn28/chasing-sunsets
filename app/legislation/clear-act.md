@@ -31,7 +31,7 @@ scoring:
     E_f: 1.0
     P: 0.4
   likelihood:
-    p_committee: 0.30
+    p_committee: 0.28
     p_enact: 0.05
     basis: "base_rate_adjusted"
   rationale:
@@ -45,10 +45,10 @@ scoring:
     Depth: "A narrow, disclosure-only bill — it doesn't reach beyond the training-data notice requirement."
     E_f: "Copyright owners can sue in federal court over a failure to file, with statutory penalties starting at $5,000 per instance plus possible injunctions and attorney's fees."
     P: "One of several federal copyright-transparency bills (alongside the TRAIN Act) rather than a wholly new model or permanent institution."
-    likelihood: "A bipartisan Schiff-Curtis pairing but only one cosponsor, still sitting at its initial Judiciary Committee referral with no further action recorded — an early-stage bill with modest odds."
+    likelihood: "A bipartisan Schiff-Curtis pairing but only one cosponsor, still sitting at its initial Judiciary Committee referral with no further action recorded — an early-stage bill with modest odds. GovTrack.us was unreachable (403) for this pass; law-firm tracking (Snell & Wilmer) confirms no hearings or markups scheduled as of mid-2026, and no committee action has surfaced through September 2026 either. The September 1, 2026 DOJ statement of interest backing AI-training-as-fair-use in NYT v. OpenAI raised the profile of the creator/copyright debate generally (with commentary framing it as pushing creators toward Congress for relief), but that doesn't translate into any concrete forward motion for this specific bill — estimate held essentially flat, nudged down slightly for continued inaction."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - copyright
 - training data
@@ -56,12 +56,18 @@ tags:
 sources:
 - label: Congress.gov
   url: https://www.congress.gov/bill/119th-congress/senate-bill/3813
+- label: "Snell & Wilmer legislation watch (no hearings/markup scheduled as of mid-2026)"
+  url: https://www.swlaw.com/publication/legislation-watch-for-ai-developers-and-registered-copyright-owners-the-federal-clear-act/
 summary: Requires notice to the Copyright Office listing copyrighted works used to train generative AI.
 timeline:
 - date: '2026-02-10'
   event: Introduced in the Senate
 - date: '2026-02-10'
   event: Read twice and referred to the Judiciary Committee
+- date: '2026-09-09'
+  event: "Re-verified: no committee hearing or markup since referral; still 1 cosponsor as of last available check."
 ---
 
 The bill requires anyone using a training dataset to train or release a generative AI model to submit a notice to the Register of Copyrights summarizing the copyrighted works in the dataset (and the dataset URL if publicly available). It directs the Register to issue implementing regulations within 180 days and sets civil penalties for failures to file, plus possible injunctions and attorney's fees. It sits alongside the TRAIN Act as one of several copyright-transparency approaches on this page.
+
+Update (September 2026): no hearings or markup have been scheduled in Senate Judiciary; the Justice Department's September 1, 2026 fair-use filing in NYT v. OpenAI adds a modest administration-level headwind to copyright-transparency bills generally.

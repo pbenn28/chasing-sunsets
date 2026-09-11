@@ -44,10 +44,10 @@ scoring:
     Depth: "Driven mainly by the new annual reporting requirement — a modest but real addition to federal oversight capacity, not a structural overhaul."
     E_f: "The annual report is a mandated obligation with a statutory deadline, but the bill attaches no penalty, rulemaking authority, or private right of action for missing it."
     P: "A narrow, self-contained interagency reporting mandate focused on financial crime — useful, but not a new institution or a template likely to be copied elsewhere."
-    likelihood: "Already cleared House Financial Services by a unanimous 52-0 vote and been placed on the Union Calendar, so committee passage is a done deal. Its odds of full enactment sit modestly above where most committee-passed bills land, helped by its bipartisan cosponsor mix and its low-controversy subject matter — a reporting mandate rather than a substantive regulatory fight — though a large majority of bills at this stage still don't become law."
+    likelihood: "Already cleared House Financial Services by a unanimous 52-0 vote and been placed on the Union Calendar since 6/24/26; as of 9/9/26 no House floor vote has been scheduled and no Senate companion action has surfaced. Its odds of full enactment sit modestly above where most committee-passed bills land, helped by its bipartisan cosponsor mix and its low-controversy subject matter — a reporting mandate rather than a substantive regulatory fight — though a large majority of bills at this stage still don't become law, and the lack of floor scheduling nearly three months after committee passage is a mild negative signal."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - financial crime
 - deepfakes
@@ -64,6 +64,8 @@ timeline:
   event: Ordered to be reported (amended), 52-0
 - date: '2026-06-24'
   event: Reported and placed on the Union Calendar
+- date: '2026-09-09'
+  event: Re-verified — no House floor vote scheduled and no Senate action since June
 ---
 
 The AI PLAN Act directs the Treasury, Homeland Security, and Commerce departments to jointly develop and submit an annual report to Congress on the economic and national-security risks of AI-enabled financial crimes — including deepfakes, voice cloning, synthetic identities, AI-assisted social engineering, and foreign election interference — inventorying resources available and needed, with legislative and best-practice recommendations.

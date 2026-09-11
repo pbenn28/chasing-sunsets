@@ -41,10 +41,10 @@ scoring:
     Depth: "Driven mainly by the private right of action for unauthorized digital replicas — the bill's other provisions don't extend much beyond that core mechanism."
     E_f: "Enforcement runs through a private right of action individuals and rights-holders can bring directly against creators, distributors, and platforms — the strongest enforcement mechanism this tracker sees, well beyond agency-only enforcement."
     P: "The first federal framework creating a durable IP right in voice and likeness against AI-generated replicas, layered on top of — not replacing — the existing patchwork of state right-of-publicity laws. If enacted, the right is permanent, not a sunset provision."
-    likelihood: "Cleared the Senate Judiciary Committee by unanimous voice vote in June 2026 after roughly a year of renegotiation between the entertainment and tech industries, with broad bipartisan cosponsorship. The House companion is still earlier in the process and hasn't been marked up, which keeps the odds of full enactment well below even money despite the Senate momentum."
+    likelihood: "Cleared the Senate Judiciary Committee by unanimous voice vote in June 2026 after roughly a year of renegotiation between the entertainment and tech industries, with broad bipartisan cosponsorship. As of 9/9/26, no Senate floor vote has been scheduled despite the Legislative Calendar placement, and the House companion (H.R. 8915) still hasn't been marked up in House Judiciary. The two-and-a-half-month gap since committee passage without floor action keeps the odds of full enactment well below even money despite the Senate momentum."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags: ["deepfakes", "likeness rights", "voice cloning", "copyright"]
 sources:
   - label: "Congress.gov (Senate)"
@@ -61,6 +61,8 @@ timeline:
     event: "Senate Judiciary Committee orders S.4591 reported by voice vote"
   - date: "2026-06-24"
     event: "Reported with a substitute amendment; placed on the Senate Legislative Calendar"
+  - date: "2026-09-09"
+    event: "Re-verified — no Senate floor vote scheduled; House Judiciary has not marked up H.R. 8915"
 ---
 The NO FAKES Act of 2026 would create a federal intellectual-property right letting individuals — or their estates and rights-holders — control the use of their voice and visual likeness in AI-generated "digital replicas," with civil liability for creators, distributors, and platforms that knowingly host unauthorized replicas. It carves out protections for news, parody, criticism, and other First Amendment-protected speech, plus library, archive, and research exemptions added in this 2026 revision.
 

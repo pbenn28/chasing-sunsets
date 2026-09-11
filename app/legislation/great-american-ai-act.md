@@ -41,10 +41,10 @@ scoring:
     Depth: "Driven mainly by the new funded evaluation body (CAISI) — the biggest structural change in the bill, ahead of its preemption and developer-obligation provisions."
     E_f: "Backed by fines up to $1 million per violation plus federal and state injunction authority — real regulatory teeth, short of a private right of action."
     P: "A 269-page, first-in-nation comprehensive frontier framework whose core pieces are already being copied into the narrower, standalone FRONTIER Act."
-    likelihood: "Still just a discussion draft, never formally introduced, and committee chairs have reportedly been skeptical — its most viable piece (frontier oversight) has already been spun off into a separate bill, a sign the broader package is struggling to gain traction."
+    likelihood: "As of 2026-09-09, still not formally introduced as a bill in either chamber — no bill number has been assigned, and no news of introduction, further markup, or renewed sponsor push has surfaced in the six weeks since 8/1. Its most viable piece (frontier oversight) remains spun off into the separately-tracked FRONTIER Act (H.R. 9925), which itself has seen no committee action either, reinforcing that the broader four-title package is stalled rather than advancing. No GovTrack page exists for an unintroduced draft, so this remains a base-rate heuristic with no live bill-tracker anchor."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags: ["frontier models", "federal framework", "preemption", "discussion draft"]
 sources:
   - label: "Sponsor press release"

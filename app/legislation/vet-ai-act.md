@@ -45,10 +45,10 @@ scoring:
     Depth: "Every substantive piece here — the assurance guidelines, the advisory committee — is voluntary rather than mandatory, so nothing pushes this bill's structural weight very far."
     E_f: "No penalties, civil enforcement, or private right of action attach to the NIST guidelines or the advisory committee's recommendations — everything here is voluntary."
     P: "A NIST voluntary-framework-plus-advisory-committee model is a familiar genre (echoing the AI Risk Management Framework) rather than a first-of-its-kind approach, and it's confined to the assurance/evaluator space."
-    likelihood: "Sponsors Hickenlooper and Capito ran an identical bill, S. 4769, in the prior Congress — it was reported out of the same committee by voice vote but never got a floor vote before that Congress ended. That history, plus the low-controversy, voluntary-standards content, suggests it can clear committee again but faces the same stall risk before reaching the floor."
+    likelihood: "Sponsors Hickenlooper and Capito ran an identical bill, S. 4769, in the prior Congress — it was reported out of the same committee by voice vote but never got a floor vote before that Congress ended. That history, plus the low-controversy, voluntary-standards content, suggests it can clear committee again but faces the same stall risk before reaching the floor. As of 2026-09-09, no markup or committee vote on S. 2615 itself has been reported since its 2025-07-31 referral (a CBO cost estimate exists but that alone doesn't indicate a markup date); GovTrack.us was unreachable (403) for a fresh prognosis check. Estimates held flat given no confirmed committee action yet in this Congress."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - NIST
 - assurance

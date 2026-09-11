@@ -31,9 +31,9 @@ scoring:
     E_f: 1.00
     P: 0.80
   likelihood:
-    p_committee: 0.18
-    p_enact: 0.025
-    basis: "base_rate_heuristic_no_live_lookup"
+    p_committee: 0.15
+    p_enact: 0.02
+    basis: "govtrack_corroborated"
   rationale:
     A: "Binds law-enforcement users of facial recognition technology, not the developers who build it, so it doesn't touch this axis."
     B: "Includes an express savings clause: nothing in the Act preempts concurrent or more stringent federal, state, or local limits on facial-recognition use."
@@ -45,10 +45,10 @@ scoring:
     Depth: "Driven mainly by its consumer-remedy provisions -- the bill's reach doesn't extend much beyond law-enforcement facial recognition."
     E_f: "Victims can sue directly for statutory damages, without needing an agency to act first."
     P: "Would be the first federal framework specifically regulating law-enforcement facial recognition, making it a likely template for future legislation."
-    likelihood: "A committee-stage bill from a single sponsor with 5 cosponsors and a two-committee referral — some signs of attention, but not yet the broad bipartisan backing that predicts quick movement."
+    likelihood: "As of 2026-09-09, no committee markup or floor action beyond the original referral in over a year; GovTrack's own modeled prognosis puts this at roughly 2% to clear committee and 1% enactment, which we corroborate but round slightly upward given continued (if quiet) sponsor attention and 5 cosponsors — still an all-Democratic sponsor list with no committee chair alignment predicting movement."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - facial recognition
 - law enforcement
@@ -56,6 +56,8 @@ tags:
 sources:
 - label: Congress.gov
   url: https://www.congress.gov/bill/119th-congress/house-bill/4695
+- label: GovTrack.us prognosis (re-verified 2026-09-09)
+  url: https://www.govtrack.us/congress/bills/119/hr4695
 summary: House bill to regulate law enforcement use of facial recognition; in committee.
 timeline:
 - date: '2025-07-23'

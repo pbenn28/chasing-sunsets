@@ -41,21 +41,31 @@ scoring:
     Depth: "Driven entirely by the preemption provision — a broad, though time-limited, moratorium on state AI regulation."
     E_f: "No private right of action or agency rulemaking; the moratorium works by barring state enforcement outright (or via potential DOJ action to enjoin it) rather than through penalties."
     P: "The moratorium is explicitly time-limited at five years rather than permanent, which tempers its precedent-setting weight even though preemption itself is the kind of provision that can otherwise reshape the regulatory landscape."
-    likelihood: "Sits in committee with zero cosponsors, essentially unchanged since its September 2025 introduction, and a nearly identical state-moratorium provision was rejected 99-1 as a Senate reconciliation amendment in 2025 — a rough sign for this vehicle specifically. The underlying push for federal preemption continues through other channels, like the White House's AI Litigation Task Force and talk of an executive order, that don't depend on this bill passing."
+    likelihood: "Re-verified 9/9/26: still sits in House Science, Space, and Technology Committee with zero cosponsors and no markup scheduled — congress.gov and GovTrack both returned 403s on direct fetch, so status is corroborated via secondary aggregators (legisletter.org, StatePulse) showing no action beyond a December 2025 committee notation. The broader preemption fight has moved to other vehicles since 8/1: the bipartisan Great American AI Act discussion draft (Obernolte-Trahan, a 3-year developer-focused preemption framework) is the live legislative center of gravity, the White House's December 2025 EO and AI Litigation Task Force continue to pursue preemption administratively, and a state-moratorium rider was again left out of 2026 NDAA/appropriations vehicles. None of this is H.R. 5388 advancing on its own merits — if anything, the emergence of a more comprehensive bipartisan alternative (Great American AI Act) makes this single-sponsor, zero-cosponsor bill even less likely to be the vehicle that moves. p_committee and p_enact held flat to reflect no material change in this bill's own prospects."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags: ["preemption", "state law", "moratorium", "federal standard"]
 sources:
   - label: "Congress.gov"
     url: "https://www.congress.gov/bill/119th-congress/house-bill/5388"
+  - label: "StatePulse bill tracker (re-verified 9/9/26)"
+    url: "https://www.statepulse.me/legislation/congress-bill-119-hr-5388"
+  - label: "legisletter.org AI Regulation in Congress tracker (re-verified 9/9/26)"
+    url: "https://legisletter.org/issues/ai-regulation"
+  - label: "StateScoop — state AI moratorium omitted from 2026 defense bill, Trump 'ONE RULE' EO"
+    url: "https://statescoop.com/state-ai-law-moratorium-omitted-2026-defense-bill-trump-eo/"
+  - label: "TechPolicy.Press — Unpacking the Great American Artificial Intelligence Act of 2026"
+    url: "https://www.techpolicy.press/unpacking-the-great-american-artificial-intelligence-act-of-2026/"
 summary: "Would impose a 5-year federal moratorium preempting state AI laws that restrict AI models or systems in interstate commerce."
 timeline:
   - date: "2025-09-16"
     event: "Introduced by Rep. Michael Baumgartner; referred to House Science, Space, and Technology Committee"
   - date: "2025-09-19"
     event: "Sponsor's office frames the bill as codifying a Trump executive order on state AI regulation"
+  - date: "2026-09-09"
+    event: "Re-verified: no committee action, no cosponsors added; congress.gov/GovTrack direct fetch blocked (403), status corroborated via secondary aggregators. The preemption fight's center of gravity has shifted to the bipartisan Great American AI Act discussion draft (Obernolte-Trahan, June 2026) and the White House's ongoing EO/litigation-task-force track, rather than this bill specifically."
 ---
 This bill would direct the President to develop and annually update a national AI action plan aimed at removing regulatory barriers to AI innovation and aligning federal risk-management standards. Alongside that plan, it would impose a five-year moratorium — not a permanent ban — on states and localities enforcing laws that restrict AI models, AI systems, or automated decision systems used in interstate commerce, with carve-outs for laws that facilitate AI deployment, generally applicable criminal statutes, and state procurement rules.
 
-It sits at the center of one of the year's biggest AI policy fights: a parallel effort to attach a similar state-law moratorium to a 2025 budget reconciliation bill was rejected by the Senate 99–1, but the underlying idea has persisted — in December 2025 the White House created an AI Litigation Task Force to challenge state AI laws directly, and reporting has floated a possible executive order establishing "one rule" for AI nationally, independent of whether this specific bill ever moves.
+It sits at the center of one of the year's biggest AI policy fights: a parallel effort to attach a similar state-law moratorium to a 2025 budget reconciliation bill was rejected by the Senate 99–1, and it was again left out of the 2026 NDAA, but the underlying idea has persisted — in December 2025 the White House created an AI Litigation Task Force to challenge state AI laws directly and issued an executive order seeking a uniform federal AI standard, and by mid-2026 a separate bipartisan discussion draft, the Great American Artificial Intelligence Act (Reps. Obernolte and Trahan), emerged as the more prominent vehicle for a (narrower, developer-focused, 3-year) federal preemption framework. As of 9/9/26, H.R. 5388 itself remains stalled in committee with no cosponsors.

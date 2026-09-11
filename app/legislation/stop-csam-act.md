@@ -34,7 +34,7 @@ scoring:
     P: 0.60
   likelihood:
     p_committee: 1.0
-    p_enact: 0.65
+    p_enact: 0.6
     basis: "govtrack_corroborated_adjusted"
   rationale:
     A: "Binds electronic communication and remote computing service providers -- platforms, hosts, and storage -- not the labs that train or release AI models. It expands mandatory CyberTipline reporting, adds an annual FTC/DOJ reporting regime for large platforms, and creates civil liability for platforms that host or facilitate CSAM, including AI-generated material, but a developer that never distributes or hosts content incurs nothing under it. The one open question is whether a model provider could itself count as a covered service when its own model generates the material -- an unsettled reading that would, if courts adopt it, create a real, if narrow, channel of developer exposure; this score assumes the narrower and more likely reading that these terms describe network and storage intermediaries, not model developers."
@@ -47,10 +47,10 @@ scoring:
     Depth: "Driven by the new private right of action against platforms (E) -- the direct legal exposure it creates is the bill's most consequential feature, well beyond its narrow effect on AI-specific governance."
     E_f: "Creates a private right of action for victims against providers -- real, direct legal exposure rather than reporting obligations alone."
     P: "Expands and formalizes the existing CyberTipline/NCMEC federal reporting framework rather than inventing a wholly new institution, while adding a new private right of action on top of it."
-    likelihood: "Already cleared the Senate Judiciary Committee unanimously and sits on the Senate calendar -- a completed step, not a forecast. Sen. Hawley has also negotiated its inclusion in the Senate's FY2027 NDAA manager's amendment, a must-pass annual vehicle, which meaningfully improves its odds of final enactment beyond what a standalone judiciary bill would typically see. The House companion remains stalled in committee with no comparable vehicle, and the NDAA rider could still be stripped in conference, so real but not certain."
+    likelihood: "Already cleared the Senate Judiciary Committee unanimously and sits on the Senate calendar -- a completed step, not a forecast (p_committee unchanged at 1.0). RE-VERIFIED 2026-09-09: as of this check, the FY2027 NDAA (S. 4784 / H.R. 8800) still has not reached final passage -- the House passed its own FY2027 NDAA on a 216-212 vote in July 2026, and the Senate version cleared the Armed Services Committee (18-9) and heads toward the floor, but no Senate floor passage or House-Senate conference agreement has been confirmed. There is no reporting that the STOP CSAM rider Hawley added to the Senate manager's amendment package on 2026-07-14 has been struck or amended since -- it appears to still be riding in the pending Senate NDAA text, but because the underlying NDAA vehicle itself has not reached the floor or a conference agreement, the rider's fate is still unresolved rather than confirmed. p_enact is nudged down slightly from 0.65 to 0.6 to reflect that over a month has passed with the NDAA still stalled pre-floor-passage and no independent floor or unanimous-consent action on S. 1829/H.R. 3921 directly -- the bill's enactment path still runs entirely through a must-pass vehicle that has not yet moved, and conference is a point where riders are traditionally at the most risk of being dropped."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - CSAM
 - child safety
@@ -60,6 +60,8 @@ sources:
   url: https://www.congress.gov/bill/119th-congress/senate-bill/1829
 - label: Congress.gov (House)
   url: https://www.congress.gov/bill/119th-congress/house-bill/3921
+- label: Sen. Hawley press release (NDAA rider)
+  url: https://www.hawley.senate.gov/hawley-negotiates-inclusion-of-stop-csam-act-in-senate-ndaa/
 summary: Bipartisan bill expanding CSAM protections and letting victims sue tech platforms; cleared Senate committee.
 timeline:
 - date: '2025-05-21'
@@ -68,6 +70,12 @@ timeline:
   event: H.R. 3921 introduced
 - date: '2025-06-26'
   event: S. 1829 ordered reported by Senate Judiciary; placed on calendar
+- date: '2026-07-14'
+  event: Sen. Hawley announced STOP CSAM Act text was added to the FY2027 NDAA manager's amendment package pending in the Senate; the NDAA itself remained stalled on the floor over unrelated disputes, and no direct floor or unanimous-consent action on S. 1829/H.R. 3921 itself has occurred
+- date: '2026-09-09'
+  event: Re-verified -- FY2027 NDAA (S. 4784/H.R. 8800) still has not reached Senate floor passage or a House-Senate conference agreement; House passed its own FY2027 NDAA 216-212 in July 2026. No reporting found that the STOP CSAM rider has been stripped from the pending Senate text, but its fate remains tied to the still-unresolved NDAA vehicle.
 ---
 
 The STOP CSAM Act revises the federal framework for preventing online child sexual exploitation. It expands protections and remedies for child victims, broadens CyberTipline reporting duties for interactive computer services, requires large providers to report annually to the FTC and DOJ, and creates new liability letting victims pursue civil action against providers that host or facilitate CSAM — including, increasingly, AI-generated material.
+
+**Update 2026-09-09:** The bill's enactment path still runs through the FY2027 NDAA rider Sen. Hawley negotiated in July 2026; as of this check that NDAA has not reached Senate floor passage or a conference agreement, so the rider's ultimate fate remains pending rather than resolved.

@@ -45,10 +45,10 @@ scoring:
     Depth: "Driven by the disclosure-and-penalty provisions for AI-impersonation robocalls — the bill doesn't reach much beyond that."
     E_f: "FCC enforcement backed by civil forfeiture and a criminal fine for violations, though it stops short of creating a private right of action."
     P: "A narrow, sector-specific amendment to the existing robocall penalty and disclosure framework, self-contained rather than a template for wider adoption."
-    likelihood: "A bipartisan bill (Sorensen and Ciscomani, 26 cosponsors) that recently landed a subcommittee hearing — a real positive signal, since most committee-stage bills never get one — though it remains early enough that passage is still a long shot."
+    likelihood: "A bipartisan bill (Sorensen and Ciscomani, 26 cosponsors) that landed a subcommittee legislative hearing on July 22, 2026 — a real positive signal, since most committee-stage bills never get one. As of September 2026, no full-committee markup has been scheduled or held since that hearing, so the bill hasn't advanced further; passage remains a long shot without a markup date."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - robocalls
 - AI voice

@@ -41,10 +41,10 @@ scoring:
     Depth: "Driven mainly by the new NIST Risk Board and registry -- real governance capacity, even though other axes are more modest."
     E_f: "NSA pre-release access and a standards-setting Risk Board point toward real agency-level enforcement, but the incident-tracking piece is voluntary and no civil-penalty regime backs it directly."
     P: "Stands up a new standing institution -- the AI Risk Board inside NIST -- the kind of durable framework other legislation is likely to build on or copy."
-    likelihood: "Introduced solo by Sen. Warner with no cosponsors, as one piece of a larger six-bill package, in a Republican-controlled Congress -- it's the most fully fleshed-out bill in that package, but that alone doesn't give it much of a path forward."
+    likelihood: "Introduced solo by Sen. Warner with no cosponsors, as one piece of a larger six-bill package, in a Republican-controlled Congress -- it's the most fully fleshed-out bill in that package, but that alone doesn't give it much of a path forward. As of 2026-09-09, no hearing, markup, or new cosponsor has been reported in Senate Commerce since introduction; GovTrack.us was unreachable (403) for a fresh prognosis check, so likelihood remains a base-rate heuristic. Estimates held flat given no material change in status."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags: ["frontier models", "national security", "pre-release testing", "NIST"]
 sources:
   - label: "Official bill text (GovInfo)"

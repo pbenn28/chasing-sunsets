@@ -47,10 +47,10 @@ scoring:
     Depth: "A study bill through and through — its only real content is the task force's mandate, so it doesn't cut very deep."
     E_f: "A study/task-force bill with no rulemaking, penalty, or enforcement mechanism attached."
     P: "The task force is required to disband 90 days after issuing its final report — a built-in sunset, not a lasting institution or template other agencies would adopt."
-    likelihood: "Bipartisan, bicameral sponsorship (Rep. Pettersen and Sen. Husted) and 10 cosponsors give this more backing than most bills in this batch, but both the House and Senate versions have sat in committee since 2025 with no markup scheduled. Low-profile study bills like this rarely move without attachment to a bigger vehicle."
+    likelihood: "Bipartisan, bicameral sponsorship (Rep. Pettersen and Sen. Husted) and 10 cosponsors give this more backing than most bills in this batch, but both the House and Senate versions have sat in committee since 2025 with no markup scheduled as of September 2026. Low-profile study bills like this rarely move without attachment to a bigger vehicle."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - deepfakes
 - financial fraud

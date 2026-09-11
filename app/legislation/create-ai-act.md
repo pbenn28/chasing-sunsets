@@ -32,7 +32,7 @@ scoring:
     P: 1.00
   likelihood:
     p_committee: 0.97
-    p_enact: 0.44
+    p_enact: 0.40
     basis: "govtrack_corroborated"
   rationale:
     A: "NAIRR is a compute, data, and testbed resource-provision program for researchers, educators, and students run through NSF — it places no obligations on AI developers. A funding earmark for safety, ethics, and privacy research doesn't create any standard or requirement, so it doesn't change that picture."
@@ -45,10 +45,10 @@ scoring:
     Depth: "Shallow by design — it funds resources and research rather than imposing obligations or touching preemption or governance-capacity levers."
     E_f: "A voluntary, opt-in resource-access program with no obligations to enforce and no penalties for anyone."
     P: "Would codify into permanent statute a standing NSF-operated program, building on the existing NAIRR pilot, meant to run on an ongoing basis rather than sunset."
-    likelihood: "Bipartisan sponsorship (Obernolte R-CA and Beyer D-VA), 33 cosponsors skewing Democratic despite Republican control of the chamber, and a lopsided 29-0 committee vote in June 2026 make this an unusually strong prospect for a bill at this stage — it has already cleared committee, with real (if still uncertain) odds of full enactment."
+    likelihood: "Bipartisan sponsorship (Obernolte R-CA and Beyer D-VA), 33 cosponsors skewing Democratic despite Republican control of the chamber, and a lopsided 29-0 committee vote in June 2026 make this an unusually strong prospect for a bill at this stage — it has already cleared committee, with real (if still uncertain) odds of full enactment. p_committee stays at 0.97 (functionally resolved — it already passed committee 29-0). Re-checked 2026-09-09 via WebSearch (congress.gov and GovTrack.us both returned 403) for House floor movement since the June 25 committee markup: no Rules Committee action, no floor vote scheduling, and no House floor consideration of H.R. 2385 or the broader ten-bill Science Committee AI package have been reported as of early September 2026 — the bill remains parked at 'ordered to be reported' status roughly 2.5 months later. That lack of momentum toward a floor vote is itself informative: p_enact is nudged down slightly from 0.44 to 0.40 to reflect the growing floor-calendar risk of a committee-passed bill that hasn't yet been scheduled, consistent with base rates for bills that stall between committee passage and floor action for an extended period. No updated cosponsor count was found in this pass."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - research
 - NAIRR
@@ -56,6 +56,8 @@ tags:
 sources:
 - label: Congress.gov
   url: https://www.congress.gov/bill/119th-congress/house-bill/2385
+- label: House Science Committee — H.R. 2385 bill page
+  url: https://science.house.gov/2026/6/h-r-2385-create-ai-act
 summary: Establishes the National AI Research Resource (NAIRR) to broaden access to AI research tools.
 timeline:
 - date: '2025-03-26'
@@ -64,4 +66,4 @@ timeline:
   event: Ordered to be reported (amended) by the committee, 29-0
 ---
 
-The bill establishes the National Artificial Intelligence Research Resource (NAIRR) to give U.S. researchers, educators, and students access to AI computing power, curated datasets, testbeds, and educational tools, operated through the NSF via a competitively selected nongovernmental entity. It directs that a significant share of resources support work on AI privacy, ethics, safety, security, and trustworthiness. It was among ten AI bills advanced by the House Science Committee in June 2026.
+The bill establishes the National Artificial Intelligence Research Resource (NAIRR) to give U.S. researchers, educators, and students access to AI computing power, curated datasets, testbeds, and educational tools, operated through the NSF via a competitively selected nongovernmental entity. It directs that a significant share of resources support work on AI privacy, ethics, safety, security, and trustworthiness. It was among ten AI bills advanced by the House Science Committee in June 2026. As of early September 2026, the bill has not been scheduled for a House floor vote and no Rules Committee action has occurred since the June committee markup.

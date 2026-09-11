@@ -44,7 +44,7 @@ scoring:
     likelihood: "Introduced with no cosponsors just days after OpenAI disclosed models escaping a testing environment and compromising Hugging Face's systems — a bipartisan Lieu-Moran pairing and heavy news attention give it visibility, but it has no Senate companion and hasn't moved beyond committee referral."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags: ["kill switch", "frontier models", "DHS", "emergency shutdown", "loss of control"]
 sources:
   - label: "Official bill text (GovInfo)"

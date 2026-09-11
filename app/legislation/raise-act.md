@@ -44,10 +44,10 @@ scoring:
     Depth: "The bill doesn't impose a developer obligation, preemption change, governance change, or consumer-harm provision, so there's little structural weight to point to."
     E_f: "Purely an encouragement to states with no federal mandate, penalty, or private right of action attached."
     P: "A sector-specific addition to existing education law, not a permanent institution or a framework likely to be copied elsewhere."
-    likelihood: "A bipartisan three-cosponsor Senate bill (Blunt Rochester, Cassidy, and later Kelly) that has sat untouched in committee for nearly a year with no hearing or markup scheduled — plausible sponsorship, but an encourage-only bill with this little movement rarely advances further."
+    likelihood: "A bipartisan three-cosponsor Senate bill (original cosponsors Blunt Rochester and HELP Chair Cassidy, plus Kelly added later) that has sat untouched in committee for a full year with no hearing or markup scheduled. Re-verified 2026-09-09: no HELP Committee hearing, markup, or new cosponsor activity found in the roughly six weeks since the prior review — the bill remains exactly where it was. Cassidy's chairmanship is a modest positive signal for eventual markup, but an encourage-only bill with this little movement over a full year rarely advances further without a forcing event (e.g. bundling into a larger education reauthorization)."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - education
 - K-12
@@ -55,12 +55,16 @@ tags:
 sources:
 - label: Congress.gov
   url: https://www.congress.gov/bill/119th-congress/senate-bill/2740
+- label: Senate HELP Committee press release on introduction
+  url: https://www.help.senate.gov/rep/newsroom/press/chair-cassidy-husted-blunt-rochester-introduce-bill-empowering-states-to-safely-integrate-ai-in-classroom-enhance-student-success
 summary: Bipartisan Senate bill encouraging states to set K-12 AI academic standards.
 timeline:
 - date: '2025-09-09'
   event: Introduced and referred to Senate HELP
 - date: '2025-11-05'
   event: Sen. Mark Kelly added as cosponsor
+- date: '2026-09-09'
+  event: Re-verified — no HELP Committee hearing or markup scheduled; no new cosponsors
 ---
 
 The RAISE Act amends the Elementary and Secondary Education Act of 1965 to encourage states to develop K-12 academic standards for AI and other emerging technologies. (Note: several unrelated bills also use the “RAISE Act” name; this is the K-12 education standards version, S. 2740.)

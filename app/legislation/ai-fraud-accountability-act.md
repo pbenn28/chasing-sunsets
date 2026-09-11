@@ -47,10 +47,10 @@ scoring:
     Depth: "Driven mainly by the criminal liability for AI-generated impersonation fraud, backed by new FTC enforcement authority."
     E_f: "Backed by FTC enforcement authority plus criminal liability for the underlying fraud — real teeth, even without a private right of action."
     P: "A sector-specific, self-contained fix for impersonation fraud rather than a new institution or a template likely to spread beyond this niche."
-    likelihood: "Referred to four separate House committees — Energy & Commerce, Judiciary, Science, and Foreign Affairs — which tends to slow things down, and cosponsorship is thin at just two members with no committee action since. A companion bill exists in the Senate, but the House path looks crowded and slow."
+    likelihood: "Referred to four separate House committees — Energy & Commerce, Judiciary, Science, and Foreign Affairs — which tends to slow things down, and cosponsorship remains thin with no committee markup in either chamber as of 9/9/26, five months after introduction. A companion bill (S. 3982) exists in the Senate, but neither chamber has scheduled action; the multi-committee referral in the House continues to look like the binding constraint."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - deepfakes
 - fraud
@@ -65,6 +65,8 @@ timeline:
   event: Introduced by Rep. Buchanan; referred to four committees
 - date: '2026-04-13'
   event: Rep. Jefferson Van Drew added as cosponsor
+- date: '2026-09-09'
+  event: Re-verified — no committee markup in either chamber since April; still pending in four House committees and Senate Judiciary
 ---
 
 The bill would establish protections against digital impersonation fraud by criminalizing the use of realistic AI-generated impersonations — visual or audio depictions of identifiable individuals — to commit fraud. It would grant the FTC clear enforcement authority and promote international cooperation to target foreign perpetrators. A Senate companion (S. 3982) also exists.

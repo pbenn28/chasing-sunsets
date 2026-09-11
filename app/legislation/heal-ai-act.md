@@ -44,10 +44,10 @@ scoring:
     Depth: "A modest, narrowly targeted grant program — none of its provisions move far from the status quo."
     E_f: "HHS is required to establish and run the grant program, but there's no penalty or enforcement mechanism attached to it."
     P: "A self-contained, sector-specific grant program with no lasting institution or broader framework created."
-    likelihood: "A committee-stage bill with just two cosponsors and single-party sponsorship, with no action since being referred — a fairly quiet trajectory typical of narrow bills at this stage."
+    likelihood: "Re-verified 2026-09-09: still committee-stage with the same two original cosponsors (Lieu, Gottheimer) and single-party sponsorship, with no hearing or markup action since referral — a fairly quiet trajectory typical of narrow bills at this stage, unchanged from the 8/1 assessment."
   confidence: medium
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - healthcare
 - education
@@ -59,6 +59,8 @@ summary: House bill funding AI literacy education and training for medical stude
 timeline:
 - date: '2025-11-18'
   event: Introduced and referred to House Energy and Commerce
+- date: '2026-09-09'
+  event: Status re-verified — still pending in House Energy and Commerce, no further action since referral
 ---
 
 The bill amends the Public Health Service Act to ensure medical students, residents, and faculty receive education and training in deploying AI in medicine, establishing an HHS grant program (up to $100,000 per grant) for accredited medical schools and residency institutions, with priority for those serving medically underserved communities.

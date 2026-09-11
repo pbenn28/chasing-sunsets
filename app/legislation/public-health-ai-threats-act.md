@@ -45,10 +45,10 @@ scoring:
     Depth: "Driven by the 180-day HHS reporting mandate — the bill's only substantive requirement."
     E_f: "HHS is obligated to submit the strategy, but the bill sets no penalty for missing the deadline."
     P: "A one-time strategy deliverable, sector-specific and self-contained, that doesn't create any lasting institution."
-    likelihood: "A reintroduction of a bill that already stalled once in the prior Congress despite bipartisan sponsorship (Budd and Markey); it has seen no action beyond committee referral since being reintroduced, and message-strategy bills without a scheduled hearing rarely move."
+    likelihood: "Re-verified 2026-09-09: a reintroduction of a bill that already stalled once in the prior Congress despite bipartisan sponsorship (Budd and Markey); still no action beyond committee referral, no scheduled HELP hearing or markup found, and message-strategy bills without a scheduled hearing rarely move — unchanged from the 8/1 assessment."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - biosecurity
 - public health
@@ -60,6 +60,8 @@ summary: Bipartisan Senate bill directing HHS to build a strategy against AI-ena
 timeline:
 - date: '2025-02-10'
   event: Introduced and referred to Senate HELP
+- date: '2026-09-09'
+  event: Status re-verified — still pending in Senate HELP, no further action since referral
 ---
 
 The bill would require HHS to prepare and submit to Congress within 180 days a strategy for public-health preparedness, response, and biodefense addressing risks from the misuse of AI that threaten national health security, particularly regarding biological or chemical weapons.

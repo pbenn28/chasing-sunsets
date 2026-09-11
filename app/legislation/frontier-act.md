@@ -41,10 +41,10 @@ scoring:
     Depth: "Driven by the frontier-conduct mandate, the preemption clause, and the new Under Secretary office, all of which push well off neutral."
     E_f: "Backed by civil penalties (up to $1 million per day for transparency violations, up to $10 million per day for violating an emergency order) pursued by the Attorney General or an opted-in state Attorney General, plus criminal penalties for willful violations of an emergency order — enforcement runs through government action rather than a private right of action."
     P: "Would stand up the first ongoing federal licensing-and-verification regime for frontier AI models, together with a durable federal ceiling on what states can require of developers in the same space — the kind of framework and preemption line later bills tend to be measured against or built on top of."
-    likelihood: "A fresh bipartisan pairing introduced days before this writing, with the lead sponsor chairing the House Science Committee's Research and Technology Subcommittee — enough to plausibly reach a hearing, but still at the earliest possible stage with five cosponsors and no companion in the Senate. It's also one of several competing frontier-AI proposals moving in the same Congress, which further limits its near-term odds."
+    likelihood: "As of 2026-09-09, no committee markup, hearing, or floor action has occurred in either House Energy and Commerce or Science, Space, and Technology since referral on 2026-07-23 — GovTrack.us was unreachable (403) for this pass, so likelihood is base-rate adjusted rather than GovTrack-corroborated. The bipartisan pairing (three Republicans, three Democrats, several sitting on Energy and Commerce) and the lead sponsor's subcommittee chairmanship still give this a plausible-but-unscheduled path to a hearing; six weeks with no scheduled markup and no Senate companion keeps near-term odds low. Estimates held flat from 8/1 given no material change in status."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags: ["frontier models", "federal framework", "audits", "incident reporting"]
 sources:
   - label: "Congress.gov"

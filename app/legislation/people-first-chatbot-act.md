@@ -41,10 +41,10 @@ scoring:
     Depth: "Driven almost entirely by the consumer-protection mandate — the ad-targeting ban, training-data consent rule, and safety-by-design requirements are where this bill's weight sits."
     E_f: "Creates a direct private right of action, with statutory damages up to $10,000 per violation (and floors of $50,000-$250,000 for safety-by-design violations specifically), fee-shifting, and a separate no-fault injury-liability claim against providers — about as strong an enforcement mechanism as this tracker sees."
     P: "Pairs a first-of-its-kind ban on ad-targeting from chatbot conversations with a training-data consent requirement — a framework later chatbot bills would likely borrow from."
-    likelihood: "Introduced by two Democratic sponsors with no Republican cosponsors so far and no committee action yet, just weeks after introduction — unlike the bipartisan GUARD and CHATBOT Acts, this one currently lacks cross-party backing, which keeps its near-term prospects weak."
+    likelihood: "RE-VERIFIED 2026-09-09: no change since 8/1. Still sitting in House Energy and Commerce with no markup scheduled, no additional cosponsors found, and no Republican cosponsors on record — unlike the bipartisan GUARD and CHATBOT Acts, this one still lacks cross-party backing two months after introduction, which keeps its near-term prospects weak. p_committee and p_enact held at their 8/1 values."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags: ["chatbots", "child safety", "data privacy", "advertising"]
 sources:
   - label: "Sponsor press release"
@@ -53,6 +53,8 @@ summary: "Would require safety-by-design protections in AI chatbots, ban targete
 timeline:
   - date: "2026-07-09"
     event: "Introduced by Rep. Foushee with Rep. Casar; referred to House Energy and Commerce Committee"
+  - date: "2026-09-09"
+    event: "Re-verified: no committee markup scheduled; bill remains pending in House Energy and Commerce with no new cosponsors identified"
 ---
 The People-First Chatbot Act would require AI chatbot providers to build in safety-by-design protections against harms like suicide, compulsive use, and emotional dependence; ban using chatbot conversations for targeted advertising to any user, not just minors; restrict using minors' chat data to train AI models (adults would need to affirmatively consent); and require periodic chatbot safety assessments.
 

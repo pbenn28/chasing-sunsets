@@ -45,10 +45,10 @@ scoring:
     Depth: "Driven mainly by the new NIST workforce-framework directive — a modest, advisory-level addition rather than a binding structural change."
     E_f: "NIST is under a real statutory duty to develop and update the framework, but no penalty, rulemaking authority, or private right of action attaches to anyone's conduct."
     P: "A sector-specific, self-contained NIST workforce-taxonomy directive modeled on the existing NICE Cybersecurity Workforce Framework — useful, but not a new institution or a template other domains would likely copy."
-    likelihood: "Still sitting at its original committee referral with no recorded action in the 16 months since introduction, and only one cosponsor despite the bipartisan Peters-Schmitt sponsorship. Companion workforce-framework bills that did advance had already cleared committee by this point, making this one's total lack of movement a materially weaker signal."
+    likelihood: "Still sitting at its original committee referral with no recorded action in the 16 months since introduction, and only one cosponsor despite the bipartisan Peters-Schmitt sponsorship. Companion workforce-framework bills that did advance had already cleared committee by this point, making this one's total lack of movement a materially weaker signal. Re-checked 2026-09-09: congress.gov and GovTrack.us both blocked automated fetches (403), so this was corroborated via WebSearch and the AIP FYI federal science bill tracker instead, which confirms status is still bare 'introduced,' last action remains the 2025-04-03 committee referral, and cosponsor count is still 1 — no markup, vote, or floor action in the intervening five weeks. GovTrack's own modeled prognosis was not directly accessible this pass (site blocked the fetch), so p_committee/p_enact remain base-rate-adjusted rather than GovTrack-anchored; no change to either probability given the total absence of new signal."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - workforce
 - NIST
@@ -63,3 +63,5 @@ timeline:
 ---
 
 The bill directs NIST to develop and publish a workforce framework defining AI job categories, work roles, and the knowledge, skills, and abilities to perform them, and to assess the need for similar frameworks for other critical and emerging technologies.
+
+As of 2026-09-09, the bill remains at its original April 2025 Senate Commerce Committee referral with no markup, vote, or new cosponsors recorded.

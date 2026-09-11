@@ -44,10 +44,10 @@ scoring:
     Depth: "A narrow, low-stakes research grant program with essentially no provisions that shift the status quo."
     E_f: "HHS has discretion to run the program, but there's no penalty structure or regulated party it applies to — purely voluntary."
     P: "A sector-specific, self-contained grant program with no permanent institution or framework that other bills would likely copy."
-    likelihood: "No action since being referred to committee in August 2025, with only one cosponsor — a narrow, single-sponsor bill with a low likelihood of moving forward this late in the term."
+    likelihood: "Re-verified 2026-09-09: no action since being referred to committee in August 2025, still with only one cosponsor and no hearing or markup scheduled — a narrow, single-sponsor bill with a low likelihood of moving forward this late in the term, unchanged from the 8/1 assessment."
   confidence: medium
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - healthcare
 - research grants
@@ -59,6 +59,8 @@ summary: House bill creating HHS grants to research generative AI in health care
 timeline:
 - date: '2025-08-26'
   event: Introduced and referred to House Energy and Commerce
+- date: '2026-09-09'
+  event: Status re-verified — still pending in House Energy and Commerce, no further action since referral
 ---
 
 The bill directs HHS to establish a grant program funding research on generative AI in health care — for example, helping clinicians record notes, ask medically relevant questions during appointments, and reduce administrative burden.

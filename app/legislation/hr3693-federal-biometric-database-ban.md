@@ -30,9 +30,9 @@ scoring:
     E_f: 0.40
     P: 0.40
   likelihood:
-    p_committee: 0.15
+    p_committee: 0.07
     p_enact: 0.02
-    basis: "base_rate_heuristic_no_live_lookup"
+    basis: "govtrack_corroborated"
   rationale:
     A: "Restricts what the federal government itself may do with biometric data, not AI developers, so it doesn't touch this dimension at all."
     B: "Contains no preemption, savings-clause, or state-related language of any kind."
@@ -44,10 +44,10 @@ scoring:
     Depth: "Driven mainly by the outright ban on federal collection and the privacy protection it delivers -- the bill doesn't extend beyond that single prohibition."
     E_f: "States a bare prohibition with no civil penalty, rulemaking authority, or right to sue attached."
     P: "A narrow, self-contained ban on one category of federal database rather than a broader institutional framework."
-    likelihood: "A single-sponsor, no-cosponsor bill sitting in committee with no bipartisan pairing or activity since it was referred -- low odds of moving."
+    likelihood: "As of 2026-09-09, still a single-sponsor, no-cosponsor bill sitting in House Oversight with no markup or further action since its June 2025 referral. GovTrack's modeled prognosis (7% committee, 2% enactment) is adopted directly here rather than the previous higher heuristic figure, since there is still no bipartisan pairing or chair alignment to justify a more optimistic read."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - biometrics
 - federal government
@@ -55,6 +55,8 @@ tags:
 sources:
 - label: Congress.gov
   url: https://www.congress.gov/bill/119th-congress/house-bill/3693
+- label: GovTrack.us prognosis (re-verified 2026-09-09)
+  url: https://www.govtrack.us/congress/bills/119/hr3693
 summary: Bill barring federal biometric identity-verification databases of US citizens; in committee.
 timeline:
 - date: '2025-06-03'

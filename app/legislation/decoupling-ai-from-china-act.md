@@ -44,10 +44,10 @@ scoring:
     Depth: "Its real weight sits in the China-focused export and investment controls rather than in domestic developer obligations, which this bill largely leaves untouched."
     E_f: "Backed by a criminal-law prohibition with real penalties, not just a study or voluntary standard, though it doesn't create a private right of action."
     P: "A sector-specific, self-contained China-AI-decoupling measure — it doesn't create a lasting institution or a framework likely to be copied elsewhere."
-    likelihood: "Solo-sponsored by Sen. Hawley with no cosponsors and no bipartisan pairing, sitting in Senate Judiciary since January 2025 with no hearing or other momentum — long odds for a bill at this stage."
+    likelihood: "Re-verified 2026-09-09: confirmed still solo-sponsored by Sen. Hawley with 0 cosponsors (R 0 / D 0 / I 0) and no committee hearing or markup — last action remains the original January 2025 referral to Senate Judiciary, over a year and a half with zero movement. No GovTrack prognosis published for a bill this dormant. Checked for inclusion in the FY2027 NDAA (stalled in the Senate after a failed 7/14/2026 cloture vote, no further floor action per CRS as of Sept. 1) — found no evidence this bill's sweeping trade/investment/R&D criminal prohibitions were folded into NDAA text in either chamber; its scope (broad criminal decoupling law via Title 18) is a poor fit for the narrower export-licensing provisions (AI OVERWATCH, Chip Security Act) that did get NDAA attention. No change to likelihood from 8/1."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - China
 - decoupling
@@ -60,6 +60,8 @@ summary: Would prohibit U.S. persons from importing, exporting, or advancing AI 
 timeline:
 - date: '2025-01-29'
   event: Introduced and referred to Senate Judiciary
+- date: '2026-09-09'
+  event: Re-verified — still 0 cosponsors, no hearing/markup, no evidence of FY2027 NDAA inclusion
 ---
 
 The bill would amend title 18 to prohibit U.S. persons from advancing AI capabilities within China — barring imports of Chinese-developed AI technology and IP, exports or transfers of U.S. AI technology to China, and (a year after enactment) holdings in or financing of Chinese AI-research entities tied to military-civil fusion, surveillance, or human-rights abuses.

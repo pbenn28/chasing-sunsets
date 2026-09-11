@@ -41,10 +41,10 @@ scoring:
     Depth: "Driven mainly by its consumer-protection mandate — the bill doesn't reach much further than banning specific chatbot behaviors toward minors."
     E_f: "Modeled on an Iowa law that relies on state attorney general enforcement rather than a private right of action, and the federal bill doesn't add a stronger enforcement mechanism of its own."
     P: "Explicitly modeled on an existing Iowa statute rather than written from scratch — a federal bill adopting an established state template rather than breaking new ground."
-    likelihood: "Solo-sponsored by Rep. Miller-Meeks with no cosponsors and no bipartisan pairing, introduced only weeks before this writing — the earliest-stage bill in the chatbot-safety cluster, with correspondingly long odds."
+    likelihood: "Confirmed no change since 8/1, re-verified 9/9: still solo-sponsored by Rep. Miller-Meeks with 0 cosponsors and no bipartisan pairing, and no further House Energy and Commerce action (hearing or markup) found — remains at initial committee referral, the earliest-stage bill in the chatbot-safety cluster, with correspondingly long odds."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags: ["chatbots", "child safety", "companion AI"]
 sources:
   - label: "Congress.gov"
@@ -53,6 +53,8 @@ summary: "House bill banning AI chatbots from simulating romance or sentience wi
 timeline:
   - date: "2026-07-16"
     event: "Introduced by Rep. Miller-Meeks; referred to House Energy and Commerce Committee"
+  - date: "2026-09-09"
+    event: "Re-verified: no cosponsors added, no committee hearing or markup scheduled"
 ---
 Modeled directly on an Iowa state law, the Conversational AI Services Act would ban AI chatbots from simulating romantic relationships, claiming sentience, or posing as licensed medical or mental-health professionals when interacting with minors. It would also prohibit gamification and engagement features designed to boost screen time, require parental supervision tools, and require chatbot operators to adopt protocols referring users expressing suicidal ideation to crisis services.
 

@@ -48,10 +48,10 @@ scoring:
     Depth: "The shallowest bill in this batch -- a disclosure-only rider with no deeper structural provisions."
     E_f: "The bill's real penalty (loss of federal grant/loan eligibility) attaches to offshoring conduct, not specifically to a failure to disclose AI use, so the AI provision itself carries no clearly stated penalty."
     P: "A narrow disclosure rule attached to a customer-service/offshoring bill, self-contained rather than part of a broader AI framework."
-    likelihood: "Still sitting at Introduced with no hearing, markup, or vote, referred to four House committees at once -- a multi-committee referral that tends to slow bills down. Sponsors span both parties (Rep. McDonald Rivet, D-MI, in the House; Sen. Gallego, D-AZ, and Sen. Justice, R-WV, in the Senate) with 13 House cosponsors, a modest but real base of support."
+    likelihood: "Re-verified 9/9/26: still sitting at Introduced with no hearing, markup, or vote on either H.R. 4954 (four House committees) or S. 2495 (Senate Commerce) — over a year since introduction with zero committee movement, consistent with the multi-committee referral tending to slow House bills down. Bipartisan sponsorship holds (Rep. McDonald Rivet, D-MI, in the House; Sen. Gallego, D-AZ, and Sen. Justice, R-WV, co-leading the Senate side) with 13 House cosponsors — a modest but real, and unchanged, base of support. congress.gov/GovTrack were not queried directly this pass; news aggregators confirm no committee action through at least mid-2026 and no markup/hearing announced for Sept. 2026. p_committee/p_enact held at prior values given the total absence of any catalyst."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - labor
 - customer service
@@ -65,6 +65,8 @@ timeline:
   event: Introduced in the House
 - date: '2025-08-12'
   event: Referred to four House committees
+- date: '2026-09-09'
+  event: Re-verified — no committee markup or hearing on H.R. 4954 or S. 2495; both remain pending at initial referral
 ---
 
 The bill requires the Labor Department to maintain a public list of employers that offshore call-center work, bars listed firms from certain federal grants and loans, and requires agents to disclose their physical location and offer transfer to a U.S.-based agent. Relevant to AI: when a business uses AI in customer service, it must disclose that fact and inform consumers of their right to request a U.S.-based human operator.

@@ -44,16 +44,18 @@ scoring:
     Depth: "Driven mainly by the outright ban and the privacy protection it delivers -- the bill doesn't extend beyond that single prohibition."
     E_f: "States a bare prohibition with no civil penalty, rulemaking authority, or right to sue attached."
     P: "A narrow, self-contained ban on one federal use case rather than a broader institutional framework."
-    likelihood: "A single-sponsor bill with no cosponsors and no bipartisan pairing, sitting in committee with no activity since referral -- low odds of moving."
+    likelihood: "As of 2026-09-09, re-verified: still a single-sponsor bill with no cosponsors and no bipartisan pairing, sitting in House Oversight with no markup or further action since its June 2025 referral. No GovTrack-published prognosis figure found distinct from its companion H.R. 3693; base-rate heuristic retained."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - facial recognition
 - federal government
 - identity verification
 sources:
 - label: Congress.gov
+  url: https://www.congress.gov/bill/119th-congress/house-bill/3782
+- label: Re-verification search (2026-09-09) — no committee action or new cosponsors found
   url: https://www.congress.gov/bill/119th-congress/house-bill/3782
 summary: Bill barring the federal government from using facial recognition for identity verification; in committee.
 timeline:

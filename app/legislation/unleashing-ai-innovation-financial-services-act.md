@@ -47,10 +47,10 @@ scoring:
     Depth: "Its structural weight comes almost entirely from the sandbox exemption itself — the bill doesn't build new government capacity or reach into other areas beyond that."
     E_f: "Applicants go through a formal agency approval process, but because the program grants forbearance rather than creating a new obligation, there's no penalty structure attached to it."
     P: "Functions as a financial-sector counterpart to the SANDBOX Act tracked elsewhere on this site — it extends an already-established regulatory-sandbox template rather than creating something novel or a lasting new institution."
-    likelihood: "The House version has already cleared Financial Services on a bipartisan 33-19 vote and moved to the Union Calendar, a real milestone. Its Senate companion, however, remains stalled in Banking with no markup scheduled. Both chambers carry bipartisan sponsor lists, which helps a narrow, low-salience bill like this one, but the stalled Senate half is a genuine bottleneck holding back its overall odds."
+    likelihood: "Re-verified 9/9/26: H.R. 4801 remains on the Union Calendar (No. 619) with no floor vote scheduled — it still appears on House Union Calendar listings as of both 8/17/26 and 9/3/26, confirming it hasn't moved further since the 6/24/26 placement. S. 2528 remains stalled in Senate Banking with no markup scheduled; opposition from a 60+ organization civil-rights/consumer/labor coalition (NCLC-led letter) has hardened since 8/1 but hasn't changed either chamber's procedural posture. congress.gov and GovTrack both blocked direct fetch (403); corroborated via GovInfo's House Union Calendar bulk data and committee/advocacy press. No material change in odds — holding p_committee/p_enact flat since neither chamber has advanced the bill since the last scoring pass."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - financial services
 - sandbox
@@ -58,6 +58,10 @@ tags:
 sources:
 - label: Congress.gov
   url: https://www.congress.gov/bill/119th-congress/house-bill/4801
+- label: GovInfo House Union Calendar, 9/3/26 (re-verified 9/9/26)
+  url: https://www.govinfo.gov/content/pkg/CCAL-119hcal-2026-09-03/html/CCAL-119hcal-2026-09-03-pt2.htm
+- label: NCLC coalition opposition letter
+  url: https://www.nclc.org/60-civil-rights-consumer-labor-technology-organizations-oppose-legislation-allowing-financial-firms-using-ai-to-ignore-the-law/
 summary: Would create “AI Innovation Labs” at financial regulators; House version reported, Senate version still in committee.
 timeline:
 - date: '2025-07-29'
@@ -66,6 +70,8 @@ timeline:
   event: House Financial Services orders H.R. 4801 reported, 33-19
 - date: '2026-06-24'
   event: H.R. 4801 placed on the Union Calendar
+- date: '2026-09-09'
+  event: Re-verified — H.R. 4801 still sitting on the Union Calendar with no floor vote scheduled (confirmed via House Union Calendar listings through 9/3/26); S. 2528 still stalled in Senate Banking with no markup scheduled. A 60+ group civil-rights/consumer coalition opposition letter has added political friction but no procedural change.
 ---
 
 The bill directs federal financial regulators (the Federal Reserve, FDIC, OCC, SEC, CFPB, NCUA, and FHFA) to establish “AI Innovation Labs” allowing regulated entities to test AI projects under waived or modified regulations without expectation of enforcement actions. It's a financial-sector cousin of the SANDBOX Act tracked here. The House version has advanced to the Union Calendar; the Senate companion, S. 2528, remains in the Banking Committee.

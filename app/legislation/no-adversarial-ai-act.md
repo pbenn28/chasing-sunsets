@@ -47,10 +47,10 @@ scoring:
     Depth: "Driven mainly by the new FASC listing process and the access restriction on adversary AI — the bill doesn't reach much further than that."
     E_f: "FASC and OMB administer and enforce the procurement bar directly, backed by a petition/delisting process — meaningful agency enforcement, though without civil penalties or a private right of action."
     P: "Extends the existing FASC framework (created under the 2018 FASCSA) to cover adversary AI specifically, building on an established process rather than standing up something entirely new."
-    likelihood: "The Senate bill has just one cosponsor, but its House companion carries the backing of the China Select Committee's chairman and ranking member with bipartisan cosponsors — a stronger signal of momentum than the raw cosponsor count suggests, and the kind of national-security procurement measure that sometimes gets folded into a must-pass vehicle like the NDAA. Still, no floor action has occurred yet."
+    likelihood: "The Senate bill has just one cosponsor, but its House companion carries the backing of the China Select Committee's chairman and ranking member with bipartisan cosponsors — a stronger signal of momentum than the raw cosponsor count suggests, and the kind of national-security procurement measure that sometimes gets folded into a must-pass vehicle like the NDAA. Re-checked as of 2026-09-09: no committee markup on either the Senate or House bill, and no confirmation this text (or equivalent adversarial-AI-procurement language) was folded into the FY2026 NDAA conference report, which finalized around this period with its own separate AI security provisions. Likelihood estimate holds unchanged pending clearer evidence either way."
   confidence: medium
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - procurement
 - national security
@@ -62,6 +62,8 @@ summary: Would bar federal agencies from procuring AI developed by foreign adver
 timeline:
 - date: '2025-06-25'
   event: Introduced in the Senate (companion H.R. 4142 in the House); referred to committee
+- date: '2026-09-09'
+  event: Re-verified — no committee markup on either bill; no confirmed inclusion in FY2026 NDAA conference text
 ---
 
 The bill would direct the Federal Acquisition Security Council to develop and publish a list of AI produced or developed by foreign adversaries and generally bar executive agencies from procuring such AI, with narrow exceptions for research, evaluation, and counterterrorism. The list would be updated at least every 180 days, with a petition process for removal. It is distinct from the Protection Against Foreign Adversarial AI Act tracked here.

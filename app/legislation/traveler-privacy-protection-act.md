@@ -31,7 +31,7 @@ scoring:
     E_f: 0.40
     P: 0.40
   likelihood:
-    p_committee: 0.09
+    p_committee: 0.15
     p_enact: 0.04
     basis: "govtrack_corroborated"
   rationale:
@@ -45,10 +45,10 @@ scoring:
     Depth: "Its weight comes mostly from the traveler-protection provisions — opt-out rights, consent, and data-minimization limits — with the GAO reporting requirement adding a smaller secondary layer."
     E_f: "Enforcement relies on TSA compliance plus mandatory GAO oversight reporting; there's no stated civil penalty, no dedicated enforcement authority, and no private right of action."
     P: "Narrow and sector-specific to TSA airport screening, not built as a reusable framework for other agencies."
-    likelihood: "A bipartisan pairing (Merkley and Kennedy) with five cosponsors, but the bill has sat in Senate Commerce without a committee vote since introduction in May 2025 — typical for a single-chamber bill at this stage, and its prospects remain modest."
+    likelihood: "Re-verified 2026-09-09: a Senate Commerce markup was scheduled for 2025-07-30 with EPIC/ACLU/POGO support, but no source confirms the bill actually cleared committee — it appears to still be pending over a year later, and airlines/airports oppose a related Senate bill in this space, adding friction. We nudge p_committee up modestly from the prior estimate given the markup attempt and sustained bipartisan sponsor pairing (Merkley, Kennedy, Markey, Marshall, Van Hollen, Daines), but this remains a bipartisan-but-stalled bill, not one with a clear path to the floor. Note: an earlier-Congress predecessor (S. 3361, 118th Congress) reportedly saw committee action in 2024, but that does not carry over to this reintroduced 119th Congress bill."
   confidence: medium
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - facial recognition
 - TSA
@@ -57,10 +57,16 @@ tags:
 sources:
 - label: Congress.gov
   url: https://www.congress.gov/bill/119th-congress/senate-bill/1691
+- label: EPIC coalition letter noting scheduled 2025-07-30 Senate Commerce markup (re-verified 2026-09-09)
+  url: https://epic.org/epic-et-al-call-on-congress-to-codify-protections-for-travelers-from-tsa-facial-recognition/
 summary: Bipartisan Senate bill requiring a TSA facial-recognition opt-out at airports; in committee.
 timeline:
 - date: '2025-05-08'
   event: Introduced and referred to Senate Commerce
+- date: '2025-07-30'
+  event: Markup scheduled in Senate Commerce, Science, and Transportation (outcome not confirmed by available sources)
+- date: '2026-09-09'
+  event: Re-verified — still pending in committee; no confirmation the 2025-07-30 markup resulted in a committee vote or reported bill
 ---
 
 The bill would limit TSA use of facial recognition for passenger screening — requiring TSA to offer and notify passengers of a non-facial-recognition option, barring less-favorable treatment for opt-outs, imposing data-minimization limits (no storage of facial images beyond 24 hours except for testing), and mandating GAO oversight.

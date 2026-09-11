@@ -35,7 +35,7 @@ scoring:
   likelihood:
     p_committee: 0.15
     p_enact: 0.02
-    basis: "base_rate_heuristic_no_live_lookup"
+    basis: "base_rate_heuristic_live_lookup_confirmed_no_change"
   rationale:
     A: "Funds NSF grants for AI literacy programs with no obligations placed on AI developers — capacity and money, no strings attached."
     B: "Contains no preemption, savings-clause, or state-authority language of any kind — it's solely NSF grants and agency-to-Congress reporting."
@@ -47,10 +47,10 @@ scoring:
     Depth: "Driven by the modest grant-and-reporting structure — an education program without any regulatory teeth."
     E_f: "Grant conditions and a congressional reporting requirement carry no stated penalty for noncompliance."
     P: "A sector-specific, self-contained literacy and education program that doesn't build any new institution or set a broader precedent."
-    likelihood: "A single-sponsor, Democratic-only bill with just four cosponsors, referred to four separate committees — the jurisdictional spread and thin cosponsorship don't point to any near-term momentum."
+    likelihood: "Re-verified 2026-09-09: congress.gov and GovTrack.us both returned 403 on direct fetch; WebSearch for markup/vote/cosponsor news turned up nothing dated after 2026-05-06 specific to this bill (a widely-indexed 'nine AI bills pass House Science Committee' story is from September 2024, a different Congress, and does not include H.R. 3210). No committee markup, floor action, or cosponsor change found. Still a single-sponsor-led, Democratic-only bill with four cosponsors spread across four committees with no aligned champion pushing it — base-rate odds for a bill at this stage after four months of inactivity remain low."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - education
 - literacy

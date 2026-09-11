@@ -44,10 +44,10 @@ scoring:
     Depth: "Driven entirely by its new criminal liability for AI-generated intimate-image abuse; the bill doesn't touch developer, preemption, or governance-capacity axes at all."
     E_f: "Enforced through the military-justice and court-martial system as a criminal provision, comparable to prosecutor-only enforcement in the civilian system, with no private right of action."
     P: "A targeted, self-contained amendment to one criminal code (the UCMJ) rather than a new institution or a framework other bills would likely copy."
-    likelihood: "Remains referred to committee with zero cosponsors and no action since introduction in September 2025 — a quiet trajectory on its own, though NCII and deepfake provisions targeting service members have a history of getting folded into the annual defense authorization bill, which is its likelier path to enactment."
+    likelihood: "Remains referred to committee with zero cosponsors and no action since introduction in September 2025, re-verified 9/9/26 with still no markup scheduled. Note that Mace's core UCMJ revenge-porn/deepfake language was already enacted as a standalone amendment in the FY26 NDAA (signed December 18, 2025, before this tracker's prior 8/1/26 scoring), which reduces the marginal urgency of H.R. 5090 passing on its own; the FY27 NDAA (H.R. 8800), now moving through the House, is the likelier near-term vehicle for any further HONOR Act-style provisions rather than standalone passage of this bill."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - deepfakes
 - military
@@ -60,6 +60,12 @@ summary: House bill extending UCMJ bans on nonconsensual intimate images to AI d
 timeline:
 - date: '2025-09-02'
   event: Introduced and referred to House Armed Services
+- date: '2025-12-18'
+  event: "FY26 NDAA signed into law, incorporating Mace's core UCMJ revenge-porn/deepfake amendment separately from this standalone bill"
+- date: '2026-09-09'
+  event: Re-verified — H.R. 5090 itself remains in committee with no markup; FY27 NDAA (H.R. 8800) is the likelier vehicle for further provisions
 ---
 
 The HONOR Act amends the Uniform Code of Military Justice to expand its prohibition on wrongful broadcast, distribution, or publication of intimate visual images to explicitly cover AI-generated “digital forgeries.” It clarifies that consent to an image's creation is not consent to its distribution and adds protections against digitally altered sexual depictions of minors.
+
+**Update (9/9/26):** H.R. 5090 itself remains stalled in the House Armed Services Committee with no cosponsors and no markup. Note that its core substance — a UCMJ ban on nonconsensual and AI-generated intimate-image distribution — was already enacted separately via Rep. Mace's amendment to the FY26 NDAA, signed into law in December 2025.

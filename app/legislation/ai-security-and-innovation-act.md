@@ -47,7 +47,7 @@ scoring:
     likelihood: "Cleared committee by a unanimous, bipartisan 29-0 vote, with bipartisan lead sponsors and cosponsors split across both parties. Its odds run well above a typical committee-passed bill, in part because it largely codifies an executive-branch body (the AI Safety Institute) that already exists rather than creating new controversial authority — but as of this writing no House floor vote has been scheduled, and it still needs a Senate companion and a floor slot in a crowded calendar."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - NIST
 - CAISI

@@ -44,10 +44,10 @@ scoring:
     Depth: "Driven by the scale of the liability shield -- a real but sector-specific rule for professional-use AI, not an economy-wide change."
     E_f: "The safe harbor is conditioned on ongoing public disclosure, but the bill spells out no separate penalty regime beyond simply losing the shield if a developer doesn't comply."
     P: "A liability rule scoped narrowly to professional use of AI -- self-contained rather than a template for broader AI governance."
-    likelihood: "Introduced solo by Sen. Lummis with no cosponsors and no bipartisan partner, sitting in Senate Commerce since June 2025 without hearings or other visible momentum."
+    likelihood: "Introduced solo by Sen. Lummis with no cosponsors and no bipartisan partner, sitting in Senate Commerce since June 2025 without hearings or other visible momentum. As of 2026-09-09, no hearing, markup, or new cosponsor has been reported in the six weeks since 8/1; GovTrack.us was unreachable (403) for a fresh prognosis check, so likelihood remains a base-rate heuristic. Estimates held flat given no material change in status."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - liability
 - transparency

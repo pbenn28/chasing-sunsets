@@ -45,10 +45,10 @@ scoring:
     Depth: "Driven mainly by the voluntary-standard-plus-liability-shield design in Sec. 3-4 — it doesn't extend much beyond that combination."
     E_f: "The NIST standard is explicitly voluntary, and while the liability shield carries real legal weight, the bill attaches no rulemaking, civil penalty, or private right of action to the underlying standard."
     P: "A self-contained, sector-specific fix — a single voluntary framework aimed at one harm, without creating a new institution or joining a broader multi-jurisdiction template."
-    likelihood: "Bipartisan (Cornyn R-TX and Kim D-NJ), with a third cosponsor added in December 2025, but still sitting in Senate Commerce without a markup, competing for attention against several other child-safety and chatbot bills. Its voluntary, low-controversy design makes it an easier committee lift than access-restriction bills like the CHAT Act, though odds of actual enactment remain slim."
+    likelihood: "RE-VERIFIED 2026-09-09: no change since 8/1. Senate Commerce held a kids'-online-safety markup on 2026-08-05 that advanced KOSA, the Youth AI Privacy Act, and the CHATBOT Act, but PROACTIV AI Data Act was not among the bills reported out — it remains bipartisan (Cornyn R-TX and Kim D-NJ) and still sitting in Senate Commerce without a markup of its own. Its voluntary, low-controversy design still makes it a plausible future committee lift, but it was passed over in the committee's one recent markup window, which does not improve its odds. p_committee and p_enact held at their 8/1 values."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - CSAM
 - training data
@@ -63,6 +63,8 @@ timeline:
   event: Introduced and referred to Senate Commerce
 - date: '2025-12-01'
   event: Sen. Ted Budd added as cosponsor
+- date: '2026-09-09'
+  event: 'Re-verified: not included in Senate Commerce Committee''s 2026-08-05 kids''-online-safety markup (which advanced KOSA, the Youth AI Privacy Act, and the CHATBOT Act); still awaiting its own committee action'
 ---
 
 The PROACTIV AI Data Act directs NIST to develop and issue voluntary best practices for AI developers to detect, remove, and report known child sexual abuse material in AI training datasets. It directs the NSF to support detection and removal research and provides limited liability protection to developers that follow the best practices in good faith.

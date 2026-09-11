@@ -47,7 +47,7 @@ scoring:
     likelihood: "A committee-stage bill with just one cosponsor and no bipartisan pairing, and no hearings or movement since its February 2025 referral."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - accountability
 - NTIA

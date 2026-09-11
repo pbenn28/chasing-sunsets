@@ -44,10 +44,10 @@ scoring:
     Depth: "Driven mainly by the strength of its consumer-protection provisions -- the private right of action, damages, and exclusionary rule give it real teeth beyond the underlying use ban."
     E_f: "Backed by an individual private right of action with actual and punitive damages (Sec. 3(c)(2)(B),(D)) -- the strongest enforcement mechanism available."
     P: "Combining a private right of action, an exclusionary rule, and state attorney general enforcement makes this a comprehensive model other biometric-surveillance bills are likely to draw from."
-    likelihood: "A Senate bill with 4 cosponsors, all from one party, still in committee -- decent but not yet bipartisan momentum."
+    likelihood: "Re-verified 2026-09-09: still in Senate Judiciary with no markup scheduled; cosponsor count confirmed at 4 (Wyden, Merkley, Alsobrooks, Sanders), all Democratic-caucus, no Republican co-sponsor despite the topic's bipartisan potential on civil-liberties grounds. A House companion (H.R. 7363, Jayapal) has since been introduced, which slightly raises the odds of this becoming the vehicle Congress eventually uses if ICE surveillance stays a live news story, but neither chamber shows committee movement yet."
   confidence: medium
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - facial recognition
 - immigration
@@ -56,10 +56,14 @@ tags:
 sources:
 - label: Congress.gov
   url: https://www.congress.gov/bill/119th-congress/senate-bill/3779
+- label: House companion bill H.R. 7363 (Jayapal), re-verification search 2026-09-09
+  url: https://www.congress.gov/bill/119th-congress/house-bill/7363
 summary: Senate bill banning ICE and CBP use of facial recognition and biometric surveillance; in committee.
 timeline:
 - date: '2026-02-04'
   event: Introduced in the Senate and referred to committee
+- date: '2026-09-09'
+  event: Re-verification found no committee markup in Senate Judiciary; noted House companion bill H.R. 7363 (Jayapal) has since been introduced under the same short title
 ---
 
 The bill would bar ICE and CBP officers, and certain deputized local officers, from acquiring or using facial recognition and other biometric surveillance within the U.S., require deletion of related biometric data within 30 days, make illegally obtained biometric information inadmissible in most federal proceedings, and create a private right of action plus state-AG enforcement. (Committee assignment is the best available estimate pending confirmation.)

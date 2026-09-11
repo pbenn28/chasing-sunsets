@@ -12,7 +12,7 @@ last_action: Ordered to be reported (amended) by the House Foreign Affairs Commi
 last_action_date: '2026-04-22'
 sponsors:
 - Rep. Bill Huizenga (R-MI)
-cosponsor_count: 18
+cosponsor_count: 21
 committees:
 - House Foreign Affairs
 scoring:
@@ -44,10 +44,10 @@ scoring:
     Depth: "Driven mainly by the new mandatory reporting and attacker-list apparatus it creates -- the bill doesn't reach much further beyond that."
     E_f: "Enforcement runs through executive action — IEEPA sanctions, asset freezes, and Commerce Entity List designation — carrying real economic consequences without requiring a private lawsuit."
     P: "A narrow, self-contained national-security mechanism aimed specifically at AI model-weight theft, rather than a permanent new institution or a template other legislation is likely to copy."
-    likelihood: "Cleared the House Foreign Affairs Committee unanimously (43-0) with 18 bipartisan cosponsors, and a companion Senate effort on AI espionage signals cross-chamber momentum — narrow, uncontroversial national-security subject matter that's unlikely to draw floor opposition, though full passage in both chambers and a presidential signature are still ahead."
+    likelihood: "Re-verified 2026-09-09: cosponsor count has grown from 18 to 21 (19 R / 2 D) since 8/1, but the bill has not moved beyond its April 22, 2026 committee order-to-report — no House floor vote, no Rules Committee action, and no Senate companion introduction found. (A secondary source reference to a Lawler 'Consensus Calendar' motion appears to be a generic description of that procedural mechanism rather than a documented action specific to this bill — that calendar requires 290 cosponsors, far beyond this bill's 21, and applies only to bills unreported by committee, which this one is not, so it is not treated as fact here.) GovTrack does not publish a numeric prognosis. Committee passage was unanimous and uncontroversial national-security subject matter continues to support a high p_committee-equivalent outcome (already achieved), but p_enact is essentially unchanged from 8/1 absent a floor schedule or Senate vehicle."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - model weights
 - theft
@@ -56,12 +56,16 @@ tags:
 sources:
 - label: Congress.gov
   url: https://www.congress.gov/bill/119th-congress/house-bill/8283
+- label: Legisletter, H.R. 8283 tracker
+  url: https://legisletter.org/bill/hr8283-deterring-ai-model-theft-act
 summary: Would sanction and counter foreign theft of American closed-source AI model weights.
 timeline:
 - date: '2026-04-15'
   event: Introduced in the House
 - date: '2026-04-22'
   event: Ordered reported (amended) by House Foreign Affairs, 43-0
+- date: '2026-09-09'
+  event: Re-verified — cosponsor count grown to 21; still no House floor vote or Senate companion
 ---
 
 The bill aims to prevent foreign adversaries from extracting key technical features — such as model weights — of closed-source, American-owned AI models. It would require federal agencies to identify foreign “entities of concern” illicitly accessing model characteristics, direct Commerce to share threat information with U.S. model owners, mandate a State Department assessment within 180 days, and authorize sanctions.

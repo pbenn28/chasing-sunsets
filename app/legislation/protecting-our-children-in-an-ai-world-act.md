@@ -44,10 +44,10 @@ scoring:
     Depth: "Driven entirely by the consumer-harm provision — the bill doesn't otherwise touch developer obligations, preemption, or government capacity."
     E_f: "Enforced by DOJ through criminal prosecution with real penalties, though the bill creates no private right of action."
     P: "A targeted fix to existing CSAM law rather than a new institution or a model other bills are likely to copy."
-    likelihood: "A narrow, single-sponsor bill with just one cosponsor that has sat in House Judiciary since introduction with no further action — the kind of quiet committee-stage bill that rarely advances."
+    likelihood: "RE-VERIFIED 2026-09-09: no change since 8/1. Still a narrow, single-sponsor bill with just one cosponsor sitting in House Judiciary with no further action; it was not among the 18 child-online-safety bills the House Energy and Commerce subcommittee advanced (which fed into the KIDS Act consolidation) nor among the bills in Senate Commerce's 2026-08-05 markup, both of which ran through different committees/chambers than this bill's own House Judiciary referral. GovTrack's own prognosis for H.R. 1283 (4% committee / 2% enactment) matches this tracker's existing p_committee/p_enact exactly, so both are held unchanged."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - CSAM
 - child safety
@@ -55,10 +55,14 @@ tags:
 sources:
 - label: Congress.gov
   url: https://www.congress.gov/bill/119th-congress/house-bill/1283
+- label: GovTrack prognosis
+  url: https://www.govtrack.us/congress/bills/119/hr1283
 summary: House bill to criminalize AI-generated child sexual abuse material; sits in Judiciary Committee.
 timeline:
 - date: '2025-02-13'
   event: Introduced and referred to House Judiciary
+- date: '2026-09-09'
+  event: 'Re-verified: no committee action; not included in the House Energy and Commerce subcommittee''s 18-bill child-online-safety markup or Senate Commerce''s 2026-08-05 markup, both of which ran through different committees'
 ---
 
 The bill amends title 18 to explicitly prohibit child sexual abuse material produced using AI, including realistic computer-generated imagery and AI-altered images of real minors, aiming to remove the defense that no real child was depicted and to broaden the legal definition of prohibited sexual images of children.

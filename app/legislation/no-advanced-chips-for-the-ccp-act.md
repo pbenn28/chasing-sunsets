@@ -44,10 +44,10 @@ scoring:
     Depth: "Nearly all of this bill's weight sits on the export-control provisions rather than spreading across developer obligations, preemption, or government capacity."
     E_f: "Enforcement runs through the existing Commerce export-licensing regime, with its civil and criminal penalties, layered on top of the congressional joint-resolution approval requirement."
     P: "A self-contained export-approval gate for one class of chips — it doesn't stand up a new permanent institution."
-    likelihood: "Introduced by a Democratic sponsor with five cosponsors and no committee action roughly a year later. Requiring an affirmative congressional joint resolution for every covered export is an unusually high bar, and the bill competes with more incrementalist chip-export proposals (like the Chip Security Act) that have moved further through committee instead."
+    likelihood: "Introduced by a Democratic sponsor with five cosponsors and still no committee action over a year later. Requiring an affirmative congressional joint resolution for every covered export remains an unusually high bar, and the FY2027 NDAA's chip-export riders that ultimately advanced (AI Overwatch Act, MATCH Act, Chip Security Act via manager's amendment, House-passed 7/22/2026) did not include this bill's joint-resolution mechanism — the NDAA itself has since stalled in the Senate after cloture failed 50-46 on 7/14/2026, with no further floor action as of 9/9/2026. No GovTrack prognosis is published for this bill; estimate uses base rates for standalone House export-control bills with single-digit cosponsor counts and no committee markup after a full year, adjusted slightly downward because the more incremental chip riders already absorbed the NDAA vehicle this bill might otherwise have ridden on."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - chip exports
 - China
@@ -55,10 +55,14 @@ tags:
 sources:
 - label: Congress.gov
   url: https://www.congress.gov/bill/119th-congress/house-bill/5022
+- label: Breaking Defense — NDAA stalled in Senate after House passage
+  url: https://breakingdefense.com/2026/07/house-passes-2027-ndaa-while-measure-remains-stalled-in-the-senate/
 summary: Would require congressional approval before exporting advanced AI chips to China.
 timeline:
 - date: '2025-08-22'
   event: Introduced and referred to House Foreign Affairs
+- date: '2026-09-09'
+  event: 'Re-verified: no committee action on H.R. 5022 itself; separate FY2027 NDAA chip-export riders (AI Overwatch Act, MATCH Act, Chip Security Act) advanced via House manager''s amendment and passed the House 7/22/2026, but the NDAA has since stalled after a failed Senate cloture vote on 7/14/2026'
 ---
 
-The bill would prohibit the export, reexport, or transfer of advanced AI semiconductors to China unless both the Secretary of Commerce and Congress (via joint resolution) approve. Covered chips are those exceeding thresholds for processing power, memory bandwidth, or interconnect capacity. It was introduced in response to reported openness to permitting exports of downgraded NVIDIA chips to China.
+The bill would prohibit the export, reexport, or transfer of advanced AI semiconductors to China unless both the Secretary of Commerce and Congress (via joint resolution) approve. Covered chips are those exceeding thresholds for processing power, memory bandwidth, or interconnect capacity. It was introduced in response to reported openness to permitting exports of downgraded NVIDIA chips to China. As of September 2026, this bill has not been folded into the FY2027 NDAA's chip-export rider package, which instead advanced narrower measures (AI Overwatch Act, MATCH Act, Chip Security Act); the NDAA itself remains stalled in the Senate.

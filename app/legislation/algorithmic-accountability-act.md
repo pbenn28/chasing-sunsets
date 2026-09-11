@@ -35,7 +35,7 @@ scoring:
   likelihood:
     p_committee: 0.02
     p_enact: 0.01
-    basis: "govtrack_corroborated"
+    basis: "base_rate_adjusted"
   rationale:
     A: "Requires covered entities to conduct bias, privacy, and performance impact assessments of automated decision systems, with documentation and annual reporting to the FTC. That's a binding, enforceable process, though it stops short of requiring sign-off from an outside licensed verifier before deployment."
     B: "Section 11 expressly states that nothing in the Act preempts state, tribal, city, or local law, and Section 9(b) lets state attorneys general bring their own enforcement actions alongside the FTC. State AI laws are explicitly left intact."
@@ -47,10 +47,10 @@ scoring:
     Depth: "Driven mainly by the reporting mandate (C) and consumer-harm scope (E) — a real compliance regime, but a fairly conventional one rather than a sweeping restructuring."
     E_f: "Backed by FTC rulemaking and civil-penalty authority, not a private right of action."
     P: "At least the third time this concept has been introduced since 2019 (the 117th Congress had a version too) — a familiar template being recycled rather than a genuinely new approach."
-    likelihood: "Introduced with only Democratic sponsors and cosponsors in a Republican-controlled Congress with little appetite for expanding FTC authority — no committee movement since referral, and the odds of advancing are slim."
+    likelihood: "As of 9/9/26, both S. 2164 (Senate Commerce) and H.R. 5511 (House Energy and Commerce) remain at initial committee referral with no markup or hearing on either side — congress.gov and GovTrack were both unreachable this pass (403 on both), so this is a base-rate estimate, not GovTrack-corroborated. Sponsorship/cosponsor list is still all-Democratic (Wyden plus Warren, Booker, Heinrich, Luján, Merkley, Hirono, Schatz on the Senate side), same partisan pattern as 8/1. No hearing, markup, or news catalyst has emerged since. p_committee/p_enact held at prior values."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - algorithmic accountability
 - FTC
@@ -66,6 +66,8 @@ timeline:
   event: S. 2164 introduced and referred to Senate Commerce
 - date: '2025-09-19'
   event: H.R. 5511 introduced and referred to House Energy and Commerce
+- date: '2026-09-09'
+  event: Re-verified — no committee markup or hearing on either S. 2164 or H.R. 5511; both remain pending at initial referral
 ---
 
 The bill directs the FTC to require covered entities to conduct impact assessments of automated decision systems and “augmented critical decision processes,” testing for bias, privacy, and performance risks. Large entities meeting revenue and data thresholds would maintain documentation and submit annual summary reports, with FTC rulemaking and enforcement. Sen. Wyden leads the Senate version; Rep. Clarke leads the House companion.

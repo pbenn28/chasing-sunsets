@@ -16,8 +16,11 @@ cosponsor_count: 4
 committees:
 - House Science, Space, and Technology
 - House Energy and Commerce
-- House Judiciary
+- House Agriculture
 - House Oversight and Government Reform
+- House Education and Workforce
+- House Judiciary
+- House Ways and Means
 scoring:
   axes:
     A: 0.0
@@ -33,8 +36,8 @@ scoring:
     E_f: 0.4
     P: 0.4
   likelihood:
-    p_committee: 0.3
-    p_enact: 0.05
+    p_committee: 0.25
+    p_enact: 0.04
     basis: "base_rate_heuristic_no_live_lookup"
   rationale:
     A: "An omnibus mix of a standards center, a research resource, and small-business aid — none of it imposes obligations on AI developers themselves."
@@ -47,10 +50,10 @@ scoring:
     Depth: "Driven mainly by the Chief AI Officers Council and related coordinating structures (C) — a modest advisory step rather than anything that reaches deep into industry practice."
     E_f: "The standards center, council, and research resource are administrative and coordinating bodies with no stated penalties attached to any provision."
     P: "A self-contained, sector-specific omnibus — standards, research resource, small-business aid, procurement council — rather than a first-in-nation template likely to be copied elsewhere."
-    likelihood: "A bipartisan pairing (Lieu, D-CA, and Obernolte, R-CA) with only 4 cosponsors, referred to seven House committees with no action yet recorded. The bipartisan sponsorship helps, but the broad multi-committee referral is a real headwind to any near-term movement."
+    likelihood: "A bipartisan pairing (Lieu, D-CA, and Obernolte, R-CA) with only 4 cosponsors, referred to seven House committees. As of 2026-09-09, no markup, hearing, or other committee action has been identified in any of the seven committees of referral (Science, Energy and Commerce, Agriculture, Oversight and Government Reform, Education and Workforce, Judiciary, Ways and Means) in the ~4.5 months since introduction. The bipartisan sponsorship helps, but the broad multi-committee referral remains a real headwind, and the continued silence across all seven committees is itself informative — bills referred this broadly rarely move without a single lead committee taking ownership, which hasn't happened here."
   confidence: medium
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - omnibus
 - standards
@@ -62,6 +65,8 @@ summary: Broad House AI omnibus referred to seven committees; no committee actio
 timeline:
 - date: '2026-04-27'
   event: Introduced and referred to seven House committees
+- date: '2026-09-09'
+  event: Re-verified — no committee markup or hearing recorded in any of the seven committees of referral since introduction
 ---
 
 A broad AI bill reportedly including a Center for AI Standards and Innovation, U.S. participation in international AI standards bodies, the National AI Research Resource, a Chief AI Officers Council, and AI resources for small businesses. Introduced by Reps. Lieu and Obernolte, it was referred to seven House committees with no committee action recorded.

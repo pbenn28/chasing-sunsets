@@ -44,10 +44,10 @@ scoring:
     Depth: "A standards-directive bill rather than a substantive mandate — driven mainly by the NIST task-force provision, without other axes adding much additional weight."
     E_f: "NIST's task forces are directed to develop voluntary technical standards with no rulemaking authority, civil penalties, or enforcement attached — a purely voluntary process."
     P: "Adds a synthetic-media detection and provenance standards process inside an existing agency rather than creating a new institution; comparable efforts (including C2PA-adjacent work) already exist elsewhere, so this is sector-specific and self-contained rather than a first-in-nation template."
-    likelihood: "Ordered reported by House Science on a unanimous, bipartisan 35-0 vote in June 2026, with sponsors spanning both parties (Foushee, Beyer, Moylan, Fitzpatrick) — a strong signal at the committee stage. Its odds of full enactment are more modest: no identified Senate companion has emerged, and only a few months remain in this Congress's second session, though a unanimous committee vote and bipartisan cosponsorship do meaningfully improve its chances relative to a typical House bill."
+    likelihood: "Ordered reported by House Science on a unanimous, bipartisan 35-0 vote in June 2026, with sponsors spanning both parties (Foushee, Beyer, Moylan, Fitzpatrick) — a strong signal at the committee stage. As of September 2026, no House floor vote has been scheduled and no Senate companion has been identified; the bill has not moved beyond committee-passed status since the June markup. Its odds of full enactment remain modest given the limited legislative runway left in this Congress's second session, though the unanimous committee vote and bipartisan cosponsorship do meaningfully improve its chances relative to a typical House bill."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - synthetic media
 - provenance

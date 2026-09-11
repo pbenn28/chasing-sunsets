@@ -48,7 +48,7 @@ scoring:
     likelihood: "A bipartisan Hawley-Blumenthal pairing, but momentum has been thin — only one cosponsor has signed on in the ten months since introduction, and the bill hasn't moved beyond its initial committee referral."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - frontier models
 - pre-deployment testing

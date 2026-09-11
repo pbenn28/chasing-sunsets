@@ -47,7 +47,7 @@ scoring:
     likelihood: "Already cleared the House Science Committee on a unanimous 35-0 vote as part of a package of ten AI bills, with bipartisan lead sponsors and cosponsors. That committee momentum puts its odds of eventual enactment well above where a typical bill sits at this stage, though most bills — even ones that clear committee — still don't become law."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - vulnerabilities
 - security

@@ -48,10 +48,10 @@ scoring:
     Depth: "Driven by the repeal-and-defund provision itself — the bill's only substantive move is undoing the executive order's preemptive effect."
     E_f: "Enforced through an appropriations rider barring funds for the executive order's implementation — a self-executing restriction on federal agencies rather than a private right of action or civil-penalty scheme aimed at regulated companies."
     P: "Restores the pre-executive-order status quo of each state setting its own AI rules independently, rather than establishing any new institution or framework."
-    likelihood: "Both the House and Senate versions remain in committee, with a Democratic-led coalition (34 House cosponsors, a handful of Senate Democrats) and no Republican buy-in. A bill undoing a sitting administration's own executive order faces a steep climb in a GOP-controlled Congress and White House, which would ultimately need to sign any repeal."
+    likelihood: "Re-verified 9/9/26: both versions remain in committee with no markup scheduled — S.4216 still sits in Senate Commerce (last action 3/26/26, 6 Senate cosponsors per BillTrack50) and H.R. 8031 in House Energy & Commerce/Judiciary (34 House cosponsors), all Democratic, no Republican cosponsors on either chamber's version. congress.gov and GovTrack both blocked direct fetch (403); status corroborated via BillTrack50 and legisletter.org, neither of which shows any committee action since introduction. The broader preemption fight has shifted toward the bipartisan Great American AI Act discussion draft (Obernolte-Trahan, June 2026) rather than a repeal fight over the EO — which reduces this bill's centrality further since it only targets the EO, not the more consequential legislative vehicle now in play. No basis to move p_committee/p_enact from 8/1 levels."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - preemption
 - state law
@@ -59,6 +59,10 @@ tags:
 sources:
 - label: Congress.gov
   url: https://www.congress.gov/bill/119th-congress/senate-bill/4216
+- label: BillTrack50 (re-verified 9/9/26)
+  url: https://www.billtrack50.com/billdetail/1994519
+- label: legisletter.org AI Regulation in Congress tracker (re-verified 9/9/26)
+  url: https://legisletter.org/issues/ai-regulation
 summary: Companion bills to repeal the December 2025 White House AI executive order and defund its implementation.
 timeline:
 - date: '2025-12-11'
@@ -67,6 +71,8 @@ timeline:
   event: H.R. 8031 introduced by Rep. Beyer
 - date: '2026-03-26'
   event: S. 4216 introduced by Sen. Schatz
+- date: '2026-09-09'
+  event: Re-verified — no committee action on either chamber's version since introduction; no Republican cosponsors added. Preemption debate's center of gravity has moved to the bipartisan Great American AI Act discussion draft rather than an EO-repeal fight.
 ---
 
 The GUARDRAILS Act would repeal the executive order “Ensuring a National Policy Framework for Artificial Intelligence” (issued December 11, 2025) and prohibit federal funds from being used to implement, administer, or enforce it. Its stated purpose is to preserve states' ability to enact their own AI safeguards rather than be preempted by a federal executive framework — the mirror image of the preemption-seeking bills also tracked here, such as the AI Leadership and Uniformity Act.

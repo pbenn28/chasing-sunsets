@@ -46,10 +46,10 @@ scoring:
     Depth: "Driven by the combination of a mandated provenance process and new enforcement authority — a meaningfully substantive bill, though not the most far-reaching on this list."
     E_f: "Enforcement runs through FTC rulemaking and civil-penalty authority alongside state-AG civil enforcement."
     P: "Would be the first federal content-provenance framework of its kind (NIST standards plus platform obligations), likely to serve as a template for later provenance mandates even though it doesn't itself create a permanent institution."
-    likelihood: "A bipartisan three-sponsor pairing (Cantwell, Blackburn, Heinrich) helps its odds, but the bill has sat with no committee action since introduction in April 2025 — over a year of inactivity that weighs against near-term movement despite the bipartisan support."
+    likelihood: "A bipartisan three-sponsor pairing (Cantwell, Blackburn, Heinrich) helps its odds, but the bill has sat with no committee action since introduction in April 2025 — as of 9/9/26, 17 months of inactivity in Senate Commerce, with no markup announced. That continued dormancy weighs against near-term movement despite the bipartisan support."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - provenance
 - watermarking
@@ -62,6 +62,8 @@ summary: Bipartisan Senate bill requiring AI content-provenance standards and pr
 timeline:
 - date: '2025-04-09'
   event: Introduced and referred to Senate Commerce Committee
+- date: '2026-09-09'
+  event: Re-verified — no committee markup scheduled or held since introduction
 ---
 
 The COPIED Act would direct NIST to develop standards for content provenance, watermarking, and synthetic-content detection, and require certain AI tools to let users attach provenance information to content they create or significantly modify. It would prohibit large platforms from stripping or tampering with that information and bar unauthorized use of provenance-protected copyrighted works to train AI, with FTC and state-AG enforcement.

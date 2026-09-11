@@ -44,10 +44,10 @@ scoring:
     Depth: "Driven entirely by the study-and-reporting-deadline requirement — a modest, self-contained mandate."
     E_f: "A study-and-report bill with no penalty, rulemaking, or private right of action attached."
     P: "A self-contained, sector-specific study mandate that doesn't create any new institution or set a template other bills would copy."
-    likelihood: "A committee-stage bill with just one cosponsor, sponsored by a non-voting Puerto Rico delegate with no bipartisan pairing — a quiet bill without much visible momentum."
+    likelihood: "Re-verified 2026-09-09: still committee-stage with just one cosponsor, sponsored by a non-voting Puerto Rico delegate with no bipartisan pairing and no committee action (hearing or markup) since referral — a quiet bill without much visible momentum, unchanged from the 8/1 assessment."
   confidence: medium
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - healthcare
 - administration
@@ -59,6 +59,8 @@ summary: House bill directing HHS to study using AI to streamline health care ad
 timeline:
 - date: '2026-01-14'
   event: Introduced and referred to House Energy and Commerce
+- date: '2026-09-09'
+  event: Status re-verified — still pending in House Energy and Commerce, no further action since referral
 ---
 
 The bill would require HHS, within 18 months, to study strategies for applying AI across the health-care industry to improve administrative and clerical processes while protecting patient data privacy and security, then report to Congress within six months of completing the study.

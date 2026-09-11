@@ -44,10 +44,10 @@ scoring:
     Depth: "Driven mainly by the NIST pilot program itself — the bill doesn't reach much beyond building that voluntary documentation framework."
     E_f: "The pilot program is entirely voluntary, with no penalties, rulemaking, or agency enforcement attached."
     P: "NIST already runs a voluntary AI Risk Management Framework; this pilot is an incremental extension of that existing approach rather than a new institution or a framework likely to be widely copied."
-    likelihood: "Already cleared committee on a unanimous 35-0 vote with bipartisan cosponsors including senior AI-focused members, and rode along in a low-controversy ten-bill NIST package the House Science Committee advanced — real momentum, helped by a similar prior package reaching House floor passage earlier in the year, though it would still need Senate floor time with no Senate companion yet in sight."
+    likelihood: "Already cleared committee on a unanimous 35-0 vote with bipartisan cosponsors including senior AI-focused members, and rode along in a low-controversy ten-bill NIST package the House Science Committee advanced — real momentum, helped by a similar prior package reaching House floor passage earlier in the year, though it would still need Senate floor time with no Senate companion yet in sight. As of 2026-09-09, no House floor vote on this bill or the broader ten-bill package has been reported; the Committee held a further markup on 2026-09-11-adjacent AI bills (CREATE AI Act and others) but that batch is separate from this one, and GovTrack.us was unreachable (403) for a fresh prognosis check. Estimates held flat given no confirmed floor action."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - model documentation
 - transparency

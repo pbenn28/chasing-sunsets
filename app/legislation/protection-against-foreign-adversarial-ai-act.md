@@ -44,10 +44,10 @@ scoring:
     Depth: "Driven by the contractor use-ban and reporting mandate — the bill doesn't reach much further beyond those two provisions."
     E_f: "The contractor ban is a binding obligation, but the bill specifies no penalty beyond ordinary contract compliance, and the Commerce/Defense report carries no penalty either."
     P: "A one-off prohibition aimed at a single adversary-linked company plus a one-time report, not a framework likely to be replicated elsewhere."
-    likelihood: "A bipartisan pairing (Cassidy and Rosen) that has sat in Senate Commerce for over a year with no further action — narrow national-security bills like this tend to clear committee well below average and are enacted only rarely, typically by riding along on a must-pass vehicle like the NDAA."
+    likelihood: "A bipartisan pairing (Cassidy and Rosen) that has now sat in Senate Commerce for over 16 months with no committee markup found. GovTrack's page for S. 1638 shows only the generic 'introduced' stage prognosis language with no bill-specific percentage published, so this estimate uses base rates for narrow national-security bills at this stage rather than a GovTrack anchor. The FY2027 NDAA — this bill's most plausible must-pass vehicle — passed the House 7/22/2026 but has stalled in the Senate after cloture failed 50-46 on 7/14/2026, and no reporting found ties S. 1638 specifically to the NDAA's chip/AI riders (which instead centered on the AI Overwatch Act, MATCH Act, and Chip Security Act); this modestly lowers the near-term enactment path."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - national security
 - DeepSeek
@@ -56,12 +56,16 @@ tags:
 sources:
 - label: Congress.gov
   url: https://www.congress.gov/bill/119th-congress/senate-bill/1638
+- label: GovTrack.us — S. 1638
+  url: https://www.govtrack.us/congress/bills/119/s1638
 summary: Bars federal contractors from using adversary-linked AI such as DeepSeek and orders a threat report.
 timeline:
 - date: '2025-05-07'
   event: Introduced in the Senate
 - date: '2025-05-07'
   event: Read twice and referred to the Senate Commerce Committee
+- date: '2026-09-09'
+  event: 'Re-verified: no committee markup found; still pending in Senate Commerce. FY2027 NDAA (the likeliest must-pass vehicle) passed the House 7/22/2026 but remains stalled in the Senate after a failed cloture vote 7/14/2026, with no reporting linking S. 1638 to the NDAA''s chip/AI riders'
 ---
 
 The bill seeks to protect the U.S. from AI applications based in or affiliated with countries of concern, including barring federal contractors from using the DeepSeek application and its parent company's services (subject to a narrow national-security/research waiver). It directs the Secretary of Commerce, with Defense, to report to Congress within one year on national-security threats from adversary-linked AI platforms — censorship, propaganda, export-control circumvention, and data-privacy risks.

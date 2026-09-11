@@ -44,10 +44,10 @@ scoring:
     Depth: "Driven only by its mild procurement condition -- the bill doesn't reach much further than that."
     E_f: "Agencies are directed to procure only compliant LLMs, but the text sets out no civil penalty, rulemaking authority, or private right of action for noncompliance."
     P: "Sector-specific and self-contained to federal LLM procurement; not the kind of framework other legislatures are likely to copy."
-    likelihood: "Has sat at committee referral since September 2025 with just one cosponsor, single-party sponsorship, and no Senate companion — the profile of a bill unlikely to advance further."
+    likelihood: "Has sat at committee referral since September 2025 with just one cosponsor, single-party sponsorship, and no Senate companion — the profile of a bill unlikely to advance further. Re-checked as of 2026-09-09: no Oversight and Government Reform markup, hearing, or other action has been identified in the year since referral, reinforcing the low-likelihood read rather than changing it."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - procurement
 - LLMs
@@ -59,6 +59,8 @@ summary: Would bar federal procurement of large language models not built on “
 timeline:
 - date: '2025-09-11'
   event: Introduced and referred to House Oversight and Government Reform
+- date: '2026-09-09'
+  event: Re-verified — no committee action recorded since referral; status unchanged
 ---
 
 The FAIR Act would prohibit federal procurement of large language models not developed in accordance with “unbiased AI principles” — requiring procured LLMs to be truthful, prioritize historical accuracy and objectivity, and not embed partisan viewpoints unless the underlying reasoning is disclosed to users. (Several unrelated bills in this Congress also carry the “FAIR Act” short title; this is the AI-procurement one, H.R. 5315.)

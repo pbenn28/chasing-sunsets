@@ -10,7 +10,7 @@ introduced_date: "2025-11-07"
 last_action: "Language was adopted as a Senate NDAA amendment (passed 77-20) but stripped out during House-Senate conference; standalone bills remain in committee with no floor action"
 last_action_date: "2025-12-17"
 sponsors: ["Sen. Jim Banks (R-IN)", "Sen. Elizabeth Warren (D-MA)", "Rep. John Moolenaar (R-MI)", "Rep. Raja Krishnamoorthi (D-IL)"]
-cosponsor_count: null
+cosponsor_count: 5
 committees: ["Senate Banking, Housing, and Urban Affairs"]
 scoring:
   axes:
@@ -28,7 +28,7 @@ scoring:
     P: 0.4
   likelihood:
     p_committee: 0.55
-    p_enact: 0.08
+    p_enact: 0.15
     basis: "base_rate_adjusted"
   rationale:
     A: "Binds AI chip exporters and manufacturers like Nvidia and AMD through an export-license certification requirement, not developers of AI models or systems — it doesn't touch how models are trained, evaluated, or deployed."
@@ -41,10 +41,10 @@ scoring:
     Depth: "The bill's real substance is its export-licensing condition, which sits outside how this depth measure is calculated, so the score here reads low despite the bill's practical weight."
     E_f: "Enforcement runs through Commerce Department export-license denial and the existing civil/criminal penalty regime for export-control violations."
     P: "A sector-specific, self-contained condition tied to one class of hardware, rather than a permanent new institution — notable for its profile, but narrow in structure."
-    likelihood: "Its strongest vehicle was a Senate NDAA floor amendment that passed 77-20 in October 2025, showing real bipartisan support, but it was stripped out during conference after opposition from the White House, Nvidia, and the semiconductor industry. The standalone bills remain in committee with no scheduled markup and no revival vehicle in sight, though sponsor interest from both parties (Banks, Warren, Cotton, Schumer, McCormick, Coons) persists."
+    likelihood: "Its strongest vehicle was a Senate NDAA floor amendment that passed 77-20 in October 2025, showing real bipartisan support, but it was stripped out during FY2026 NDAA conference in December 2025 after opposition from the White House, Nvidia, and the semiconductor industry. The standalone bills (S. 3150, H.R. 5885) remain in committee with no scheduled markup — neither has moved since introduction. A revival vehicle has since reappeared: GAIN-AI-style chip-prioritization language is reported to again be part of the Senate Armed Services Committee's FY2027 NDAA package (S. 4784, reported out of committee in June 2026), but the House-passed FY2027 NDAA (H.R. 8800, passed 216-212 on 2026-07-22) does not include it, mirroring last year's House/Senate split. As of 2026-09-09 the Senate has not yet passed its own FY2027 NDAA on the floor — a cloture motion failed 50-46 on 2026-07-14 over unrelated disputes, and the Senate is not scheduled to return to it until after the September 14 recess ends — so no conference committee has even convened yet to decide GAIN AI's fate a second time. GovTrack does not appear to publish an updated prognosis distinguishing the standalone bill from its NDAA-rider path, so this estimate is base-rate-adjusted rather than GovTrack-anchored. p_enact is revised up modestly from the 8/1 score of 0.08 to reflect that the provision has a live, if uncertain, path back into a must-pass vehicle for a second consecutive year, while p_committee (probability the standalone bill itself clears committee) is unchanged since neither standalone bill has had any committee action."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags: ["chip exports", "China", "national security", "NDAA"]
 sources:
   - label: "Sponsor press release"

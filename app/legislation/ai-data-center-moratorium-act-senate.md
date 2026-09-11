@@ -41,10 +41,10 @@ scoring:
     Depth: "The moratorium is the bill's central and most consequential provision — the reporting mandate and preemption effects both flow from it."
     E_f: "The moratorium mechanism and DOE reporting requirement imply real enforcement teeth, closer to agency rulemaking backed by penalties than a bare, unenforced obligation."
     P: "A nationwide construction moratorium tied to future federal legislation — a first-of-its-kind framework that, if enacted, other bills would likely reference or copy."
-    likelihood: "Zero cosponsors four months after introduction, with no hearings or other signs of momentum — a lone-sponsor bill with little visible traction."
+    likelihood: "Re-verified 2026-09-09: still zero cosponsors nearly six months after introduction, with no Senate Commerce Committee hearing or markup scheduled and no news of movement. A lone-sponsor bill with no visible traction; holding prior estimate."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags: ["data centers", "moratorium", "energy", "labor"]
 sources:
   - label: "Congress.gov"

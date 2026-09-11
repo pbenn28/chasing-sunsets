@@ -44,10 +44,10 @@ scoring:
     Depth: "Driven entirely by defunding the executive order -- a narrow, single-purpose mechanism."
     E_f: "A self-executing bar on federal spending: no private right of action or new rulemaking, but agencies are categorically barred from spending, which gives it more bite than a toothless obligation."
     P: "Described by its own sponsors as a close cousin of the GUARDRAILS Act -- it joins an established template of anti-preemption responses rather than breaking new ground."
-    likelihood: "Has 10 cosponsors but only one lead sponsor (Sen. Markey) and no bipartisan pairing, which limits its prospects in a GOP-controlled Senate."
+    likelihood: "Re-verified 9/9/26: cosponsor count unchanged at 10, all Democratic (Van Hollen, Schiff, Booker, Welch, Wyden, Sanders, Luján, Klobuchar, Padilla, Durbin), no bipartisan pairing, no committee action since the December 2025 referral. congress.gov and GovTrack both blocked direct fetch (403); corroborated via BillTrack50 and Markey's own office. Markey has also pursued the same substantive goal through amendment vehicles (e.g. filing it against appropriations bills) rather than relying on this bill advancing through ordinary committee process, which is consistent with a low-probability standalone bill in a GOP-controlled Senate. No basis to move p_committee/p_enact from 8/1."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - preemption
 - state law
@@ -55,12 +55,18 @@ tags:
 sources:
 - label: Congress.gov
   url: https://www.congress.gov/bill/119th-congress/senate-bill/3557
+- label: BillTrack50 (re-verified 9/9/26)
+  url: https://www.billtrack50.com/billdetail/1918339
+- label: Sen. Markey press office
+  url: https://www.markey.senate.gov/news/press-releases/senator-markey-introduces-legislation-to-block-trumps-executive-order-blocking-state-ai-regulation
 summary: Markey bill barring federal funds to enforce the December 2025 AI executive order, protecting state AI rules.
 timeline:
 - date: '2025-12-11'
   event: White House issues the AI executive order at issue
 - date: '2025-12-17'
   event: S. 3557 introduced by Sen. Markey; referred to Senate Commerce
+- date: '2026-09-09'
+  event: Re-verified — no committee action, cosponsor count unchanged at 10, all Democratic. Markey has continued pushing the same goal via floor amendments to other vehicles (e.g. appropriations) rather than this bill advancing on its own.
 ---
 
 The States' Right to Regulate AI Act would prohibit federal funds from being used to implement the executive order “Ensuring a National Policy Framework for Artificial Intelligence,” preserving state authority to regulate AI. It was introduced in response to the administration's effort to establish a federal framework that would preempt state laws, and is a close cousin of the GUARDRAILS Act.

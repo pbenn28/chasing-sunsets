@@ -41,10 +41,10 @@ scoring:
     Depth: "The moratorium itself is the bill's entire substance — every other provision exists to support or condition that freeze."
     E_f: "The moratorium implies agency-level enforcement of the construction bar, but the text doesn't spell out a penalty schedule or private right of action."
     P: "A nationwide construction moratorium tied to future federal legislation — a framework later bills could point to if it's enacted."
-    likelihood: "13 cosponsors is a meaningful number, but all are Democrats from the party's progressive wing with no Republican support in sight, in a GOP-controlled House that isn't inclined to move it."
+    likelihood: "Re-verified 2026-09-09: no committee hearing, markup, or new cosponsors found since the 7/22 addition of Rep. Figures — still 13 cosponsors, all Democrats, no Republican support, in a GOP-controlled House with no indication either Energy and Commerce or Foreign Affairs plans to act. Base rate for a lone-party, no-bipartisan-pairing bill with zero markup activity five weeks on remains low; holding prior estimate."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags: ["data centers", "moratorium", "energy", "labor"]
 sources:
   - label: "Congress.gov"

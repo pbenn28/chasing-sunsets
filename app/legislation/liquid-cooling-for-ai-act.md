@@ -45,10 +45,10 @@ scoring:
     Depth: "Driven mainly by the GAO/DOE study requirement — a real but modest reporting mandate that doesn't extend much further."
     E_f: "GAO must produce an assessment and DOE must advise Congress, but nothing attaches a penalty, rulemaking authority, or right of action to that obligation."
     P: "A one-time technology assessment and advisory report — it doesn't stand up a lasting institution or set a template other bills would copy."
-    likelihood: "Bipartisan-cosponsored (led by Reps. Obernolte and Gottheimer) but sitting with no committee action roughly a year after introduction. Advisory, non-controversial bills like this tend to clear committee more easily than average, but the lack of any markup activity so far keeps its odds modest."
+    likelihood: "Re-verified 2026-09-09: no Energy and Commerce or Science Committee markup found; secondary trackers show cosponsor counts in the same 10-11 range as the prior check, not materially changed. A Senate companion (S. 3269, Coons-McCormick, with Schiff and Budd cosponsoring) exists and adds a bipartisan bicameral pairing, which is a mild positive for eventual movement, but neither chamber's bill has had committee action roughly a year after introduction. Advisory, non-controversial bills like this tend to clear committee more easily than average, but the continued lack of markup activity keeps odds modest; holding prior estimate."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - data centers
 - cooling

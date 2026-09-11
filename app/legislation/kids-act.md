@@ -28,8 +28,8 @@ scoring:
     P: 0.6
   likelihood:
     p_committee: 0.60
-    p_enact: 0.34
-    basis: "govtrack_corroborated"
+    p_enact: 0.22
+    basis: "base_rate_adjusted"
   rationale:
     A: "Title IV requires AI chatbots to disclose they aren't human, bars them from claiming to be licensed professionals, mandates crisis-hotline referrals when a minor raises self-harm or suicide, and requires 'take a break' prompts after three hours of continuous use, backed by FTC and state-AG enforcement. A real, enforced conduct standard for chatbot deployers, though it doesn't touch frontier model training or release itself."
     B: "Sec. 704 preempts state law only where it actually conflicts with the Act, while expressly preserving state tort, contract, and product-liability law and any state or local law that protects minors more than this Act does -- the same conflict-preemption-plus-savings-clause structure is written permanently into COPPA. States remain free to legislate more protectively; only direct conflicts are barred."
@@ -41,10 +41,10 @@ scoring:
     Depth: "Driven mainly by the breadth of its consumer-protection provisions -- the mix of mandated disclosures, crisis referrals, and FTC/state-AG enforcement gives it real structural weight."
     E_f: "Enforced through the FTC's own authority plus state attorney general civil actions (with the FTC getting right of first refusal) -- agency-style enforcement backed by civil penalties, though there's no private right of action."
     P: "Consolidates roughly 14 prior bills, including a revised SAFE BOTs Act, into the first House-passed federal framework addressing AI-chatbot conduct toward minors -- likely to be a reference point for future state and federal chatbot-safety bills, though it doesn't create a permanent new institution."
-    likelihood: "Passed the House 267-117 under suspension of the rules with bipartisan leadership backing (committee chair Guthrie and ranking member Pallone), despite having just one formal cosponsor since it moved as leadership legislation rather than through rank-and-file cosponsorship. Now before Senate Commerce, where a 44-state bipartisan attorney general coalition is actively fighting its preemption provisions -- real momentum, but a live fight ahead."
+    likelihood: "REVISED 2026-09-09: passed the House 267-117 under suspension of the rules with bipartisan leadership backing (Guthrie/Pallone), and p_committee (0.60, reflecting the bill's already-pending referral) is unchanged. But p_enact is revised down materially: as of this check, H.R. 7757 remains parked in Senate Commerce with no markup scheduled, and Senate sponsors -- including Sen. Markey and other KOSA backers -- have publicly called the House version 'dead' in its current form because the revised text omits KOSA's duty-of-care provision. Rather than taking up H.R. 7757 itself, Senate Commerce instead advanced its own separate kids'-safety package (KOSA, the CHATBOT Act, and the Youth AI Privacy Act) out of committee by voice vote on 2026-08-05 -- a competing vehicle carrying much of the same subject matter but built on the Senate's preferred duty-of-care framework rather than the House's text. That divergence means H.R. 7757's path to enactment now most plausibly runs through a House-Senate conference reconciling two substantially different bills rather than the Senate simply adopting the House text, which lowers its odds of enactment in its current form even though the broader subject area (kids' online/chatbot safety) has real momentum. No GovTrack prognosis update found reflecting this divergence as of this check."
   confidence: high
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags: ["child safety", "chatbots", "SAFE BOTs", "platform regulation"]
 sources:
   - label: "Congress.gov"
@@ -61,7 +61,11 @@ timeline:
     event: "House passes H.R. 7757 (as amended) under suspension of the rules, 267-117"
   - date: "2026-07-13"
     event: "Received in the Senate; referred to the Senate Commerce Committee"
+  - date: "2026-09-09"
+    event: "Re-verified: H.R. 7757 remains parked in Senate Commerce with no markup scheduled; Senate sponsors have called the House text 'dead' over its omission of KOSA's duty-of-care provision, and Senate Commerce instead advanced its own separate KOSA/CHATBOT Act/Youth AI Privacy Act package by voice vote on 2026-08-05 as its preferred vehicle."
 ---
 The KIDS Act bundles roughly fourteen previously separate child-online-safety bills — including a revised version of the SAFE BOTs Act — into one package requiring social media, gaming, and AI chatbot platforms to build in safeguards for minors: parental controls, limits on harmful content exposure, and age-appropriate design.
 
 Its chatbot-specific provisions (Title IV) require AI chatbots to disclose that they are not human, bar them from claiming to be licensed professionals, mandate crisis-hotline referrals when a minor raises self-harm or suicide, and require "take a break" prompts after three continuous hours of use. The bill also directs a four-year NIH study on chatbots' mental-health effects on minors. It passed the House by a wide bipartisan margin and is now before the Senate Commerce Committee, with no distinct Senate companion bill — the same H.R. 7757 simply continues through that chamber.
+
+**Update 2026-09-09:** H.R. 7757 has stalled in Senate Commerce with no markup scheduled. Senate sponsors have called the House text "dead" for omitting KOSA's duty-of-care provision, and the committee instead advanced its own separate kids'-safety package (KOSA, the CHATBOT Act, and the Youth AI Privacy Act) on 2026-08-05, setting up a likely conference fight over which framework prevails rather than simple Senate concurrence with the House bill.

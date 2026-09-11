@@ -32,7 +32,7 @@ scoring:
   likelihood:
     p_committee: 0.15
     p_enact: 0.02
-    basis: "base_rate_heuristic_no_live_lookup"
+    basis: "base_rate_adjusted"
   rationale:
     A: "Adds generative-AI and voice-cloning systems to the FCC's existing robocall rules under 47 U.S.C. 227(d)(3), so they must meet the same caller-ID disclosure and 5-second line-release requirements as other automated calls. A real but narrow technical mandate, with nothing touching compute or energy."
     B: "Contains no preemption or state-law language of any kind; it's a straightforward federal amendment to telecom rules."
@@ -44,10 +44,10 @@ scoring:
     Depth: "A modest, single-purpose tweak to robocall rules -- it doesn't reach into deeper structural territory."
     E_f: "Enforced through FCC rulemaking backed by civil penalties under the existing Communications Act framework."
     P: "A narrow, self-contained standard for AI voice calls rather than a broader template other bills would build on."
-    likelihood: "A single-sponsor bill (Rep. Rick Allen) with no cosponsors and no movement since its January 2025 committee referral -- little sign of momentum."
+    likelihood: "A single-sponsor bill (Rep. Rick Allen) with no cosponsors and no movement since its January 2025 committee referral. A May 2026 CRS report on robocall legislation in the 119th Congress (R48941) confirms no hearings specific to robocalls, AI-generated or otherwise, have been held at all — corroborating live-lookup evidence of continued dormancy rather than the prior pass's heuristic-only estimate."
   confidence: medium
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - AI voice
 - FCC
@@ -59,6 +59,8 @@ summary: House bill directing FCC standards for generative-AI voice call systems
 timeline:
 - date: '2025-01-13'
   event: Introduced in the House and referred to Energy and Commerce
+- date: '2026-09-09'
+  event: Re-verified — CRS report (R48941, May 2026) confirms no robocall-related hearings held in the 119th Congress; no further action on this bill
 ---
 
 H.R. 334 would amend the Communications Act of 1934 to establish technical and procedural standards for artificial or prerecorded voice systems created through generative AI, giving the FCC authority over such systems — for example, requiring AI-generated voice messages to identify the caller's number and to release a recipient's line within five seconds after they hang up.

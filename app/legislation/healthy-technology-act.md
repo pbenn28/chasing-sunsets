@@ -44,10 +44,10 @@ scoring:
     Depth: "Driven mainly by the patient-safety stakes of letting AI act as a prescriber — the developer- and preemption-related provisions are essentially neutral."
     E_f: "Enforced through ordinary FDA and state licensing frameworks, with no explicit penalty provision or private right of action in the bill text."
     P: "Would be the first federal framework to explicitly recognize AI/ML systems as drug-prescribing 'practitioners' — a novel classification likely to be referenced in future AI-in-medicine proposals."
-    likelihood: "A committee-stage bill with zero cosponsors, single-party sponsorship, and documented opposition from the American College of Physicians — a difficult path with no signs of bipartisan support."
+    likelihood: "Re-verified 2026-09-09: still committee-stage with zero cosponsors, single-party sponsorship, and standing documented opposition from the American College of Physicians (per ACP's letter to Rep. Schweikert) — no hearing or markup activity found, a difficult path with no signs of bipartisan support, unchanged from the 8/1 assessment."
   confidence: medium
   text_source: full_text
-  scored_at: "2026-08-01"
+  scored_at: "2026-09-09"
 tags:
 - healthcare
 - FDA
@@ -59,6 +59,8 @@ summary: House bill clarifying AI/ML tools could qualify as practitioners eligib
 timeline:
 - date: '2025-01-07'
   event: Introduced and referred to House Energy and Commerce
+- date: '2026-09-09'
+  event: Status re-verified — still pending in House Energy and Commerce, zero cosponsors, no further action since referral
 ---
 
 The bill amends the Federal Food, Drug, and Cosmetic Act to expand the definition of a “practitioner licensed by law to administer” drugs to include AI and machine-learning technologies — but only where authorized to prescribe under state law and approved, cleared, or authorized by the FDA. It has drawn opposition from groups including the American College of Physicians.
