@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 jx = Math.cos(angle) * radius;
                 jy = Math.sin(angle) * radius;
             }
-            const r = 1.5 + im * 1.1;
+            const r = 1 + im * 1.2;
             const name = ((c.querySelector('.bill-title') || {}).textContent || c.id).trim() + (scored ? '' : ' (not yet scored)');
             const ptAttrs = {
                 class: 'pt', cx: xOf(s) + jx, cy: yOf(pe) + jy, r: r,
