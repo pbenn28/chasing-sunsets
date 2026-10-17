@@ -108,6 +108,11 @@
         <section id="chart-section">
             <h3 class="chart-title">Where does Congress stand?</h3>
             <p class="chart-dek">Each dot is a bill, placed by its safety score S (horizontal — negative is deregulation/acceleration, positive is safety/restriction) and its modeled probability of enactment (vertical). Dot size reflects Impact. The dashed line marks the <strong>enactment-probability-weighted average</strong> S — the center of gravity of what's actually likely to become law. The chart reflects the filters above and the weight controls below. Only bills scored against their actual full bill text are plotted here — see "How the probability model works" above for why; every tracked bill still appears in the list below regardless.</p>
+            <div class="scale-toggle">
+                <span class="scale-toggle-label">Y-axis scale:</span>
+                <button type="button" class="scale-toggle-btn active" data-scale="linear">Linear</button>
+                <button type="button" class="scale-toggle-btn" data-scale="log">Log</button>
+            </div>
             <div id="chart-wrap">
                 <svg id="chart-svg" viewBox="0 0 720 460" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Scatter plot of AI bills by safety score and probability of enactment"></svg>
             </div>

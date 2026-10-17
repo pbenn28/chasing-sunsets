@@ -115,9 +115,23 @@ document.addEventListener('DOMContentLoaded', function () {
     const plotW = VB_W - padL - padR;
     const plotH = VB_H - padT - padB;
     const S_MIN = -5, S_MAX = 5, PE_MIN = 0, PE_MAX = 1;
+    // Floor for the log scale -- log(0) is undefined, and the lowest p_enact
+    // actually seen in the data is ~1%, so values below this clamp to it
+    // rather than breaking the axis.
+    const PE_LOG_MIN = 0.01;
+    const LOG_TICKS = [0.01, 0.03, 0.1, 0.3, 1.0];
+
+    let yScaleMode = 'linear';
 
     const xOf = s => padL + ((s - S_MIN) / (S_MAX - S_MIN)) * plotW;
-    const yOf = pe => padT + ((PE_MAX - pe) / (PE_MAX - PE_MIN)) * plotH;
+    function yOf(pe) {
+        if (yScaleMode === 'log') {
+            const clamped = Math.max(pe, PE_LOG_MIN);
+            const t = (Math.log10(clamped) - Math.log10(PE_LOG_MIN)) / (Math.log10(PE_MAX) - Math.log10(PE_LOG_MIN));
+            return padT + (1 - t) * plotH;
+        }
+        return padT + ((PE_MAX - pe) / (PE_MAX - PE_MIN)) * plotH;
+    }
 
     function lerp(a, b, t) { return a + (b - a) * t; }
     function safetyColor(s) {
@@ -152,11 +166,13 @@ document.addEventListener('DOMContentLoaded', function () {
         while (svg.firstChild) svg.removeChild(svg.firstChild);
 
         // gridlines + Y ticks (P(enact) 0..1, shown as %)
-        [0, 0.25, 0.5, 0.75, 1.0].forEach(pe => {
+        const yTicks = yScaleMode === 'log' ? LOG_TICKS : [0, 0.25, 0.5, 0.75, 1.0];
+        yTicks.forEach(pe => {
             const y = yOf(pe);
             svg.appendChild(el('line', { class: 'grid-line', x1: padL, y1: y, x2: padL + plotW, y2: y }));
             const t = el('text', { class: 'axis-text', x: padL - 10, y: y + 4, 'text-anchor': 'end' });
-            t.textContent = Math.round(pe * 100) + '%';
+            const pct = pe * 100;
+            t.textContent = (pct < 1 ? pct.toFixed(1) : Math.round(pct)) + '%';
             svg.appendChild(t);
         });
         // X ticks (S -5..+5)
@@ -383,6 +399,16 @@ document.addEventListener('DOMContentLoaded', function () {
             recomputeAll();
         });
     }
+
+    const scaleToggleButtons = Array.from(document.querySelectorAll('.scale-toggle-btn'));
+    scaleToggleButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            if (btn.dataset.scale === yScaleMode) return;
+            yScaleMode = btn.dataset.scale;
+            scaleToggleButtons.forEach(function (b) { b.classList.toggle('active', b === btn); });
+            applyFilters();
+        });
+    });
 
     recomputeAll();
     openFromHash();

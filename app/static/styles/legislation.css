@@ -187,6 +187,41 @@
     max-width: 640px;
 }
 
+.scale-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4em;
+    margin: 0 auto 0.6em;
+    font-size: 0.82em;
+    color: #666;
+}
+
+.scale-toggle-label {
+    margin-right: 0.2em;
+}
+
+.scale-toggle-btn {
+    padding: 0.25em 0.7em;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fafafa;
+    font-family: inherit;
+    font-size: 1em;
+    cursor: pointer;
+    color: #555;
+}
+
+.scale-toggle-btn:hover {
+    background: #f0f0f0;
+}
+
+.scale-toggle-btn.active {
+    background: #333;
+    color: #fff;
+    border-color: #333;
+}
+
 #chart-wrap {
     width: 100%;
     background: #fcfcfb;
