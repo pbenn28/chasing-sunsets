@@ -177,6 +177,8 @@ def blog_post(slug):
     posts_dir = os.path.join(os.getcwd(), "app", "posts")
 
     post_dates = {
+        "love": "261017",
+        "openai": "260927",
         "dark": "260513",
         "clouds": "260510",
         "dropout": "260413",
@@ -188,7 +190,7 @@ def blog_post(slug):
         "crystallization": "241215"
     }
 
-    order = ["contents","dark","clouds","dropout","mission","safe","golumbia","visions","etch","crystallization","end"]
+    order = ["contents","love","openai","dark","clouds","dropout","mission","safe","golumbia","visions","etch","crystallization","end"]
 
     # Expected file path for the post
     post_path = os.path.join(posts_dir, post_dates[slug])
